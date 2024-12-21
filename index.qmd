@@ -1,0 +1,19 @@
+---
+title: "Dr. D's Public Safety Data Science"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: medium
+      text: Medium
+      href: https://medium.com/@trdunsworth
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/tonyrdunsworth
+    - icon: github
+      text: Github
+      href: https://github.com/trdunsworth
+
+---
+
+I am a data scientist focusing on the use of data to improve emergency operations in our communities. 
