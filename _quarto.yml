@@ -19,7 +19,9 @@ website:
         href: https://medium.com/@trdunsworth
 format:
   html:
-    theme: cosmo
+    theme: yeti
     css: styles.css
     
-
+comments:
+  giscus:
+    repo: trdunsworth/drddatascience

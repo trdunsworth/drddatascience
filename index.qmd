@@ -2,7 +2,7 @@
 title: "Dr. D's Public Safety Data Science"
 image: profile.jpg
 about:
-  template: jolla
+  template: broadside
   links:
     - icon: medium
       text: Medium
