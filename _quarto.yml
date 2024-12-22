@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Dr. D Data Science"
+  title: "Dr. D's Data Science"
   site-url: https://drddatascience.com
   description: "Public Safety Data Science by Dr. Tony Dunsworth"
   navbar:

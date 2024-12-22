@@ -1,0 +1,20 @@
+---
+title: "The Start of a New Blog"
+author: "Tony Dunsworth"
+date: "2024-12-22"
+categories: [news]
+---
+
+This is, for me, a starting point post. I am just starting to develop this site, including this blog, as a way to do several things at once. First and foremost, I want to document my work in public safety communications data science. This is a turning point in my career, transitioning from back-end administration of dispatch systems to data analytics and data science. 
+
+Another part of this blog will discuss things I find interesting in tech, especially when it comes to data. For example, I have been working more and more in Python lately and finding tools that I enjoy using because they make my work easier. The top three of late are [uv](https://github.com/astral-sh/uv), [DuckDB](https://duckdb.org/), and [FireDucks](https://fireducks-dev.github.io/). Over time, I will add Jupyter notebooks here so I can document my work with these and other tools. 
+
+I also want to learn more about [Julia](https://julialang.org/). So I might experiment with it in notebooks as well here and there and document the experience. However, most of the code that you see here will be in R, because it was the first language that I learned and the one that I feel most comfortable with. That will present its own challenge because many forecasting libraries that I have worked with are only expressed in Python. 
+
+There will be some tutorials as I write more and I get more comfortable with writing here and updating the blog and the site. Most of those are going to be geared towards public safety communications. I work with [NENA](https://nena.org) on several technical committees and part of that work, for me, focuses on bringing advanced analytics to PSAPs across the country. I also speak a few times a year on this and other topics. I will start blogging about what I have presented after the presentations are done. It will be good review. 
+
+I am also fascinated with generating synthetic data for analyses. Right now, I've been working with [Mostly.ai](https://mostly.ai/) to generate synthetic data for my research work. Due to the nature of the work that I do in centres, I use synthetic data for my presentations and my tutorials. My goal is to work with other libraries to create more realistic data for research purposes. I know that I will write about that in future posts. I'm looking forward to having fun with that exploration.
+
+Many of my posts will be found on my [Medium](https://medium.com/@trdunsworth) page. Some of the tutorials may also be found, in the future, on my [LinkedIn](https://linkedin.com/in/tonyrdunsworth). However, I will point my audience here over time because there will be posts here that don't exist other places so I can promote this place as my prefered publication venue. 
+
+Well, I think that this is a good start as a pre-launch blog post. 

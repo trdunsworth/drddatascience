@@ -1,6 +1,7 @@
 ---
 title: "Resume"
 format: html
+comments: false
 ---
 
 # Resume for Tony Dunsworth Ph.D.
