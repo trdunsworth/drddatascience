@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://drddatascience.com/blog.html</loc>
-    <lastmod>2024-12-22T02:27:41.743Z</lastmod>
-  </url>
-  <url>
     <loc>https://drddatascience.com/resume.html</loc>
-    <lastmod>2024-12-22T02:27:27.034Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drddatascience.com/posts/welcome/index.html</loc>
-    <lastmod>2024-12-22T02:03:56.500Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drddatascience.com/index.html</loc>
-    <lastmod>2024-12-22T04:19:34.134Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drddatascience.com/posts/post-with-code/index.html</loc>
-    <lastmod>2024-12-22T02:03:56.500Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drddatascience.com/about.html</loc>
-    <lastmod>2024-12-22T03:36:27.810Z</lastmod>
+    <lastmod>2024-12-22T05:49:32.794Z</lastmod>
   </url>
   <url>
     <loc>https://drddatascience.com/posts/startingpoint/index.html</loc>
-    <lastmod>2024-12-22T05:34:47.439Z</lastmod>
+    <lastmod>2024-12-22T05:49:35.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/posts/20241223/index.html</loc>
+    <lastmod>2024-12-24T04:35:41.397Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/blog.html</loc>
+    <lastmod>2024-12-22T05:49:32.868Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/about.html</loc>
+    <lastmod>2024-12-22T05:49:32.836Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/index.html</loc>
+    <lastmod>2024-12-22T05:49:32.462Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/posts/post-with-code/index.html</loc>
+    <lastmod>2024-12-22T04:57:41.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/posts/welcome/index.html</loc>
+    <lastmod>2024-12-22T04:57:41.231Z</lastmod>
   </url>
 </urlset>

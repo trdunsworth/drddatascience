@@ -10,7 +10,32 @@
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Sun, 22 Dec 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 22 Dec 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Thanks and Thoughts</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20241223/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Well, the site is now live, thanks to Ionos’ technical support. I have to compliment the person who followed up with me today. He helped me get everything taken care of and get the site live and available for you to see. It’s nice to go from working to build it to seeing it out there where everyone else can see it and we can go on this journey together.</p>
+<p>I also want to thank <a href="https://beamilz.com">Beartiz Milz</a> for writing an awesome <a href="https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/">tutorial</a> that helped me turn my limited knowledge of Quarto and my comfort with R into a website and blog to promote my work in 911 data science. I’m also using her tutorial to build a blog as a vehicle for new reports in my PSAP.</p>
+<p>For the last 14 years, I’ve written reports for two different PSAPs and felt like my reports have not illuminated everything that the data has to offer. The weekly and monthly reports have been things I’ve been asked to develop. However, there is always so much more in the data which could be important. Can we use knowledge about what days and hours are busiest change how we schedule telecommunicators? Can we see training oportunities by focusing on how long it takes us to process specific call types? Are there hidden correlations in the data that we’ve been missing because we don’t see them? I’ve thought of these questions forever. Now that I’ve finished my doctorate, I want to spend the time investigating these and other questions.</p>
+<p>I think that I can build templates that I can share with other interested PSAPs and we can start building better reporting systems which can, by being served as dashboards and websites, make the reports more responsive while automating the delivery. I want to mke things easier for everyone.</p>
+<p>I updated my <a href="https://medium.com/@trdunsworth">Medium</a> site with an annoucement that this blog exists and has become active. I’ve also updated <a href="https://linkedin.com/in/tonyrdunsworth">LinkedIn</a> with a link to that <a href="https://medium.com/@trdunsworth/new-blog-new-goals-same-ol-me-107d3dec8cf6">article</a> and invited my friends and contacts there to add comments and ask questions that can turn into blog posts. I will post this article there too, once I’ve published it.</p>
+<p>So, this is where this post ends. I will post something new in a couple of days. I’m going to challenge myself to add some code in the next one to see what happens. I have a couple of ideas in mind.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>thoughts</category>
+  <category>reports</category>
+  <guid>https://drddatascience.com/posts/20241223/</guid>
+  <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The Start of a New Blog</title>
   <dc:creator>Tony Dunsworth</dc:creator>
@@ -33,7 +58,60 @@
  ]]></description>
   <category>news</category>
   <guid>https://drddatascience.com/posts/startingpoint/</guid>
-  <pubDate>Sun, 22 Dec 2024 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Post With Code</title>
+  <dc:creator>Harlow Malloc</dc:creator>
+  <link>https://drddatascience.com/posts/post-with-code/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is a post with executable code.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>code</category>
+  <category>analysis</category>
+  <guid>https://drddatascience.com/posts/post-with-code/</guid>
+  <pubDate>Fri, 20 Dec 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://drddatascience.com/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Welcome To My Blog</title>
+  <dc:creator>Tristan O&#39;Malley</dc:creator>
+  <link>https://drddatascience.com/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is the first post in a Quarto blog. Welcome!</p>
+<p><img src="https://drddatascience.com/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://drddatascience.com/posts/welcome/</guid>
+  <pubDate>Tue, 17 Dec 2024 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
