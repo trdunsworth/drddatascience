@@ -7,13 +7,6 @@
     "text": "Resume for Tony Dunsworth Ph.D.\n\n    It appears you don't have a PDF plugin for this browser.\n    No biggie... you can click here to\n    download the PDF file."
   },
   {
-    "objectID": "posts/startingpoint/index.html",
-    "href": "posts/startingpoint/index.html",
-    "title": "The Start of a New Blog",
-    "section": "",
-    "text": "This is, for me, a starting point post. I am just starting to develop this site, including this blog, as a way to do several things at once. First and foremost, I want to document my work in public safety communications data science. This is a turning point in my career, transitioning from back-end administration of dispatch systems to data analytics and data science.\nAnother part of this blog will discuss things I find interesting in tech, especially when it comes to data. For example, I have been working more and more in Python lately and finding tools that I enjoy using because they make my work easier. The top three of late are uv, DuckDB, and FireDucks. Over time, I will add Jupyter notebooks here so I can document my work with these and other tools.\nI also want to learn more about Julia. So I might experiment with it in notebooks as well here and there and document the experience. However, most of the code that you see here will be in R, because it was the first language that I learned and the one that I feel most comfortable with. That will present its own challenge because many forecasting libraries that I have worked with are only expressed in Python.\nThere will be some tutorials as I write more and I get more comfortable with writing here and updating the blog and the site. Most of those are going to be geared towards public safety communications. I work with NENA on several technical committees and part of that work, for me, focuses on bringing advanced analytics to PSAPs across the country. I also speak a few times a year on this and other topics. I will start blogging about what I have presented after the presentations are done. It will be good review.\nI am also fascinated with generating synthetic data for analyses. Right now, I’ve been working with Mostly.ai to generate synthetic data for my research work. Due to the nature of the work that I do in centres, I use synthetic data for my presentations and my tutorials. My goal is to work with other libraries to create more realistic data for research purposes. I know that I will write about that in future posts. I’m looking forward to having fun with that exploration.\nMany of my posts will be found on my Medium page. Some of the tutorials may also be found, in the future, on my LinkedIn. However, I will point my audience here over time because there will be posts here that don’t exist other places so I can promote this place as my prefered publication venue.\nWell, I think that this is a good start as a pre-launch blog post."
-  },
-  {
     "objectID": "posts/20241223/index.html",
     "href": "posts/20241223/index.html",
     "title": "Thanks and Thoughts",
@@ -25,7 +18,7 @@
     "href": "blog.html",
     "title": "Dr. D Public Safety Data Science",
     "section": "",
-    "text": "Thanks and Thoughts\n\n\n\n\n\n\nnews\n\n\nthoughts\n\n\nreports\n\n\n\n\n\n\n\n\n\nDec 22, 2024\n\n\n3 min\n\n\n\n\n\n\n\nThe Start of a New Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 22, 2024\n\n\n3 min\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 20, 2024\n\n\n1 min\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 17, 2024\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Thanks and Thoughts\n\n\n\n\n\n\nnews\n\n\nthoughts\n\n\nreports\n\n\n\n\n\n\n\n\n\nDec 22, 2024\n\n\n3 min\n\n\n\n\n\n\n\nThe Start of a New Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 22, 2024\n\n\n3 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -56,17 +49,10 @@
     "text": "I am a data scientist focusing on the use of data to improve emergency operations in our communities. I also research zero-shot time series forecasting libraries. I want to develop automated analytical libraries to be used in 911/999/112 centers to give staff access to better intelligence through the application of advanced techniques."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/startingpoint/index.html",
+    "href": "posts/startingpoint/index.html",
+    "title": "The Start of a New Blog",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This is, for me, a starting point post. I am just starting to develop this site, including this blog, as a way to do several things at once. First and foremost, I want to document my work in public safety communications data science. This is a turning point in my career, transitioning from back-end administration of dispatch systems to data analytics and data science.\nAnother part of this blog will discuss things I find interesting in tech, especially when it comes to data. For example, I have been working more and more in Python lately and finding tools that I enjoy using because they make my work easier. The top three of late are uv, DuckDB, and FireDucks. Over time, I will add Jupyter notebooks here so I can document my work with these and other tools.\nI also want to learn more about Julia. So I might experiment with it in notebooks as well here and there and document the experience. However, most of the code that you see here will be in R, because it was the first language that I learned and the one that I feel most comfortable with. That will present its own challenge because many forecasting libraries that I have worked with are only expressed in Python.\nThere will be some tutorials as I write more and I get more comfortable with writing here and updating the blog and the site. Most of those are going to be geared towards public safety communications. I work with NENA on several technical committees and part of that work, for me, focuses on bringing advanced analytics to PSAPs across the country. I also speak a few times a year on this and other topics. I will start blogging about what I have presented after the presentations are done. It will be good review.\nI am also fascinated with generating synthetic data for analyses. Right now, I’ve been working with Mostly.ai to generate synthetic data for my research work. Due to the nature of the work that I do in centres, I use synthetic data for my presentations and my tutorials. My goal is to work with other libraries to create more realistic data for research purposes. I know that I will write about that in future posts. I’m looking forward to having fun with that exploration.\nMany of my posts will be found on my Medium page. Some of the tutorials may also be found, in the future, on my LinkedIn. However, I will point my audience here over time because there will be posts here that don’t exist other places so I can promote this place as my prefered publication venue.\nWell, I think that this is a good start as a pre-launch blog post."
   }
 ]

@@ -3,9 +3,7 @@
     "listing": "/blog.html",
     "items": [
       "/posts/20241223/index.html",
-      "/posts/startingpoint/index.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/startingpoint/index.html"
     ]
   }
 ]
