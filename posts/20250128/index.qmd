@@ -1,0 +1,27 @@
+---
+title: "So where does the data take me?"
+author: "Tony Dunsworth"
+date: "2025-01-28"
+categories: [news, editorial, data science]
+---
+# Reflections about the last week
+
+I just finished a week at [NENA's](https://nena.org) Standard and Best Practices. I had a wonderful time with my presentations on developing staffing models, data management, and using data better in call processing. I met a lot of new friends and I see a lot of opportunities ahead of me to make a real difference at the intersection of public safety and data science.
+
+This is, however, where I'm going to get on my soapbox and address something I am hearing more and more of, not only in the  centres, but in civic government as well. I admit that I have phrases and words that I don't like and that I will not use or accept from others when we're working on projects. In statistics, I hate the word *average*. It's meaningless. Define which measure of central tendency you mean and stick with it. If the distribution is normally distributed, then stick with the mean and call it such. If it's not, then choose either the median or the mode. I prefer the median myself, but don't use **average**.
+
+When it comes to Analytics, I hate hearing anyone say *Trust Me*. I do not want blind trust in anyone, including me. I should have to prove what I assert. Yes, I do know my business, but I'm fallable just like anyone else. 
+
+The other phrase that I fear is being overused is *data-driven*. I am concerned that it's becoming a buzz phrase rather than being looked at in depth. My opinion here, and only my opinion, is that this along with "Data is the new oil" is becoming meaningless because it's being used without thought. I prefer using *information-driven* or *intelligence-driven*. When I was in the middle of my first Masters, I had an instructor who was studying knowledge management and he gave us really good definitions of data, information, and intelligence. We were taught that data is the raw material. Much like oil, if you want to continue with that metaphor. Information is data in context. Intelligence is application of information to a specific situation. During the week in Clearwater, I heard someone start the "oil" quote and finished it this way, Data like oil is the raw product, until it is extracted and transformed, it has limited value. Once it's processed into something else, information, then it acquires a value. That's why I prefer to use *information-driven*. I work with you to put the data into context and then generate information that you can apply as actionable intelligence.
+
+## NENA's SBP
+
+I participated in seven presentations. I will upload slide decks and notes later for people who are interested in learning what I was talking about in detail. Three of these were in a block discussing the need for a new staffing model recommendation in 911 centres. Currently, NENA's [Staffing Recommendations](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-REF-001-2003_PSAP_Staff.pdf) are over 21 years old and rely heavily on the [Erlang-C](https://myweb.ecu.edu/robbinst/PDFs/Erlang%20Compare%20Working%20paper.pdf) model for staffing recommendations. There has been a tonne of work in queuing theory since the development of this formula. And, as referenced in the linked paper, there are legitimate questions about how appropriate the Erlang model family is for regular call centres, let alone 911 centres.
+
+Two of the other presentations centered around the [Emergency Incident Data Object](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-STA-021.1b-2021_2024121.pdf). This is how, we propose, to move information between different systems and entities in public safety. It's in a JSON object that leverages [NIEM](https://www.niem.gov/) to define the objects passed between entities. My presentations dicussed the JSON object itself and the conveyance mechanisms by which the JSON objects are moved between entities.
+
+The other presentations in which I participated were the Call Processing working group where I am the *'data SME'* and the [Future Think](https://www.nena.org/page/standards#FutureThink) committee's Data Management and Presetation work. That was a fun panel discussion with a lot of great audience participation.
+
+I am heartened, as a data scientist working in public safety, to hear my colleagues in public safety acknowledging the need to use data analytics, regression modeling, predictive analytics, and forecasting to improve things for telecommunicators.
+
+There is also a movement to start considering a shaerd data repository for research and analytical purposes. I beieve that will be an excellent idea. If we can get several PSAPs together and build out a research database, we could put it in front of other researchers and see where it leades us. 

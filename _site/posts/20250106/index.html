@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tony Dunsworth">
+<meta name="dcterms.date" content="2025-01-06">
 
-<title>Dr.&nbsp;D Public Safety Data Science – Dr. D's Data Science</title>
+<title>So where does the data take me? – Dr.&nbsp;D’s Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fd053a38988e21bb3d3b0b617a2084cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-fd053a38988e21bb3d3b0b617a2084cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,68 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Dr. D's Data Science" href="blog.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -138,7 +80,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Dr.&nbsp;D’s Data Science</span>
     </a>
   </div>
@@ -149,15 +91,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -178,25 +120,42 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="OTEx">911 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YW5hbHl0aWNz">analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGF0YSUyMHNjaWVuY2U=">data science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZWRpdG9yaWFs">editorial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZnVsbC1zdGFjaw==">full-stack <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(5)</span></div><div class="category" data-category="cmVwb3J0cw==">reports <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGhvdWdodHM=">thoughts <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Dr.&nbsp;D Public Safety Data Science</h1>
-</div>
+<h1 class="title">So where does the data take me?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">news</div>
+    <div class="quarto-category">full-stack</div>
+    <div class="quarto-category">data science</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tony Dunsworth </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 6, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -206,181 +165,12 @@ window.Quarto = {
 </header>
 
 
+<p>With the snow storm that moved from the midwest over the Appalachians and through Virginia, I received texts and a phone call from a friend and former colleague. She asked if I knew of a way to view all of the current calls for service throughout the state. No, she’s not crazy, she was investigating a request made of her. However, the commiunication started me thinking about an <em>“end-to-end”</em> data science solution that could make that a reality.</p>
+<p>Thwew are severak steps that need to be taken to create such an application. Granted, the end result would be focused</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ2VkaXRvcmlhbCUyQ2RhdGElMjBzY2llbmNl" data-listing-date-sort="1738040400000" data-listing-file-modified-sort="1738126910140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/20250128/index.html" class="no-external">So where does the data take me?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/20250128/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZWRpdG9yaWFs'); return false;">
-editorial
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMHNjaWVuY2U='); return false;">
-data science
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/20250128/index.html" class="no-external">I just finished a week at NENA’s Standard and Best Practices. I had a wonderful time with my presentations on developing staffing models, data management, and using data…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/20250128/index.html" class="no-external">
-<div class="listing-date">
-Jan 28, 2025
-</div>
-<div class="listing-reading-time">
-4 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cyUyQ2Z1bGwtc3RhY2slMkNkYXRhJTIwc2NpZW5jZQ==" data-listing-date-sort="1736139600000" data-listing-file-modified-sort="1736218789518" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="100">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/20250106/index.html" class="no-external">So where does the data take me?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/20250106/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZnVsbC1zdGFjaw=='); return false;">
-full-stack
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMHNjaWVuY2U='); return false;">
-data science
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/20250106/index.html" class="no-external">With the snow storm that moved from the midwest over the Appalachians and through Virginia, I received texts and a phone call from a friend and former colleague. She asked…<em></em></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/20250106/index.html" class="no-external">
-<div class="listing-date">
-Jan 6, 2025
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="bmV3cyUyQ2FuYWx5dGljcyUyQzkxMQ==" data-listing-date-sort="1736053200000" data-listing-file-modified-sort="1736053954892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/20250105/index.html" class="no-external">So where does the data take me?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/20250105/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHl0aWNz'); return false;">
-analytics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('OTEx'); return false;">
-911
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/20250105/index.html" class="no-external">So, over the <em>dead</em> week between Christmas and New Year’s Day, I started working on a new reporting template. The goal is to create a new archive of weekly and monthly reports…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/20250105/index.html" class="no-external">
-<div class="listing-date">
-Jan 5, 2025
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="bmV3cyUyQ3Rob3VnaHRzJTJDcmVwb3J0cw==" data-listing-date-sort="1734843600000" data-listing-file-modified-sort="1735014941397" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/20241223/index.html" class="no-external">Thanks and Thoughts</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/20241223/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('dGhvdWdodHM='); return false;">
-thoughts
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cmVwb3J0cw=='); return false;">
-reports
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/20241223/index.html" class="no-external">Well, the site is now live, thanks to Ionos’ technical support. I have to compliment the person who followed up with me today. He helped me get everything taken care of and…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/20241223/index.html" class="no-external">
-<div class="listing-date">
-Dec 22, 2024
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="bmV3cw==" data-listing-date-sort="1734843600000" data-listing-file-modified-sort="1734846575251" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="459">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/startingpoint/index.html" class="no-external">The Start of a New Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/startingpoint/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/startingpoint/index.html" class="no-external">This is, for me, a starting point post. I am just starting to develop this site, including this blog, as a way to do several things at once. First and foremost, I want to…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/startingpoint/index.html" class="no-external">
-<div class="listing-date">
-Dec 22, 2024
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -798,6 +588,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://utteranc.es/client.js" repo="trdunsworth/blogComments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+<script src="https://giscus.app/client.js" data-repo="trdunsworth/drddatascience" data-repo-id="R_kgDONgymXQ" data-category="General" data-category-id="DIC_kwDONgymXc4Clbfm" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 
 
