@@ -1,8 +1,10 @@
 ---
-title: "Thanks and Thoughts"
+title: "Thoughts While Checking My Language Skills"
 author: "Tony Dunsworth"
-date: "2025-01-29"
+date: "2025-01-30"
 categories: [news, thoughts]
 ---
 
-After getting caught up with many of the day-to-day tasks at work, I found myself thinking about what's coming next for me and for the blog. I have always intended for this blog to have several different
+I had a post idea all lined up and then something new landed in my lap. Well, more accurately, it landed in my inbox. I have been tasked with providing some aggregates and means for certain service calls. When I'm looking through some collected data to give me the baseline, I realized that I have four separate columns in my dataset that could be used as the starting timestamp. Many of the rows in the dataset have identical values in all 4 columns. For the rows that don't, there can be differences between columns of up to 45 seconds. When I asked the requester if there was a preference for which column to use and I received explanations about how further research should be left for operations. I'm ok with that. Ultimately, I was able to learn that there was no preference and I am free to select the starting point I wish. 
+
+However, it did get me thinking. I want to know if there is a specific timestamp that *should* be used as the starting point? Can that be determined statistically? I know that I can create SQL to isolate the earliest time point when there is a discrepancy. However, this could be  an interesting project. So, I think I'm going to design it and work on it a bit. 
