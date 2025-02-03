@@ -10,22 +10,28 @@ I just finished a week at [NENA's](https://nena.org) Standard and Best Practices
 
 ## NENA's SBP
 
-I participated in seven presentations. I will upload slide decks and notes later for people who are interested in learning what I was talking about in detail. 
+I participated in seven presentations. I will upload slide decks and notes later for people who are interested in learning what I was talking about in detail.
 
 ### Staffing
 
-Three of these were in a block discussing the need for a new staffing model recommendation in 911 centres. Currently, NENA's [Staffing Recommendations](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-REF-001-2003_PSAP_Staff.pdf) are over 21 years old and rely heavily on the [Erlang-C](https://myweb.ecu.edu/robbinst/PDFs/Erlang%20Compare%20Working%20paper.pdf) model for staffing recommendations. There has been a tonne of work in queuing theory since the development of this formula. And, as referenced in the linked paper, there are legitimate questions about how appropriate the Erlang model family is for regular call centres, let alone 911 centres. 
+Three of these were in a block discussing the need for a new staffing model recommendation in 911 centres. Currently, NENA's [Staffing Recommendations](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-REF-001-2003_PSAP_Staff.pdf) are over 21 years old and rely heavily on the [Erlang-C](https://myweb.ecu.edu/robbinst/PDFs/Erlang%20Compare%20Working%20paper.pdf) model for staffing recommendations. There has been a tonne of work in queuing theory since the development of this formula. And, as referenced in the linked paper, there are legitimate questions about how appropriate the Erlang model family is for regular call centres, let alone 911 centres.
 
 One of the central problems is that Erlang-C models assume there is only one queue that delivers all of the customers to the servers. In most modern centres, there are at least 4 ingression points to the server set. We have dedicated 9-1-1 trunk lines, typically most primary PSAPs also answer some non-emergency lines, and most centres also take 9-1-1 SMS messages. Finally, all centres have to be able to receive and process TTD-TTY calls. Many larger centers may also process traffic cameras, [ASAP2PSAP](https://www.apcointl.org/technology/interoperability/asap-to-psap/) generated alarm calls, or other monitoring services like [ShotSpotter](https://www.soundthinking.com/). Dispatchers also have radio traffic from the units that they monitor which require their attention. So, there are numerous queues to access the servers, the servers are  all multi-skilled servers, and the different queues have different priorities for servers depending on skill sets and responsibilities. Each of these adds levels of complexity that could confound an Erlang-C model.
 
-There are several different methods that could come into play, including Markovian models, Game Theory, and Priority Queuing Models. Each of these can be explored and addressed. 
+There are several different methods that could come into play, including Markovian models, Game Theory, and Priority Queuing Models. Each of these can be explored and addressed.
 
-I remain convinced that we have enough brain power in NENA  that our working group can tackle this issue and come up with a queuing model that will work for the industry. 
+I remain convinced that we have enough brain power in NENA  that our working group can tackle this issue and come up with a queuing model that will work for the industry.
+
+### EIDO and NG9-1-1
 
 Two of the other presentations centered around the [Emergency Incident Data Object](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-STA-021.1b-2021_2024121.pdf). This is how, we propose, to move information between different systems and entities in public safety. It's in a JSON object that leverages [NIEM](https://www.niem.gov/) to define the objects passed between entities. My presentations dicussed the JSON object itself and the conveyance mechanisms by which the JSON objects are moved between entities.
 
-The other presentations in which I participated were the Call Processing working group where I am the *'data SME'* and the [Future Think](https://www.nena.org/page/standards#FutureThink) committee's Data Management and Presetation work. That was a fun panel discussion with a lot of great audience participation.
+I believe in the use of the EIDO as we continue to roll out NG9-1-1 services across the country. We have done a lot of good work throughout the years to create something that can be useful in ensuring data gets to where it needs to go and can be processed efficiently.
+
+### Data Usage
+
+The other presentations in which I participated were the Call Processing working group where I am the *'data SME'* and the [Future Think](https://www.nena.org/page/standards#FutureThink) committee's Data Management and Presetation work. That was a fun panel discussion with a lot of great audience participation. There is a general agreement that we need to use more of our data and use it more effectively.
 
 I am heartened, as a data scientist working in public safety, to hear my colleagues in public safety acknowledging the need to use data analytics, regression modeling, predictive analytics, and forecasting to improve things for telecommunicators.
 
-There is also a movement to start considering a shaerd data repository for research and analytical purposes. I beieve that will be an excellent idea. If we can get several PSAPs together and build out a research database, we could put it in front of other researchers and see where it leades us. 
+There is also a movement to start considering a shared data repository for research and analytical purposes. I beieve that will be an excellent idea. If we can get several PSAPs together and build out a research database, we could put it in front of other researchers and see where it leades us.
