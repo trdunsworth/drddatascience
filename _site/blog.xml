@@ -10,7 +10,7 @@
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Tue, 28 Jan 2025 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 02 Feb 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>So where does the data take me?</title>
   <dc:creator>Tony Dunsworth</dc:creator>
@@ -23,18 +23,33 @@
 <section id="reflections-about-the-last-week" class="level1">
 <h1>Reflections about the last week</h1>
 <p>I just finished a week at <a href="https://nena.org">NENA’s</a> Standard and Best Practices. I had a wonderful time with my presentations on developing staffing models, data management, and using data better in call processing. I met a lot of new friends and I see a lot of opportunities ahead of me to make a real difference at the intersection of public safety and data science.</p>
-<p>This is, however, where I’m going to get on my soapbox and address something I am hearing more and more of, not only in the centres, but in civic government as well. I admit that I have phrases and words that I don’t like and that I will not use or accept from others when we’re working on projects. In statistics, I hate the word <em>average</em>. It’s meaningless. Define which measure of central tendency you mean and stick with it. If the distribution is normally distributed, then stick with the mean and call it such. If it’s not, then choose either the median or the mode. I prefer the median myself, but don’t use <strong>average</strong>.</p>
-<p>When it comes to Analytics, I hate hearing anyone say <em>Trust Me</em>. I do not want blind trust in anyone, including me. I should have to prove what I assert. Yes, I do know my business, but I’m fallable just like anyone else.</p>
-<p>The other phrase that I fear is being overused is <em>data-driven</em>. I am concerned that it’s becoming a buzz phrase rather than being looked at in depth. My opinion here, and only my opinion, is that this along with “Data is the new oil” is becoming meaningless because it’s being used without thought. I prefer using <em>information-driven</em> or <em>intelligence-driven</em>. When I was in the middle of my first Masters, I had an instructor who was studying knowledge management and he gave us really good definitions of data, information, and intelligence. We were taught that data is the raw material. Much like oil, if you want to continue with that metaphor. Information is data in context. Intelligence is application of information to a specific situation. During the week in Clearwater, I heard someone start the “oil” quote and finished it this way, Data like oil is the raw product, until it is extracted and transformed, it has limited value. Once it’s processed into something else, information, then it acquires a value. That’s why I prefer to use <em>information-driven</em>. I work with you to put the data into context and then generate information that you can apply as actionable intelligence.</p>
 <section id="nenas-sbp" class="level2">
 <h2 class="anchored" data-anchor-id="nenas-sbp">NENA’s SBP</h2>
-<p>I participated in seven presentations. I will upload slide decks and notes later for people who are interested in learning what I was talking about in detail. Three of these were in a block discussing the need for a new staffing model recommendation in 911 centres. Currently, NENA’s <a href="https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-REF-001-2003_PSAP_Staff.pdf">Staffing Recommendations</a> are over 21 years old and rely heavily on the <a href="https://myweb.ecu.edu/robbinst/PDFs/Erlang%20Compare%20Working%20paper.pdf">Erlang-C</a> model for staffing recommendations. There has been a tonne of work in queuing theory since the development of this formula. And, as referenced in the linked paper, there are legitimate questions about how appropriate the Erlang model family is for regular call centres, let alone 911 centres.</p>
-<p>Two of the other presentations centered around the <a href="https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-STA-021.1b-2021_2024121.pdf">Emergency Incident Data Object</a>. This is how, we propose, to move information between different systems and entities in public safety. It’s in a JSON object that leverages <a href="https://www.niem.gov/">NIEM</a> to define the objects passed between entities. My presentations dicussed the JSON object itself and the conveyance mechanisms by which the JSON objects are moved between entities.</p>
-<p>The other presentations in which I participated were the Call Processing working group where I am the <em>‘data SME’</em> and the <a href="https://www.nena.org/page/standards#FutureThink">Future Think</a> committee’s Data Management and Presetation work. That was a fun panel discussion with a lot of great audience participation.</p>
+<p>I participated in seven presentations. I will upload slide decks and notes later for people who are interested in learning what I was talking about in detail.</p>
+<section id="staffing" class="level3">
+<h3 class="anchored" data-anchor-id="staffing">Staffing</h3>
+<p>Three of these were in a block discussing the need for a new staffing model recommendation in 911 centres. Currently, NENA’s <a href="https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-REF-001-2003_PSAP_Staff.pdf">Staffing Recommendations</a> are over 21 years old and rely heavily on the <a href="https://myweb.ecu.edu/robbinst/PDFs/Erlang%20Compare%20Working%20paper.pdf">Erlang-C</a> model for staffing recommendations. There has been a tonne of work in queuing theory since the development of this formula. And, as referenced in the linked paper, there are legitimate questions about how appropriate the Erlang model family is for regular call centres, let alone 911 centres.</p>
+<p>One of the central problems is that Erlang-C models assume there is only one queue that delivers all of the customers to the servers. In most modern centres, there are at least 4 ingression points to the server set. We have dedicated 9-1-1 trunk lines, typically most primary PSAPs also answer some non-emergency lines, and most centres also take 9-1-1 SMS messages. Finally, all centres have to be able to receive and process TTD-TTY calls. Many larger centers may also process traffic cameras, <a href="https://www.apcointl.org/technology/interoperability/asap-to-psap/">ASAP2PSAP</a> generated alarm calls, or other monitoring services like <a href="https://www.soundthinking.com/">ShotSpotter</a>. Dispatchers also have radio traffic from the units that they monitor which require their attention. So, there are numerous queues to access the servers, the servers are all multi-skilled servers, and the different queues have different priorities for servers depending on skill sets and responsibilities. Each of these adds levels of complexity that could confound an Erlang-C model.</p>
+<p>There are several different methods that could come into play, including Markovian models, Game Theory, and Priority Queuing Models. Each of these can be explored and addressed.</p>
+<p>I remain convinced that we have enough brain power in NENA that our working group can tackle this issue and come up with a queuing model that will work for the industry.</p>
+</section>
+<section id="eido-and-ng9-1-1" class="level3">
+<h3 class="anchored" data-anchor-id="eido-and-ng9-1-1">EIDO and NG9-1-1</h3>
+<p>Two of the other presentations centered around the <a href="https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-STA-021.1b-2021_2024121.pdf">Emergency Incident Data Object</a>. This is how, we propose, to move information between different systems and entities in public safety. It’s in a <a href="https://www.json.org/json-en.html">JSON</a> object that leverages <a href="https://www.niem.gov/about-niem">NIEM</a> to define the objects passed between entities. My presentations dicussed the JSON object itself and the conveyance mechanisms by which the JSON objects are moved between entities.</p>
+<p>I believe in the use of the EIDO as we continue to roll out NG9-1-1 services across the country. We have done a lot of good work throughout the years to create something that can be useful in ensuring data gets to where it needs to go and can be processed efficiently.</p>
+</section>
+<section id="data-usage" class="level3">
+<h3 class="anchored" data-anchor-id="data-usage">Data Usage</h3>
+<p>The other presentations in which I participated were the Call Processing working group where I am the <em>‘data SME’</em> and the <a href="https://www.nena.org/page/standards#FutureThink">Future Think</a> committee’s Data Management and Presentation work. That was a fun panel discussion with a lot of great audience participation. There is a general agreement that we need to use more of our data and use it more effectively.</p>
 <p>I am heartened, as a data scientist working in public safety, to hear my colleagues in public safety acknowledging the need to use data analytics, regression modeling, predictive analytics, and forecasting to improve things for telecommunicators.</p>
-<p>There is also a movement to start considering a shaerd data repository for research and analytical purposes. I beieve that will be an excellent idea. If we can get several PSAPs together and build out a research database, we could put it in front of other researchers and see where it leades us.</p>
+<p>There is also a movement to start considering a shared data repository for research and analytical purposes. I beieve that will be an excellent idea. If we can get several PSAPs together and build out a research database, we could put it in front of other researchers and see where it leades us.</p>
+<section id="editorial-note" class="level4">
+<h4 class="anchored" data-anchor-id="editorial-note">Editorial Note</h4>
+<p><em>I changed the link for NIEM to go to the About page to give readers a better explanaiton of what NIEM is and why it’s important. I also linked to a page describing JSON in better terms. Finally, my editor found a spelling error that was also corrected.</em></p>
 
 
+</section>
+</section>
 </section>
 </section>
 
@@ -43,7 +58,27 @@
   <category>editorial</category>
   <category>data science</category>
   <guid>https://drddatascience.com/posts/20250128/</guid>
-  <pubDate>Tue, 28 Jan 2025 05:00:00 GMT</pubDate>
+  <pubDate>Sun, 02 Feb 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Thoughts While Checking My Language Skills</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20250129/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I had a post idea all lined up and then something new landed in my lap. Well, more accurately, it landed in my inbox. I have been tasked with providing some aggregates and means for certain service calls. When I’m looking through some collected data to give me the baseline, I realized that I have four separate columns in my dataset that could be used as the starting timestamp. Many of the rows in the dataset have identical values in all 4 columns. For the rows that don’t, there can be differences between columns of up to 45 seconds. When I asked the requester if there was a preference for which column to use and I received explanations about how further research should be left for operations. I’m ok with that. Ultimately, I was able to learn that there was no preference and I am free to select the starting point I wish.</p>
+<p>However, it did get me thinking. I want to know if there is a specific timestamp that <em>should</em> be used as the starting point? Can that be determined statistically? I know that I can create SQL to isolate the earliest time point when there is a discrepancy. However, this could be an interesting project. So, I think I’m going to design it and work on it a bit.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>thoughts</category>
+  <guid>https://drddatascience.com/posts/20250129/</guid>
+  <pubDate>Thu, 30 Jan 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>So where does the data take me?</title>
