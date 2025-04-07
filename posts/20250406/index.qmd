@@ -5,4 +5,6 @@ date: "2025-04-06"
 categories: [news, thoughts, updates]
 ---
 
-It has certainly been way too long since I've written a blog post. I know that I promised myself and my readers, if I have any left, that I would do better with this, but here we are. Life has a funny way of getting in the way when you least expect it. However, one 
+It has certainly been way too long since I've written a blog post. I know that I promised myself and my readers, if I have any left, that I would do better with this, but here we are. Life has a funny way of getting in the way when you least expect it. However, those same recent events have given me considerable fodder for new posts that could be in the pipeline. 
+
+I've been working on a few projects lately. Many of those projects are going to be the bases of many future posts. The first of those is a piece of software that I'm working on
