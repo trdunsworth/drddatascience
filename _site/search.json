@@ -32,7 +32,7 @@
     "href": "blog.html",
     "title": "Dr. D Public Safety Data Science",
     "section": "",
-    "text": "So where does the data take me?\n\n\n\n\n\n\nnews\n\n\neditorial\n\n\ndata science\n\n\n\n\n\n\n\n\n\nFeb 2, 2025\n\n\n4 min\n\n\n\n\n\n\n\nThoughts While Checking My Language Skills\n\n\n\n\n\n\nnews\n\n\nthoughts\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\n2 min\n\n\n\n\n\n\n\nSo where does the data take me?\n\n\n\n\n\n\nnews\n\n\nfull-stack\n\n\ndata science\n\n\n\n\n\n\n\n\n\nJan 6, 2025\n\n\n1 min\n\n\n\n\n\n\n\nSo where does the data take me?\n\n\n\n\n\n\nnews\n\n\nanalytics\n\n\n911\n\n\n\n\n\n\n\n\n\nJan 5, 2025\n\n\n1 min\n\n\n\n\n\n\n\nThanks and Thoughts\n\n\n\n\n\n\nnews\n\n\nthoughts\n\n\nreports\n\n\n\n\n\n\n\n\n\nDec 22, 2024\n\n\n3 min\n\n\n\n\n\n\n\nThe Start of a New Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 22, 2024\n\n\n3 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Updated Directions\n\n\n\n\n\n\nnews\n\n\nthoughts\n\n\nupdates\n\n\n\n\n\n\n\n\n\nApr 6, 2025\n\n\n1 min\n\n\n\n\n\n\n\nDirections for Future Posts\n\n\n\n\n\n\nthoughts\n\n\nideas\n\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\n1 min\n\n\n\n\n\n\n\nIt’s About Time\n\n\n\n\n\n\nnews\n\n\neditorial\n\n\ndata science\n\n\n\n\n\n\n\n\n\nFeb 3, 2025\n\n\n1 min\n\n\n\n\n\n\n\nSo where does the data take me?\n\n\n\n\n\n\nnews\n\n\neditorial\n\n\ndata science\n\n\n\n\n\n\n\n\n\nFeb 2, 2025\n\n\n4 min\n\n\n\n\n\n\n\nSo where does the data take me?\n\n\n\n\n\n\nnews\n\n\nfull-stack\n\n\ndata science\n\n\n\n\n\n\n\n\n\nJan 6, 2025\n\n\n1 min\n\n\n\n\n\n\n\nSo where does the data take me?\n\n\n\n\n\n\nnews\n\n\nanalytics\n\n\n911\n\n\n\n\n\n\n\n\n\nJan 5, 2025\n\n\n1 min\n\n\n\n\n\n\n\nThanks and Thoughts\n\n\n\n\n\n\nnews\n\n\nthoughts\n\n\nreports\n\n\n\n\n\n\n\n\n\nDec 22, 2024\n\n\n3 min\n\n\n\n\n\n\n\nThe Start of a New Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 22, 2024\n\n\n3 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -89,5 +89,19 @@
     "title": "The Start of a New Blog",
     "section": "",
     "text": "This is, for me, a starting point post. I am just starting to develop this site, including this blog, as a way to do several things at once. First and foremost, I want to document my work in public safety communications data science. This is a turning point in my career, transitioning from back-end administration of dispatch systems to data analytics and data science.\nAnother part of this blog will discuss things I find interesting in tech, especially when it comes to data. For example, I have been working more and more in Python lately and finding tools that I enjoy using because they make my work easier. The top three of late are uv, DuckDB, and FireDucks. Over time, I will add Jupyter notebooks here so I can document my work with these and other tools.\nI also want to learn more about Julia. So I might experiment with it in notebooks as well here and there and document the experience. However, most of the code that you see here will be in R, because it was the first language that I learned and the one that I feel most comfortable with. That will present its own challenge because many forecasting libraries that I have worked with are only expressed in Python.\nThere will be some tutorials as I write more and I get more comfortable with writing here and updating the blog and the site. Most of those are going to be geared towards public safety communications. I work with NENA on several technical committees and part of that work, for me, focuses on bringing advanced analytics to PSAPs across the country. I also speak a few times a year on this and other topics. I will start blogging about what I have presented after the presentations are done. It will be good review.\nI am also fascinated with generating synthetic data for analyses. Right now, I’ve been working with Mostly.ai to generate synthetic data for my research work. Due to the nature of the work that I do in centres, I use synthetic data for my presentations and my tutorials. My goal is to work with other libraries to create more realistic data for research purposes. I know that I will write about that in future posts. I’m looking forward to having fun with that exploration.\nMany of my posts will be found on my Medium page. Some of the tutorials may also be found, in the future, on my LinkedIn. However, I will point my audience here over time because there will be posts here that don’t exist other places so I can promote this place as my prefered publication venue.\nWell, I think that this is a good start as a pre-launch blog post."
+  },
+  {
+    "objectID": "posts/20250406/index.html",
+    "href": "posts/20250406/index.html",
+    "title": "Updated Directions",
+    "section": "",
+    "text": "It has certainly been way too long since I’ve written a blog post. I know that I promised myself and my readers, if I have any left, that I would do better with this, but here we are. Life has a funny way of getting in the way when you least expect it. However, those same recent events have given me considerable fodder for new posts that could be in the pipeline.\nI’ve been working on a few projects lately. Many of those projects are going to be the bases of many future posts. The first of those is a piece of software that I’m working on`to generate more realistic synthetic data for use in presentations and data science for public safety.\nthe other large project on the deck is called It’s About Time! Everything"
+  },
+  {
+    "objectID": "posts/20250204/index.html",
+    "href": "posts/20250204/index.html",
+    "title": "Directions for Future Posts",
+    "section": "",
+    "text": "I’ve been considering the"
   }
 ]

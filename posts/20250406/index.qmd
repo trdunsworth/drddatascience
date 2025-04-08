@@ -7,4 +7,8 @@ categories: [news, thoughts, updates]
 
 It has certainly been way too long since I've written a blog post. I know that I promised myself and my readers, if I have any left, that I would do better with this, but here we are. Life has a funny way of getting in the way when you least expect it. However, those same recent events have given me considerable fodder for new posts that could be in the pipeline. 
 
-I've been working on a few projects lately. Many of those projects are going to be the bases of many future posts. The first of those is a piece of software that I'm working on
+I've been working on a few projects lately. Many of those projects are going to be the bases of many future posts. The first of those is a piece of software that I'm working on`to generate more realistic synthetic data for use in presentations and data science for public safety. 
+
+the other large project on the deck is called <ins>*It's About Time!*</ins> Time is essential in every part of any 9-1-1 service call. It starts with a time stamp at every step in the call process. The passage of time can determine a call's outcome. We can go further and ask how one event can influence another. Can the time spent at a specific point in the process tell you how likely the event will be successful? Can we see how well we meet our SLAs to partner organizations by viewing how well we handle the setup? 
+
+In each CAD on the market, calls that have been closed can be re-opened or clones into a new call. The preferred method is to clone the call to preserve the timestamps in the original call. 

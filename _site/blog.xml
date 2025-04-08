@@ -9,8 +9,68 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.6.40</generator>
-<lastBuildDate>Sun, 02 Feb 2025 05:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Sun, 06 Apr 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Updated Directions</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20250406/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>It has certainly been way too long since I’ve written a blog post. I know that I promised myself and my readers, if I have any left, that I would do better with this, but here we are. Life has a funny way of getting in the way when you least expect it. However, those same recent events have given me considerable fodder for new posts that could be in the pipeline.</p>
+<p>I’ve been working on a few projects lately. Many of those projects are going to be the bases of many future posts. The first of those is a piece of software that I’m working on`to generate more realistic synthetic data for use in presentations and data science for public safety.</p>
+<p>the other large project on the deck is called <ins><em>It’s About Time!</em></ins> Everything</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>thoughts</category>
+  <category>updates</category>
+  <guid>https://drddatascience.com/posts/20250406/</guid>
+  <pubDate>Sun, 06 Apr 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Directions for Future Posts</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20250204/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’ve been considering the</p>
+
+
+
+ ]]></description>
+  <category>thoughts</category>
+  <category>ideas</category>
+  <guid>https://drddatascience.com/posts/20250204/</guid>
+  <pubDate>Tue, 04 Feb 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>It’s About Time</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/timestamps/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>editorial</category>
+  <category>data science</category>
+  <guid>https://drddatascience.com/posts/timestamps/</guid>
+  <pubDate>Mon, 03 Feb 2025 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>So where does the data take me?</title>
   <dc:creator>Tony Dunsworth</dc:creator>
@@ -59,26 +119,6 @@
   <category>data science</category>
   <guid>https://drddatascience.com/posts/20250128/</guid>
   <pubDate>Sun, 02 Feb 2025 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Thoughts While Checking My Language Skills</title>
-  <dc:creator>Tony Dunsworth</dc:creator>
-  <link>https://drddatascience.com/posts/20250129/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I had a post idea all lined up and then something new landed in my lap. Well, more accurately, it landed in my inbox. I have been tasked with providing some aggregates and means for certain service calls. When I’m looking through some collected data to give me the baseline, I realized that I have four separate columns in my dataset that could be used as the starting timestamp. Many of the rows in the dataset have identical values in all 4 columns. For the rows that don’t, there can be differences between columns of up to 45 seconds. When I asked the requester if there was a preference for which column to use and I received explanations about how further research should be left for operations. I’m ok with that. Ultimately, I was able to learn that there was no preference and I am free to select the starting point I wish.</p>
-<p>However, it did get me thinking. I want to know if there is a specific timestamp that <em>should</em> be used as the starting point? Can that be determined statistically? I know that I can create SQL to isolate the earliest time point when there is a discrepancy. However, this could be an interesting project. So, I think I’m going to design it and work on it a bit.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <category>thoughts</category>
-  <guid>https://drddatascience.com/posts/20250129/</guid>
-  <pubDate>Thu, 30 Jan 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>So where does the data take me?</title>
