@@ -1,0 +1,8 @@
+---
+title: "Creating a Synthetic Generator"
+author: "Tony Dunsworth"
+date: "2025-04-10"
+categories: [synthetic data, coding, python]
+---
+
+When I give presentations on the use of analytics and data in 9-1-1 centres, I made a decision to employ synthetic data. 
