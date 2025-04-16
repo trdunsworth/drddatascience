@@ -237,4 +237,129 @@ box1
 
 Comparing the results of the current year to the benchmarks gives you visual verification of what you've seen numerically. These are also great for the subsequent reports because your audience is now able to visualize what you're telling them. This may lead to additional questions about the internal working of the data. This could add to the question and project totals that you have generated. 
 
-Visualizations are not simply for numeric data. We can create boxplots for the factor or categorical data. 
+Visualizations are not simply for numeric data. We can create boxplots for the factor or categorical data. For example, this allows us to look at each day of the week and see how many cardiac arrest calls we have for each day of the week. 
+
+```{r dow-bar-chart}
+#| output: false
+
+df_cacy$DOW <- factor(df_cacy$DOW, levels = c("SUN","MON","TUE","WED","THU","FRI","SAT"))
+
+# ggplot2
+barDOW <- df_cacy %>% ggplot(aes(x=DOW, fill=DOW)) +
+  geom_bar() +
+  scale_fill_viridis(discrete = TRUE, option = "H") +
+  ggtitle("Count of calls per day of the week") +
+  geom_text(
+    stat = 'count', 
+    aes(label = after_stat(count)), 
+    vjust = -0.5  # Adjusts the vertical position of the count
+  )
+
+barDOW
+```
+
+If anything stands out in this, we can also check that against the benchmark datasets and determine if this normal or if it's standing out for a different reason. This can also be generated for each hour of the day with minor changes to the code. This leads us to another plot that can be visually appealing while also giving us some excellent information. We can use a ridgeline plot to give us a count of events per hour per doy. Are there specific times and days which see more events than others. It's likely that we would see different patters if we examined traffic stops. I expect, if we ran this out, we would not see any particular combination stand out.
+
+```{r ridgeplot1}
+#| fig-width: 12
+#| fig-height: 10
+# Aggregate data to get counts per hour per day
+hourly_calls <- df_cacy %>%
+  group_by(DOW, Hour) %>%
+  dplyr::tally(name = "CallCount")
+
+# Create the Ridgeline Plot
+ridge_plot <- ggplot(hourly_calls, aes(x = Hour, y = DOW, height = CallCount, group = DOW, fill = DOW)) + # Add fill aesthetic
+  geom_density_ridges(stat = "identity", scale = 0.9, rel_min_height = 0.01) +
+    scale_x_continuous(breaks = 0:23) + # Set breaks for each hour
+  scale_y_discrete(limits = rev) + # Reverse order of days for better readability
+  scale_fill_viridis(discrete = TRUE, option = "H") + # Use viridis scale
+  labs(title = "Call Count by Hour and Day of Week",
+       x = "Hour of Day",
+       y = "Day of Week",
+       fill = "Day of Week") + # Add legend title
+  theme_ridges(font_size = 20, grid = TRUE)
+
+ridge_plot
+```
+
+Another thing we can do is look at the geographic distribution of cardiac arrests in the city. Where do we have more of them? that might help us position our resources better and assist us with patient care by ensuring that people at those locations are properly trained in CPR to help get hands on chest faster which increases the likelihood of survival. This code will create and display a map of the City with the locations marked. Hovering over any individual data point will also give us call information so we can see other details. 
+
+```{r geomapping}
+#| output: false
+
+# Convert integer coordinates to decimal degrees
+# For latitude: Divide by 1,000,000 and keep positive (Northern hemisphere)
+# For longitude: Divide by 1,000,000 and make negative (Western hemisphere for Alexandria)
+calls_with_coords <- df_cacy %>%
+  mutate(
+    lat = Latitude / 1000000,
+    long= -1 * (Longitude / 1000000)  # Negative for western hemisphere
+  )
+
+# Create the map
+alexandria_map <- leaflet(calls_with_coords) %>%
+  # Add base map tiles
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  # Set the view to center on Alexandria, VA
+  setView(lng = -77.0469, lat = 38.8048, zoom = 13) %>%
+  # Add markers for each call
+  addCircleMarkers(
+    ~long, ~lat,
+    color = '#1c5789',
+    radius = 6,
+    stroke = FALSE,
+    fillOpacity = 0.7,
+    popup = ~paste("<b>Call ID:</b>", Master_Incident_Number, "<br>",
+                   "<b>Date:</b>", Response_Date, "<br>",
+                   "<b>Address:</b>", Address, "<br>",
+                   "<b>Seconds To Queue:</b>", Call_Entry_Time, "<br>",
+                   "<b>Seconds To DispatchL</b>", Call_Queue_Time, "<b>",
+                   "<b>Seconds On Call:</b>", Call_Process_Time, "<br>")
+  ) %>%
+  # Add a title
+  addControl(
+    html = "<h3>Cardiac Arrest Calls<br>Alexandria, VA</h3>",
+    position = "topright"
+  )
+
+# Display the map
+alexandria_map
+
+# Save the map for inclusion in reports
+saveWidget(alexandria_map, "alexandria_calls_map.html", selfcontained = TRUE)
+
+# Optional: If you want to analyze call density by neighborhood or district
+# This creates a clustered view that can help identify hotspots
+cluster_map <- leaflet(calls_with_coords) %>%
+  # Add base map tiles
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  # Set the view to center on Alexandria, VA
+  setView(lng = -77.0469, lat = 38.8048, zoom = 13) %>%
+  # Add clustered markers
+  addMarkers(
+    ~longitude, ~latitude,
+    popup = ~paste("<b>Call ID:</b>", Master_Incident_Number, "<br>",
+                   "<b>Date:</b>", Response_Date, "<br>",
+                   "<b>Address:</b>", Address, "<br>",
+                   "<b>Seconds To Queue:</b>", Call_Entry_Time, "<br>",
+                   "<b>Seconds To DispatchL</b>", Call_Queue_Time, "<b>",
+                   "<b>Seconds On Call:</b>", Call_Process_Time, "<br>"),
+    clusterOptions = markerClusterOptions(),
+    label = ~as.character(Master_Incident_Number)
+  ) %>%
+  # Add a title
+  addControl(
+    html = "<h3>Clustered Call Locations<br>Alexandria, VA</h3>",
+    position = "topright"
+  )
+
+# Uncomment to save the cluster map
+# saveWidget(cluster_map, "alexandria_calls_cluster_map.html", selfcontained = TRUE)
+```
+
+We have set this up to show us where all of the calls are and when we hover over an individual call, it will give us information about the call including the master incident number, the address, the date and time of when it was generated, and the amount of time that passed before it went to queue, was dispatcahed, and how long we were on the call. Seeing the geographic clusters will likely identify nursing homes or other care facilities, so if we see clusters in other places, we may want to look into why a cluster of cardiac arrests are there. These clusters can also be compared against the benchmarks to see if they look the same. If they don't, we can start asking why we have a new cluster. That increases the number of questions that we can ask and the number of projects we have in front of us.
+
+A final example of a new research project would be to create a binary variable in hand with deeper research to determine if calls were originally coded as cardiac arrests or if they were coded and dispatched as something else and changed to cardiac arrests later in the process. That examination could show how accurate we were in triaging and handling these calls. I will leave that code for another day and another post.
+
+From here, you can go anywhere you want to and find answers to the questions that you've found. I hope that this showed exactly how you can start with one question, what can we learn about cardiac arrests, and turn it into many questions and projects that show how much is left to know.
