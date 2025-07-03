@@ -1,0 +1,10 @@
+---
+title: "How to Start - Asking the First Question in Python"
+author: "Tony Dunsworth, Ph.D."
+date: "2025-05-05"
+categories: [examples, analyses]
+execute: 
+  eval: false
+---
+
+A little while back, I wrote a blog entry discussing how to get started with data analysis in a <abbr title="9-1-1 Center">PSAP</abbr> 
