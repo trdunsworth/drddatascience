@@ -1,0 +1,10 @@
+---
+title: "Building a new reporting system"
+author: "Tony Dunsworth, Ph.D."
+date: "2025-08-07"
+categories: [development, software]
+execute: 
+  eval: false
+---
+
+I have a lot of projects in the works, probably too many to be honest. However, at the day job, the one that has been bouncing around the longest and is now the centre of my attention is building an updated reporting structure. Currently, most of the regular reports that I generate are call lists that fit certain criteria. This has satisfied management at multiple levels for a while now, however, I haven't been satisfied with it. I have wanted to change things up and bring more data into the reports. I've also wanted to expand the comparative statistics to determine where, if at all, correlations exist in operations. 
