@@ -9,8 +9,32 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.7.31</generator>
-<lastBuildDate>Fri, 04 Jul 2025 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Fri, 01 Aug 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>You never know what is interesting</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250801/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>About a month or so back, I had an opportunity to speak with several people from a company that makes software for public safety entities. I had connected with one of their folks through my <a href="trdunsworth.bsky.social">BlueSky account</a>. After a few preliminary conversations, they wanted to read my dissertation. Trust me folks, when someone asks to read it, you are truly excited. I sent them a copy of it and when it came time to meet with the group, I was excited to learn they <strong>really did</strong> read it!</p>
+<p>When we met, they asked me a few questions about it. Overall, they appeared to be impressed with my work. However, the surprise came when I mentioned a small piece of <em>toy</em> software I have written. They were immediately interested in this software. They were thinking of new uses for it, beyond my reason for creating it, and asking questions about what I developed and why I made the design choices that I dud. The conversation was very enlightening. I admit that I didn’t expect that the <a href="https://github.com/trdunsworth/synth911gen2">program</a> would be the subject of anyone’s interest.</p>
+<p>Because I give many presentations around the country about statistics and data use, I use synthetic data in place of real data from a specfic centre for my presentations. It provides better compliance with CJIS and HIPAA regulations because I’m not potentially exposing anyone’s data. Granted, I don’t ever use the call narrative, but some systems may identify telecommunicators by name, and I don’t want to expose that either. In the past, I used <a href="https://mostly.ai/">Mostly.ai</a> as my first provider. The building process was challenging, not because of any deficiencies on their part. They were kind enough to extend credits to me to dive into the product after I met with them and discussed what I was doing and why. When I created my first datasets using their product, I made mistakes and ended up creating a dataset that had a normal distribution for elapsed times between events. Granted, I will admit that was user error. So, I went through the <a href="https://numpy.org/">NumPy</a> library and started leveraging different random generators to find the right distribution for the data when compared to actual data from my center.I wrote an analyzer to look over the elapsed times for each interval and report back the distribution and its properties. Once I had those, I matched that to the proper random generator so I would have realistic elapsed times. After I created those, I used that to create my ancillary timestamps.</p>
+<p>When I started making it, I thought of it is as something that I could use to generate data for my speeches and a way to learn more about Python programming. I didn’t conceive of any other uses or anyone else being interested. Maybe someone like Mostly might look at it and, possibly, give me suggestions to make it better or something like that, but I didn’t expect anyone else to find uses for it or inspire me to see different uses for it. However, like the post about <a href="https://drddatascience.com/posts/20250415/">Asking the First Question</a>, it was someone else who inspried me to take things in a direction I hadn’t expected.</p>
+<p>I hope you find this post useful. Thanks for reading!</p>
+<hr>
+
+
+
+ ]]></description>
+  <category>updates</category>
+  <category>news</category>
+  <guid>https://drddatascience.com/posts/20250801/</guid>
+  <pubDate>Fri, 01 Aug 2025 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>NENA 25 National Convention - Long Beach</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
@@ -20,7 +44,10 @@
 
 
 
-<p>Once again, I haven’t written in a long time. I know <em>Bad Dr.&nbsp;D</em>!</p>
+<p>Once again, I haven’t written in a long time. I know <em>Bad Dr.&nbsp;D</em>! I have not been as diligent as a blogger as I would like to be. So now that my mea culpa is out of the way, let’s proceed to the next step in this blog, actually discussing information.</p>
+<p>Last week, I was out in Long Beach, CA at the <a href="https://nena.org">NENA</a> 2025 Annual Convention at the Long Beach Convention Center. It was a bit of an “old home” week for me. I used to live near the convention center over 20 years ago. Obviously, some things were completely differnt while some things have not changed. In a way, it was nice to be back in the area. I was able to take the old Green Line and the Blue Line to get down to Long Beach from the airport.</p>
+<p>However, once the convention started, I found myself a lot busier than I expected I would be. I had two presentations to give. I knew that going in. What surprised me was the number of people who walked up to strike up a conversation. I am sitll not used to that one. My wife tells me that she doesn’t know why I am so surprised, I’ve been working on so many different things for the City and the community that I shouldn’t be surprised that people want to get a piece of my brain. I also had some really interesting and substantive meetings with several people. That helped me get some good directions for future research.</p>
+<p>Ironically, one of the best meetings during the week had nothing to do with the convention. I was contacted by a colleague from private industry regarding a topic that has become a passion for me. I’ve started working on trying to build new staffing models for 9-1-1 centers. To that end, I lead a working group that is working on developing a new staffing model workbook. So, I have been talking to</p>
 
 
 
@@ -28,7 +55,7 @@
   <category>updates</category>
   <category>news</category>
   <guid>https://drddatascience.com/posts/20250704/</guid>
-  <pubDate>Fri, 04 Jul 2025 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 21 Jul 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>How to Start - Asking the First Question</title>
