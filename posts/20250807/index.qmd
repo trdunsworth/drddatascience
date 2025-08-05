@@ -7,4 +7,6 @@ execute:
   eval: false
 ---
 
-I have a lot of projects in the works, probably too many to be honest. However, at the day job, the one that has been bouncing around the longest and is now the centre of my attention is building an updated reporting structure. Currently, most of the regular reports that I generate are call lists that fit certain criteria. This has satisfied management at multiple levels for a while now, however, I haven't been satisfied with it. I have wanted to change things up and bring more data into the reports. I've also wanted to expand the comparative statistics to determine where, if at all, correlations exist in operations. 
+I have a lot of projects in the works, probably too many to be honest. However, at the day job, the one that has been bouncing around the longest and is now the centre of my attention is building an updated reporting structure. Currently, most of the regular reports that I generate are call lists that fit certain criteria. This has satisfied management at multiple levels for a while now, however, I haven't been satisfied with it. I have wanted to change things up and bring more data into the reports. I've also wanted to expand the comparative statistics to determine where, if at all, correlations exist in operations. It is also, in my opinion, good to discern any trneds that could be present in the data. Something call lists may miss.
+
+The whole project will be deployed in five phases. So some of these 

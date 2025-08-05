@@ -17,6 +17,11 @@ website:
         href: https://github.com/trdunsworth
       - icon: medium
         href: https://medium.com/@trdunsworth
+
+# Support for multiple engines
+execute:
+  keep-md: true
+  
 format:
   html:
     theme: yeti
