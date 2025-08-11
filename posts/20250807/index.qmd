@@ -1,7 +1,7 @@
 ---
 title: "Building a new reporting system"
 author: "Tony Dunsworth, Ph.D."
-date: "2025-08-07"
+date: "2025-08-10"
 categories: [development, software]
 execute: 
   eval: false
