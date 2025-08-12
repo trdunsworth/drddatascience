@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Dr. D&#39;s Data Science</title>
+<link>https://drddatascience.com/blog.html</link>
+<atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Public Safety Data Science by Dr. Tony Dunsworth</description>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Sun, 10 Aug 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/20250807/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250807/</link>
+  <description>{B4F502887207:/posts/20250807/index.html}</description>
+  <category>development</category>
+  <category>software</category>
+  <guid>https://drddatascience.com/posts/20250807/</guid>
+  <pubDate>Sun, 10 Aug 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250801/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250801/</link>
+  <description>{B4F502887207:/posts/20250801/index.html}</description>
+  <category>updates</category>
+  <category>news</category>
+  <guid>https://drddatascience.com/posts/20250801/</guid>
+  <pubDate>Mon, 04 Aug 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250704/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250704/</link>
+  <description>{B4F502887207:/posts/20250704/index.html}</description>
+  <category>updates</category>
+  <category>news</category>
+  <guid>https://drddatascience.com/posts/20250704/</guid>
+  <pubDate>Mon, 21 Jul 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250415/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250415/</link>
+  <description>{B4F502887207:/posts/20250415/index.html}</description>
+  <category>examples</category>
+  <category>analyses</category>
+  <guid>https://drddatascience.com/posts/20250415/</guid>
+  <pubDate>Sat, 12 Apr 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250406/index.html}</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20250406/</link>
+  <description>{B4F502887207:/posts/20250406/index.html}</description>
+  <category>news</category>
+  <category>thoughts</category>
+  <category>updates</category>
+  <guid>https://drddatascience.com/posts/20250406/</guid>
+  <pubDate>Thu, 10 Apr 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250204/index.html}</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20250204/</link>
+  <description>{B4F502887207:/posts/20250204/index.html}</description>
+  <category>thoughts</category>
+  <category>ideas</category>
+  <guid>https://drddatascience.com/posts/20250204/</guid>
+  <pubDate>Tue, 04 Feb 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/timestamps/index.html}</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/timestamps/</link>
+  <description>{B4F502887207:/posts/timestamps/index.html}</description>
+  <category>news</category>
+  <category>editorial</category>
+  <category>data science</category>
+  <guid>https://drddatascience.com/posts/timestamps/</guid>
+  <pubDate>Mon, 03 Feb 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250128/index.html}</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20250128/</link>
+  <description>{B4F502887207:/posts/20250128/index.html}</description>
+  <category>news</category>
+  <category>editorial</category>
+  <category>data science</category>
+  <guid>https://drddatascience.com/posts/20250128/</guid>
+  <pubDate>Sun, 02 Feb 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250106/index.html}</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20250106/</link>
+  <description>{B4F502887207:/posts/20250106/index.html}</description>
+  <category>news</category>
+  <category>full-stack</category>
+  <category>data science</category>
+  <guid>https://drddatascience.com/posts/20250106/</guid>
+  <pubDate>Mon, 06 Jan 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250105/index.html}</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20250105/</link>
+  <description>{B4F502887207:/posts/20250105/index.html}</description>
+  <category>news</category>
+  <category>analytics</category>
+  <category>911</category>
+  <guid>https://drddatascience.com/posts/20250105/</guid>
+  <pubDate>Sun, 05 Jan 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20241223/index.html}</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/20241223/</link>
+  <description>{B4F502887207:/posts/20241223/index.html}</description>
+  <category>news</category>
+  <category>thoughts</category>
+  <category>reports</category>
+  <guid>https://drddatascience.com/posts/20241223/</guid>
+  <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/startingpoint/index.html}</title>
+  <dc:creator>Tony Dunsworth</dc:creator>
+  <link>https://drddatascience.com/posts/startingpoint/</link>
+  <description>{B4F502887207:/posts/startingpoint/index.html}</description>
+  <category>news</category>
+  <guid>https://drddatascience.com/posts/startingpoint/</guid>
+  <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

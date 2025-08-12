@@ -10,7 +10,32 @@
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Mon, 04 Aug 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 10 Aug 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Building a new reporting system</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250807/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I have a lot of projects in the works, probably too many to be honest. However, at the day job, the one that has been bouncing around the longest and is now the centre of my attention is building an updated reporting structure. Currently, most of the regular reports that I generate are call lists that fit certain criteria. This has satisfied management at multiple levels for a while now, however, I haven’t been satisfied with it. I have wanted to change things up and bring more data into the reports. I’ve also wanted to expand the comparative statistics to determine where, if at all, correlations exist in operations. It is also, in my opinion, good to discern any trends that could be present in the data. Something call lists may miss.</p>
+<p>The whole project will be deployed in five phases. The first phase is building the infrastructure. I know that may sound boring, but my experiences in engineering and analytics is that most of the job is boring to most people. I don’t mind it at all, so I’m happy to take my time. The first decision is that of programming language. While I, typically, prefer R over Python, in this instance, I’m reversing that decision because I believe that I can accomplish the other phases more efficiently code-wise in Python. I would like to try this in R as well, but that is a project for another day. When this is done perhaps.</p>
+<p>One of the reasons that I chose Python is my preference to use <a href="https://docs.astral.sh/uv/">uv</a> to manage the environment. Written in Rust, uv allows me to use one tool to manage the environment, install the preferred libraries, including the dependencies, and ensure the proper version of Python has been installed. It can also ensure that the project could be deployed on any platform by using .toml files to define all of the libraries and show the version of Python that is needed for the project. I’ve used other options, including Poetry, Anaconda, and pipenv, etc. However, I’ve found uv quicker and easier to use.</p>
+<p>After that, I selected my libraries. I chose to replace pandas with <a href="https://pola.rs/">polars</a>. Like uv, polars is written in Rust. No, I’m not planning on using Rust yet. I do know that Rust can build some very good tools for Python though. Obviously, I’m going to use <a href="https://numpy.org/">NumPy</a> for a lot of my mathematical and statistical work. I will also add in <a href="https://scipy.org/">SciPy</a> and <a href="https://www.statsmodels.org/stable/index.html">Statsmodels</a>. They both can contribute a lot to analyses and modeling. For grpahics I prefer to use either <a href="https://plotly.com/python/">Plotly</a> or <a href="https://plotnine.org/">Plotnine</a>. I lean more toward Plotnine because it implements the grammar of graphics, the book behind the idea <a href="https://link.springer.com/book/10.1007/0-387-28695-0">The Grammar of Graphics</a> by Leland Wilkinson is the foundation of <a href="https://ggplot2.tidyverse.org/">ggplot2</a> in R also. I like it because it is clear to implement and everything makes sense once you get used to it. The final two libraries that I want to ensure I implement in Phase I are <a href="https://docs.pydantic.dev/latest/">Pydantic</a> for type checking. That will ensure that my code doesn’t create any type conversion problems, and <a href="https://www.quarto.org">quarto</a> for publishing. It is wonderful for working wtih either <a href="https://pandoc.org/">pandoc</a> or <a href="https://www.latex-project.org/">LaTeX</a> to create high quality documents. It even now supports <a href="https://github.com/typst/typst">typst</a> which uses Markdown for typesetting.</p>
+<p>These choices will allow me to start building the infrastructure and start with the first step of creating reports that will better reflect the operations in the center. I also plan on starting to build in comparative analytics by comparing the week I’m analyzing to the previous week, 4 weeks prior, and the year prior. Eventually, I want to build comparisons that span at least 6 to 8 weeks. This will allow us to investigate and illuminate trends over time. I also want to perform correlative analysis over time to find other trends and patterns in the data. I think that could unlock information which would enable us to serve our community better. The other part of a weekly analysis, beyond the summary statistics and these other analyses, should be looking over KPIs that are applicable to the centre and see how well we are meeting those KPIs.</p>
+<p>When I get this phase completed and we’ve evaluated the output and adjusted the reports in response to the feedback received, then I will head to Phase II. Phase II will improve the data pipeline. I would like to move from CSV files to direct database access and then refactor Phase I to use the new data pipeline. After that, I will start determining which KPIs I need to build dashboards for management. I will discuss this in another post.</p>
+<p>For now, on to building the infrastructure and getting dug into Phase I. Happy Reading and please feel free to comment!</p>
+
+
+
+ ]]></description>
+  <category>development</category>
+  <category>software</category>
+  <guid>https://drddatascience.com/posts/20250807/</guid>
+  <pubDate>Sun, 10 Aug 2025 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>You never know what is interesting</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
