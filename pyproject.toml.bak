@@ -1,0 +1,72 @@
+[project]
+name = "drddatascience"
+version = "1.0.0"
+description = "Python environment for Dr. D's Data Science blog"
+authors = [
+    {name = "Tony Dunsworth", email = "trdunsworth@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    # Core data science libraries
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "scipy>=1.10.0",
+    
+    # Statistical analysis
+    "statsmodels>=0.14.0",
+    "scikit-learn>=1.3.0",
+    
+    # Database connectivity
+    "sqlalchemy>=2.0.0",
+    "pyodbc>=4.0.39",  # For SQL Server connections
+    "psycopg2-binary>=2.9.5",  # For PostgreSQL if needed
+    
+    # Geospatial analysis (equivalent to R's leaflet/mapping)
+    "folium>=0.14.0",
+    "geopandas>=0.13.0",
+    
+    # Jupyter and notebook support
+    "jupyter>=1.0.0",
+    "ipykernel>=6.25.0",
+    
+    # Additional utilities
+    "python-dotenv>=1.0.0",  # For environment variables
+    "requests>=2.31.0",
+    
+    # For data visualization and analysis
+    "plotly>=5.15.0",
+    "altair>=5.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = []
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "C90", "I", "N", "UP", "S", "B", "A", "COM", "C4", "DTZ", "EM", "EXE", "FA", "ISC", "G", "INP", "PIE", "PT", "Q", "RSE", "RET", "SLF", "SLOT", "SIM", "TID", "ARG", "PTH", "TD", "FIX", "ERA", "PD", "PGH", "PL", "TRY", "NPY", "PERF", "FURB", "LOG", "RUF"]
+ignore = ["E501", "COM812", "ISC001"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

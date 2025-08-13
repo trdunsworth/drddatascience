@@ -1,23 +1,54 @@
 # Python Support for Dr. D's Data Science
 
-This site now supports both R and Python code execution and rendering in Quarto documents.
+This site now supports both R and Python code execution and rendering in Quarto documents, using **uv** for fast and reliable Python environment management.
+
+## Prerequisites
+
+- **uv** (install from: https://docs.astral.sh/uv/getting-started/installation/)
+- **Quarto** (install from: https://quarto.org/docs/get-started/)
 
 ## Setup
 
-1. **Install Python dependencies:**
-   ```bash
-   python setup_python.py
-   ```
-   
-   Or manually:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Option 1: Automated Setup (Recommended)
+```bash
+python setup_python.py
+```
 
-2. **Verify Quarto can find Python:**
-   ```bash
-   quarto check
-   ```
+### Option 2: Manual Setup
+```bash
+# Create virtual environment
+uv venv
+
+# Install all data science packages
+uv pip install pandas numpy matplotlib seaborn scipy statsmodels scikit-learn sqlalchemy pyodbc psycopg2-binary folium geopandas jupyter ipykernel python-dotenv requests plotly altair
+
+# Verify Quarto can detect Python
+source .venv/bin/activate && quarto check jupyter
+```
+
+## Using the Environment
+
+### With uv (Recommended)
+```bash
+# Render your site (automatically activates environment)
+uv run quarto render
+
+# Preview your site
+uv run quarto preview
+
+# Run Jupyter
+uv run jupyter lab
+```
+
+### Manual Activation
+```bash
+# Activate environment
+source .venv/bin/activate
+
+# Then use quarto normally
+quarto render
+quarto preview
+```
 
 ## Using Python in Blog Posts
 

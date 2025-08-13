@@ -187,5 +187,19 @@
     "title": "Python Support for Dr. D’s Data Science",
     "section": "",
     "text": "To render your site with Python support:\nquarto render\nTo preview with live reload:\nquarto preview\nThe site will automatically detect and execute both R and Python code blocks based on the language specified in the fenced code block."
+  },
+  {
+    "objectID": "test_python.html",
+    "href": "test_python.html",
+    "title": "Python Test",
+    "section": "",
+    "text": "Testing Python execution:\n\nimport pandas as pd\nimport numpy as np\n\n# Test basic functionality\nprint(\"Python is working!\")\nprint(f\"Pandas version: {pd.__version__}\")\nprint(f\"NumPy version: {np.__version__}\")\n\n# Create a simple DataFrame\ndata = {'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]}\ndf = pd.DataFrame(data)\nprint(\"\\nSample DataFrame:\")\nprint(df)\n\nPython is working!\nPandas version: 2.3.1\nNumPy version: 2.3.2\n\nSample DataFrame:\n   x   y\n0  1   2\n1  2   4\n2  3   6\n3  4   8\n4  5  10"
+  },
+  {
+    "objectID": "test_python_setup.html",
+    "href": "test_python_setup.html",
+    "title": "Python Test",
+    "section": "",
+    "text": "print(\"Python is working in Quarto!\")\nimport pandas as pd\nprint(f\"Pandas version: {pd.__version__}\")\n\nPython is working in Quarto!\nPandas version: 2.3.1"
   }
 ]

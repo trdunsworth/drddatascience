@@ -1,0 +1,26 @@
+---
+title: "Python Test"
+author: "Tony Dunsworth, Ph.D."
+date: "2025-08-13"
+execute: 
+  eval: true
+---
+
+Testing Python execution:
+
+```{python}
+#| echo: true
+import pandas as pd
+import numpy as np
+
+# Test basic functionality
+print("Python is working!")
+print(f"Pandas version: {pd.__version__}")
+print(f"NumPy version: {np.__version__}")
+
+# Create a simple DataFrame
+data = {'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]}
+df = pd.DataFrame(data)
+print("\nSample DataFrame:")
+print(df)
+```

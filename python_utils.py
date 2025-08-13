@@ -14,8 +14,8 @@ import sqlalchemy as sa
 
 def custom_summary(series):
     """
-    Custom summary function equivalent to the R version
-    Returns comprehensive statistics for a numeric series
+    Custom summary function equivalent to the R version.
+    Returns comprehensive statistics for a numeric series.
     """
     return {
         'minimum': round(series.min(), 2),
@@ -119,9 +119,13 @@ def create_geographic_map(df, lat_col='latitude', lon_col='longitude',
     # Add markers for each call
     for idx, row in df.iterrows():
         if pd.notna(row[lat_col]) and pd.notna(row[lon_col]):
-            # Convert coordinates if they're in integer format (like the R example)
-            lat = row[lat_col] / 1000000 if row[lat_col] > 180 else row[lat_col]
-            lon = -abs(row[lon_col] / 1000000) if abs(row[lon_col]) > 180 else row[lon_col]
+            # Improved coordinate conversion
+            lat = row[lat_col]
+            lon = row[lon_col]
+            if abs(lat) > 180:
+                lat = lat / 1000000
+            if abs(lon) > 180:
+                lon = -abs(lon / 1000000)
             
             popup_text = f"""
             <b>Call ID:</b> {row.get('call_id', 'N/A')}<br>
@@ -142,12 +146,17 @@ def create_geographic_map(df, lat_col='latitude', lon_col='longitude',
 
 def load_sql_data(connection_string, query):
     """
-    Load data from SQL database
-    Equivalent to the SQL queries shown in the R examples
+    Load data from SQL database.
+    Equivalent to the SQL queries shown in the R examples.
+    Returns a pandas DataFrame or None if error occurs.
     """
-    engine = sa.create_engine(connection_string)
-    df = pd.read_sql(query, engine)
-    return df
+    try:
+        engine = sa.create_engine(connection_string)
+        df = pd.read_sql(query, engine)
+        return df
+    except Exception as e:
+        print(f"Error loading SQL data: {e}")
+        return None
 
 # Example SQL queries as strings (equivalent to the R examples)
 CARDIAC_ARREST_CURRENT_YEAR = """

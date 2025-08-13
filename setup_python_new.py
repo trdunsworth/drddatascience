@@ -36,7 +36,10 @@ def create_venv_and_install():
             "pandas", "numpy", "matplotlib", "seaborn", "scipy",
             "statsmodels", "scikit-learn", "sqlalchemy", "pyodbc", 
             "psycopg2-binary", "folium", "geopandas", "jupyter", 
-            "ipykernel", "python-dotenv", "requests", "plotly", "altair"
+            "ipykernel", "python-dotenv", "requests", "plotly", "altair",
+            "tsfresh", "sktime", "mapie", "pyarrow",
+            "statsforecast", "neuralforecast", "nixtla", "hierarchicalforecast",
+            "mlforecast", "tsfeatures", "polars", "duckdb", "whenever"
         ]
         
         subprocess.check_call(["uv", "pip", "install"] + packages)
