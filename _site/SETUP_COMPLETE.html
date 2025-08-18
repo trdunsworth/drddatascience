@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>python_readme – Dr. D's Data Science</title>
+<title>setup_complete – Dr. D's Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -164,141 +164,113 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="python-support-for-dr.-ds-data-science" class="level1">
-<h1>Python Support for Dr.&nbsp;D’s Data Science</h1>
-<p>This site now supports both R and Python code execution and rendering in Quarto documents, using <strong>uv</strong> for fast and reliable Python environment management.</p>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<section id="python-environment-setup-complete" class="level1">
+<h1>Python Environment Setup Complete! 🎉</h1>
+<p>Your Quarto site now supports both <strong>R</strong> and <strong>Python</strong> code execution using <code>uv</code> for fast Python package management.</p>
+<section id="what-was-set-up" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-set-up">What Was Set Up</h2>
+<section id="python-environment" class="level3">
+<h3 class="anchored" data-anchor-id="python-environment">1. Python Environment</h3>
 <ul>
-<li><strong>uv</strong> (install from: https://docs.astral.sh/uv/getting-started/installation/)</li>
-<li><strong>Quarto</strong> (install from: https://quarto.org/docs/get-started/)</li>
-</ul>
-</section>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<section id="option-1-automated-setup-recommended" class="level3">
-<h3 class="anchored" data-anchor-id="option-1-automated-setup-recommended">Option 1: Automated Setup (Recommended)</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> setup_python.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="option-2-manual-setup" class="level3">
-<h3 class="anchored" data-anchor-id="option-2-manual-setup">Option 2: Manual Setup</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create virtual environment</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> venv</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install all data science packages</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip install pandas numpy matplotlib seaborn scipy statsmodels scikit-learn sqlalchemy pyodbc psycopg2-binary folium geopandas jupyter ipykernel python-dotenv requests plotly altair</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify Quarto can detect Python</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> check jupyter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
-<section id="using-the-environment" class="level2">
-<h2 class="anchored" data-anchor-id="using-the-environment">Using the Environment</h2>
-<section id="with-uv-recommended" class="level3">
-<h3 class="anchored" data-anchor-id="with-uv-recommended">With uv (Recommended)</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Render your site (automatically activates environment)</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run quarto render</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview your site</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run quarto preview</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Run Jupyter</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run jupyter lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="manual-activation" class="level3">
-<h3 class="anchored" data-anchor-id="manual-activation">Manual Activation</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Activate environment</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Then use quarto normally</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
-<section id="using-python-in-blog-posts" class="level2">
-<h2 class="anchored" data-anchor-id="using-python-in-blog-posts">Using Python in Blog Posts</h2>
-<section id="basic-python-code-block" class="level3">
-<h3 class="anchored" data-anchor-id="basic-python-code-block">Basic Python Code Block</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Your Python code here</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({<span class="st">'x'</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], <span class="st">'y'</span>: [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]})</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="python-code-block-with-options" class="level3">
-<h3 class="anchored" data-anchor-id="python-code-block-with-options">Python Code Block with Options</h3>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: my-analysis</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "My Figure Caption"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>])</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
-<section id="common-code-block-options" class="level2">
-<h2 class="anchored" data-anchor-id="common-code-block-options">Common Code Block Options</h2>
+<li>✅ Virtual environment created with <code>uv venv</code></li>
+<li>✅ All data science packages installed:
 <ul>
-<li><code>#| echo: true/false</code> - Show/hide code</li>
-<li><code>#| eval: true/false</code> - Execute/don’t execute code<br>
+<li><strong>Core</strong>: pandas, numpy, matplotlib, seaborn, scipy</li>
+<li><strong>ML/Stats</strong>: statsmodels, scikit-learn</li>
+<li><strong>Database</strong>: sqlalchemy, pyodbc, psycopg2-binary</li>
+<li><strong>Geospatial</strong>: folium, geopandas<br>
 </li>
-<li><code>#| output: true/false</code> - Show/hide output</li>
-<li><code>#| warning: false</code> - Hide warnings</li>
-<li><code>#| message: false</code> - Hide messages</li>
-<li><code>#| fig-cap: "Caption"</code> - Add figure caption</li>
-<li><code>#| fig-width: 8</code> - Set figure width</li>
-<li><code>#| fig-height: 6</code> - Set figure height</li>
+<li><strong>Visualization</strong>: plotly, altair</li>
+<li><strong>Jupyter</strong>: jupyter, ipykernel</li>
+<li><strong>Utilities</strong>: python-dotenv, requests</li>
+</ul></li>
 </ul>
 </section>
-<section id="python-utilities" class="level2">
-<h2 class="anchored" data-anchor-id="python-utilities">Python Utilities</h2>
-<p>The <code>python_utils.py</code> file contains Python equivalents of the R functions used in your analyses:</p>
+<section id="quarto-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-configuration">2. Quarto Configuration</h3>
 <ul>
-<li><code>custom_summary()</code> - Comprehensive statistics (equivalent to your R function)</li>
-<li><code>extract_datetime_features()</code> - Extract date/time components</li>
-<li><code>create_response_time_plots()</code> - Generate analysis plots</li>
-<li><code>create_geographic_map()</code> - Interactive maps with Folium</li>
+<li>✅ Updated <code>_quarto.yml</code> to support multiple engines</li>
+<li>✅ Python code execution verified and working</li>
+<li>✅ Both R and Python can be used in the same site</li>
+</ul>
+</section>
+<section id="helper-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="helper-scripts">3. Helper Scripts</h3>
+<ul>
+<li>✅ <code>setup_python.py</code> - Automated setup and testing</li>
+<li>✅ <code>with_python_env.sh</code> - Convenience script for running commands</li>
+<li>✅ <code>python_utils.py</code> - Python equivalents of R functions</li>
+</ul>
+</section>
+</section>
+<section id="quick-start" class="level2">
+<h2 class="anchored" data-anchor-id="quick-start">Quick Start</h2>
+<section id="render-your-site" class="level3">
+<h3 class="anchored" data-anchor-id="render-your-site">Render Your Site</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 1: Activate environment manually</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 2: Use convenience script</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">./with_python_env.sh</span> quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="preview-your-site" class="level3">
+<h3 class="anchored" data-anchor-id="preview-your-site">Preview Your Site</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./with_python_env.sh</span> quarto preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="using-python-in-posts" class="level2">
+<h2 class="anchored" data-anchor-id="using-python-in-posts">Using Python in Posts</h2>
+<p>Create Python code blocks in your <code>.qmd</code> files:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Your Python analysis code</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'your_data.csv'</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data.plot()</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="python-equivalents-of-your-r-functions" class="level2">
+<h2 class="anchored" data-anchor-id="python-equivalents-of-your-r-functions">Python Equivalents of Your R Functions</h2>
+<p>The <code>python_utils.py</code> file provides Python versions of your R analysis functions:</p>
+<ul>
+<li><code>custom_summary()</code> - Comprehensive statistics</li>
+<li><code>extract_datetime_features()</code> - Date/time processing<br>
+</li>
+<li><code>create_response_time_plots()</code> - Analysis visualizations</li>
+<li><code>create_geographic_map()</code> - Interactive mapping with Folium</li>
 <li><code>load_sql_data()</code> - Database connectivity</li>
 </ul>
 </section>
-<section id="example-usage-in-a-blog-post" class="level2">
-<h2 class="anchored" data-anchor-id="example-usage-in-a-blog-post">Example Usage in a Blog Post</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load-utilities</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> python_utils <span class="im">import</span> custom_summary, create_response_time_plots</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load your data</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'cardiac_arrests_cy.csv'</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Get comprehensive statistics</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>stats <span class="op">=</span> custom_summary(df[<span class="st">'call_entry_time'</span>])</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(stats)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Create visualizations</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> create_response_time_plots(df, <span class="st">'call_entry_time'</span>)</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="example-usage" class="level2">
+<h2 class="anchored" data-anchor-id="example-usage">Example Usage</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> python_utils <span class="im">import</span> custom_summary, create_geographic_map</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load your cardiac arrest data</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'cardiac_arrests_cy.csv'</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get comprehensive statistics (equivalent to your R function)</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>stats <span class="op">=</span> custom_summary(df[<span class="st">'call_entry_time'</span>])</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(stats)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Create interactive map (equivalent to your R leaflet maps)</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>map_obj <span class="op">=</span> create_geographic_map(df)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>map_obj.save(<span class="st">'cardiac_arrests_map.html'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="database-connections" class="level2">
-<h2 class="anchored" data-anchor-id="database-connections">Database Connections</h2>
-<p>For SQL Server connections (equivalent to your R setup):</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sqlalchemy <span class="im">as</span> sa</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> python_utils <span class="im">import</span> load_sql_data, CARDIAC_ARREST_CURRENT_YEAR</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Connection string for SQL Server</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>conn_str <span class="op">=</span> <span class="st">"mssql+pyodbc://server/database?driver=ODBC+Driver+17+for+SQL+Server"</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data using your SQL queries</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> load_sql_data(conn_str, CARDIAC_ARREST_CURRENT_YEAR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="rendering" class="level2">
-<h2 class="anchored" data-anchor-id="rendering">Rendering</h2>
-<p>To render your site with Python support:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To preview with live reload:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The site will automatically detect and execute both R and Python code blocks based on the language specified in the fenced code block.</p>
+<section id="files-addedmodified" class="level2">
+<h2 class="anchored" data-anchor-id="files-addedmodified">Files Added/Modified</h2>
+<ul>
+<li><code>_quarto.yml</code> - Added Python engine support</li>
+<li><code>.venv/</code> - Python virtual environment</li>
+<li><code>python_utils.py</code> - Python utility functions</li>
+<li><code>setup_python.py</code> - Setup automation</li>
+<li><code>with_python_env.sh</code> - Convenience script</li>
+<li><code>requirements.txt</code> - Package dependencies (backup)</li>
+<li><code>PYTHON_README.md</code> - Detailed documentation</li>
+</ul>
+<p>Your site now has the flexibility to use either R or Python (or both!) for your data science content. The Python environment provides equivalent functionality to your R workflow with modern, fast package management via <code>uv</code>.</p>
 
 
 </section>

@@ -10,7 +10,17 @@
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Sun, 10 Aug 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 17 Aug 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/20250812/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250812/</link>
+  <description>{B4F502887207:/posts/20250812/index.html}</description>
+  <category>development</category>
+  <category>software</category>
+  <guid>https://drddatascience.com/posts/20250812/</guid>
+  <pubDate>Sun, 17 Aug 2025 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>{B4F502887207:/posts/20250807/index.html}</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
