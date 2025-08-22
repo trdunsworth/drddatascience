@@ -10,7 +10,26 @@
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Sun, 17 Aug 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 19 Aug 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Building a data-centric future</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/Next Bright Idea/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>As most of you know, I have a few outside activities where I can use my skills to better things around me. For example, I contribute to first-look book reviews for <a href="https://www.manning.com/">Manning Press</a>. I am a subject matter expert for <a href="https://www.comptia.com/">CompTIA</a> on a couple of different exams. I also volunteer my time and energy for <a href="https://www.nena.org/">NENA</a>, the National Emergency Number Association. I work on standards and best practice development there.</p>
+
+
+
+ ]]></description>
+  <category>research. data-driven</category>
+  <category>data</category>
+  <guid>https://drddatascience.com/posts/Next Bright Idea/</guid>
+  <pubDate>Tue, 19 Aug 2025 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Remembering My Target Audience</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>

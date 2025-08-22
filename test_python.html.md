@@ -8,7 +8,7 @@ execute:
 
 Testing Python execution:
 
-::: {#26a50195 .cell execution_count=1}
+::: {#88fba72c .cell execution_count=1}
 ``` {.python .cell-code}
 import pandas as pd
 import numpy as np
@@ -29,7 +29,7 @@ print(df)
 ```
 Python is working!
 Pandas version: 2.3.1
-NumPy version: 2.3.2
+NumPy version: 2.2.6
 
 Sample DataFrame:
    x   y
