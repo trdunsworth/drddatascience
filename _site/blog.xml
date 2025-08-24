@@ -9,25 +9,29 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.7.32</generator>
+<generator>quarto-1.7.33</generator>
 <lastBuildDate>Tue, 19 Aug 2025 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Building a data-centric future</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
-  <link>https://drddatascience.com/posts/Next Bright Idea/</link>
+  <link>https://drddatascience.com/posts/20250824/</link>
   <description><![CDATA[ 
 
 
 
 
-<p>As most of you know, I have a few outside activities where I can use my skills to better things around me. For example, I contribute to first-look book reviews for <a href="https://www.manning.com/">Manning Press</a>. I am a subject matter expert for <a href="https://www.comptia.com/">CompTIA</a> on a couple of different exams. I also volunteer my time and energy for <a href="https://www.nena.org/">NENA</a>, the National Emergency Number Association. I work on standards and best practice development there.</p>
+<p>As most of you know, I have a few outside activities where I can use my skills to better things around me. For example, I contribute to first-look book reviews for <a href="https://www.manning.com/">Manning Press</a>. I am a subject matter expert for <a href="https://www.comptia.com/">CompTIA</a> on a couple of different exams. I also volunteer my time and energy for <a href="https://www.nena.org/">NENA</a>, the National Emergency Number Association. I work on standards and best practice development there. Recently, at their annual convention in Long Beach, CA., I had an idea to suggest something new. The new <a href="https://www.nena.org/page/board">NENA board</a> president, Lee Ann Magoski, challenged all of us in her inauguration speech to use more of the data we generate and use it more effectively. I started thinking about submitting a form to create a working group that could assist in completing data collection and analysis for other working groups that need it to further their work on standards and best practices. I ran my idea past some colleagues and I was pleasantly surprised to hear a lot of support. That support extended to colleagues offering their advice and support to help me with the paperwork and ensure that the community can be built and sustained.</p>
+<p>What started out as an idea and a form to create a working group got its first potential boost when I asked to speak to a NENA executive and was encouraged to think even bigger than the two working groups. Since it hasn’t been approved yet, I’m being a bit circumspect. However, I want to discuss what I want to see for the future. I was redirected from creating a working group that could come together to support other groups, to developing a proposal to create a committee that can create working groups to support current and future data efforts. However, it can also do much more.</p>
+<p>NENA is an organization dedicated to educaiton, training, and the development of the industry. I was encouraged by an old mentor to contribute to them because he believed that I knew too much to be sitting in a cube all day watching everything pass by. During both my work in NENA and my development as a data scientist, I’ve wanted to find ways to advance the use of analytics and data science in the 911 industry. So, I have been creating that proposal to leverage both my passion for data analytics and data science and NENA’s reputation for education and training to create new opportunities for the industry. To do that, I’ve started expanding the idea of the committee to do more than supply analytics to other working groups. I think that the committee could work with NENA to create more a more detailed census of the industry. I think we could become a clearing hours for data that could be used for many other research projects.</p>
+<p>I also believe that the committee could further education in our industry by helping PSAPs set up their own analytics systems, helping define best practices and giving instructions on how to build systems on a budget, using open source freeware components. Yes, I know some of our vendor partners might have a problem with parts of this, but I don’t see this as something that would be truly negative for them. They could use this as a way to show their capabilities to the industry. Some centers will still want to purchase their produts because they don’t want to set everything up for themselves. For those that do, this gives the vendors exposure to make sales. I also believe that the committee can contribute to future editions of the <a href="https://www.nena.org/page/ENP_Certification">ENP</a> and <a href="https://www.nena.org/page/CenterManagerCert">CMCP</a> exams. I think that both certifications could benefit from basic statistical knowledge. I think that NENA can also use the committee to sponsor research projects that can benefit the community. One such research project that comes to mind comes from a report that the NFPA comissioned for the NFPA 1225 standard. That report can be found <a href="https://www.nfpa.org/education-and-research/research/fire-protection-research-foundation/projects-and-reports/an-analysis-of-public-safety-call-answering-and-event-processing-times">here</a>. In this report, the authors suggested that their work could serve as a tool to guide future research. After reading their survey questions and their report, I think that this type of committee could spawn a working group interested in taking up that research using data that NENA can collect from PSAPs around the country. I also beleive that many more PSAPs would participate if they knew that NENA was behind the research efforts because we are the community and we’re doing this to support our industry.</p>
+<p>During a different conversation where I have been working to get data for the two working groups to which I’ve alluded above, I was speaking with a state 9-1-1 administrator and she was intrigued about the opportunity.</p>
 
 
 
  ]]></description>
   <category>research. data-driven</category>
   <category>data</category>
-  <guid>https://drddatascience.com/posts/Next Bright Idea/</guid>
+  <guid>https://drddatascience.com/posts/20250824/</guid>
   <pubDate>Tue, 19 Aug 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1889,6 +1893,10 @@ font-style: inherit;"># saveWidget(cluster_map, "alexandria_calls_cluster_map.ht
   <category>news</category>
   <guid>https://drddatascience.com/posts/startingpoint/</guid>
   <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
+Date>
 </item>
 </channel>
 </rss>
