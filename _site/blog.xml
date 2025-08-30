@@ -9,8 +9,52 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.7.33</generator>
-<lastBuildDate>Tue, 19 Aug 2025 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.21</generator>
+<lastBuildDate>Sat, 30 Aug 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Getting Certified</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250826/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>As my readers know, from following this blog, I work with <a href="https://www.comptia.org/en-us/">CompTIA</a> on developing certification exams for Database Administrators and Data Analysts. One of the criteria for sunject matter experts is that we hold a valid CompTIA certification outselves. Thankfully, they were gracious enough to suspend that for me while I was finishing my Ph.D.&nbsp;Now that I’ve finished it, I know that I have to start working on obtaining a certification. At one point, I held four CompTIA certfications, but I sadly allowed them to lapse because I was working on a Masters in Data Analytics. The ones that I held were the A+, the Network+, the Security+ and the Project+ certs. I suppose that, with a little review time, I could retake the exams and obtain all four of them. However, I won’t make use of them in my day job any longer, so it feels like it defeats the purpose.</p>
+<p>While we work on the exams, CompTIA reminds us to ensure that we focus on things that the target audience would acutally need to know or do in their daily work. I think that is an excellent idea. So, I’m going to follow the same advice for the selection of the certification I am choosing to pursue. In this case, I’m starting to study for the <a href="https://partners.comptia.org/docs/default-source/resources/comptia-datax-dy0-001-exam-objectives-(5-0)">DataX</a> exam. I applied to work on this exam, but I was told that my qualifications were insufficient. At first, I was surprised because I thought that my resume was impressive enough to work on this exam. In retrospect, I can see where I fell short. While I had a lot of experience in data analytics and statistics, I wasn’t working as a data scientist on a daily basis, so I was just a bit short. I might reapply after I get the certification since I think the combination of passing the exam and having the Ph.D.&nbsp;might qualify me.</p>
+<p>Until then, like anyone else, I have to study to prepare for the exam. So far, to do that, I picked up a book of questions from Amazon and have it on my Fire tablet. I know that most of the questions are not in the CompTIA format, but it’s a good way to review different topics that may be covered on the exam. I’ve also purchased a Udemy course for the exam. I’ve used some of them in the past to help me study and they were effective when I made good use of them. So that’s an emerging discipline issue that I will address.</p>
+<p>The first exam objective, according to the CompTIA document I’ve linked above is mathematics and statistics. It makes sense to me since math is the foundation of analytics and data science. In this domain, most of the topics make sense and I can see how they apply. The question is going to be how in depth do they cover p-values? Everything else in there seems to make sense to me. I think that I will need to review AIC/BIC, type I and II errors, and a few other statistical concepts. The second objective in the domain is probability and synthetic modeling. A lot of this is stuff that I use daily, types of distributions, missingness, skewness and kurtosis. Those two are big with my work on 9-1-1 data. I know that I will want to cover homoskedacity and heteroskedacity in depth. I also need to review Probability Density Function and Probability Mass Function. The third objective in this domain is linear algebra and calculus. I know I need to review that. I have always been a much better statistician than mathematician. I will find additional resources to augment my education in this area. The final objective in this domain is temporal. I know that I will feel comfortable there. I wrote a dissertation on the subject and have built many models I thought that it was interesting to see that survival analysis is included here. I also saw that the objectives list a difference between parametric and non-parametric survival analyses. I want to ensure that I look into this a bit more.</p>
+<p>The second domain covers modeling, analyses, and outcomes. The first objective that exists in this domain is Exploratory Data Analysis (EDA). I think that every data scientist has conducted EDA at least a dozen times in their practice. It’s the first thing that we do with new datasets. All of the topics that are covered under this objective should be pretty straightforward for me and my studies. There are the different types of analyses and the different plots that can be used for visualizing the data. The second objective centers on common data issues such as sparse data, outliers, lagged observations, multicollinearity issues, and other issues. The third objective covers data enrichment such as geocoding, feature engineering, and transforming data. I have done quite a bit of feature engineering when I have built forecasts. I also like that synthetic data is covered here. I’ve done a lot of work recently with synthetic data, so I will feel comfortable there. I think that I want to review a lot of data transformation techniques prior to the exam. Mainly that will be needed because that is something that I don’t do as much of that in my current work. That doesn’t mean that I don’t need to do it, just that I’ve not applied these much.</p>
+<p>I’m going to continue to cover this in more depth while I work on my studies, but this is a good start to get me moving. I have other blog posts that I want to get out to all of you. So, on to the next step.</p>
+
+
+
+ ]]></description>
+  <category>data science</category>
+  <category>certification</category>
+  <category>studying</category>
+  <guid>https://drddatascience.com/posts/20250826/</guid>
+  <pubDate>Sat, 30 Aug 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Taking care of the community</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250825/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <category>data</category>
+  <category>community</category>
+  <category>dispatch</category>
+  <guid>https://drddatascience.com/posts/20250825/</guid>
+  <pubDate>Mon, 25 Aug 2025 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Building a data-centric future</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
@@ -1894,10 +1938,6 @@ font-style: inherit;"># saveWidget(cluster_map, "alexandria_calls_cluster_map.ht
   <category>news</category>
   <guid>https://drddatascience.com/posts/startingpoint/</guid>
   <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
-</item>
-</channel>
-</rss>
-Date>
 </item>
 </channel>
 </rss>

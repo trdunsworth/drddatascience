@@ -9,8 +9,30 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.7.33</generator>
-<lastBuildDate>Tue, 19 Aug 2025 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.21</generator>
+<lastBuildDate>Sat, 30 Aug 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/20250826/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250826/</link>
+  <description>{B4F502887207:/posts/20250826/index.html}</description>
+  <category>data science</category>
+  <category>certification</category>
+  <category>studying</category>
+  <guid>https://drddatascience.com/posts/20250826/</guid>
+  <pubDate>Sat, 30 Aug 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20250825/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20250825/</link>
+  <description>{B4F502887207:/posts/20250825/index.html}</description>
+  <category>data</category>
+  <category>community</category>
+  <category>dispatch</category>
+  <guid>https://drddatascience.com/posts/20250825/</guid>
+  <pubDate>Mon, 25 Aug 2025 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>{B4F502887207:/posts/20250824/index.html}</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
@@ -155,10 +177,6 @@
   <category>news</category>
   <guid>https://drddatascience.com/posts/startingpoint/</guid>
   <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
-</item>
-</channel>
-</rss>
-Date>
 </item>
 </channel>
 </rss>
