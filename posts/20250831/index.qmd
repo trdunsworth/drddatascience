@@ -1,0 +1,10 @@
+---
+title: "Getting Certified"
+author: "Tony Dunsworth, Ph.D."
+date: "2025-08-31"
+categories: [data science, analyses, data issues]
+execute: 
+  eval: false
+---
+
+When I started actively working in data science, like everyone else, I heard the old maxim that a data scientist spends about 80% of their time cleaning data. Well, I can report that in many cases, that's true. I'm currently facing a lot of that right now in building a new dataset for some new reports and dashboards that I'm designing. I'm starting the data cleaning process in the [SQL](https://www.ibm.com/think/topics/structured-query-language) statement. I believe that it's a lot faster.
