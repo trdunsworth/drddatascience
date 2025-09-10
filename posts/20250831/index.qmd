@@ -1,6 +1,6 @@
 ---
 title: "Cleaning in the Query"
-author: "Tony Dunsworth, Ph.D."+/*i-
+author: "Tony Dunsworth, Ph.D."
 date: "2025-09-08"
 categories: [data science, analyses, data issues]
 execute: 
@@ -27,6 +27,6 @@ In several places, I still have *NULL* values. In several of my non-datetime fie
 
 When I'm done, I have a dataset that has completed an initial cleaning and is ready for the needed manipulations and transformations that will allow me to find new insights and deliver value. Sure the query to generate these datasets is kinda heavy. This new version clocks in at just under 600 lines when formatted in a way that is more human-readable, but it runs quickly, returns over 1000 rows of data in under 3 seconds. I have a second version of this that isn't focused on a weekly output. That version allows for the specification of dates so I can create larger datasets. 
 
-Since I also have a synthetic generator that I continue to update and support, I can also use this query to generate datasets that will allow me to gather more accurate data to fine-tune the distributions and make certain that my synthetic data is more useful. I will likely use the [disfit](https://erdogant.github.io/distfit/pages/html/index.html) library to make more accurate assessments. 
+Since I also have a synthetic generator that I continue to update and support, I can also use this query to generate datasets that will allow me to gather more accurate data to fine-tune the distributions and make certain that my synthetic data is more useful. I will likely use the [disfit](https://erdogant.github.io/distfit/pages/html/index.html) library to make more accurate assessments of the data and find the best distribution.
 
 Well, that's it for this edition. Stay tuned for a different swing through the world of data workers coming soon!!
