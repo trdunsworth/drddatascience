@@ -3,5 +3,7 @@
         "Boudreau's",
         "Dunsworth",
         "venv"
-    ]
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "quarto.visualEditor.markdownWrapColumn": 80
 }
