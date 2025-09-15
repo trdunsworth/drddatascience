@@ -1,0 +1,16 @@
+---
+title: "Stochasticity in Time-Series, Dissertation part 1"
+author: "Tony Dunsworth, Ph.D."
+date: "2025-09-18"
+categories: [data science, analyses, data issues]
+execute: 
+  eval: false
+---
+
+## Background
+
+It's been nearly a year since I defended my dissertation. In that time, I've found that people are intrested in knowing what it's about until I try to explain it, then they feel that they don't understand it and the discussions get lost. So, while I was playing FreeCell solitaire this morning, I thought of an experiment that could help me work with forecasting stochastic processes, including adding conformal predictions to the mixture. Part of it is because I want to keep my data science skills sharp. I also realized that this would work well as a better explanation of my dissertation also. So my plan is to split everything into three parts. This part is going to discuss stochasticity and how it plays a part of forecasting. The second part will be focused low-code and zero-shot forecasting models. The final part will be marrying these together, like I did in my dissertation, for 9-1-1 centres and how my dissertation can serve as a foundation for future research on both forecasting polystochastic processes and finding even better ways to address forecasting in centers and why it will be important. 
+
+### Simple Stochasticity
+
+This all started with a weird thought playing FreeCell. 
