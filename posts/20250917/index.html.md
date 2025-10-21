@@ -5,12 +5,10 @@ date: "2025-09-18"
 categories: [data science, analyses, data issues]
 execute: 
   eval: false
-filters: [acronyms]
 acronyms:
   PSAP: Public Safety Answering Point
   TDD: Telecommunications Device for the Deaf
   TTY: Teletypwriter
-  SMS: Short Message Service
 ---
 
 ## Background
@@ -31,8 +29,4 @@ This is most generally found in many commercial call centres. Most accurately, i
 
 #### The next Stochastic level
 
-Additionally, because of the nature of Primary {{< acr PSAP >}}s, there is an additional level of stochasticity regarding how the call for service arrives to the centre. Calls may arrive from 9-1-1 telephone lines, administrative, non-emergency, lines, {{< acr SMS >}} text messages, {{< acr TDD >}}/{{< acr TTY >}} devices, radio communications from officers, or even public walk-ups for centres that have a window for the public, like the county that I live in. This additional stochasticity can magnify the challenges for both forecasting and queue development. So, when we're trying to build models to describe this behaviour, we have to account for the additional factors that are present.
-
-### Application to the Dissertation
-
-In my dissertation, I wanted to examine how to forecast inbound call volumes for PSAPs because it's the first stage in a larger body of work that I hope to complete. I want to find a forecasting model that works
+Additionally, because of the nature of Primary {{< acr PSAP >}}s, there is an additional level of stochasticity regarding how the call for service arrives to the centre. Calls may arrive from 9-1-1 telephone lines, administrative, non-emergency, lines, SMS text messages, {{< acr TDD >}}/{{< acr TTY >}} devices, radio communications from officers, or even public walk-ups for centres that have a window for the public, like the county that I live in. 
