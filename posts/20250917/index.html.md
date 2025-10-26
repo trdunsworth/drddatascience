@@ -5,10 +5,6 @@ date: "2025-09-18"
 categories: [data science, analyses, data issues]
 execute: 
   eval: false
-acronyms:
-  PSAP: Public Safety Answering Point
-  TDD: Telecommunications Device for the Deaf
-  TTY: Teletypwriter
 ---
 
 ## Background
@@ -21,7 +17,7 @@ This all started with a weird thought playing FreeCell. When I started playing, 
 
 Ultimately, this is a simple stochastic process. The "mother-ship" selects a deal at random each day. There are a finite number of choices, according to a quick search, there are $1.75^{64}$ possibilities. The program, as part of the trivia, points out that some deals are unwinnable. So the rules that the "mother-ship" must follow also includes, for the daily challenges, the exclusion of unwinnable deals. The program also attaches the daily deal number to the day it is presented, so even if I don't complete the daily deal, I'm guaranteed to see the same daily deal that my wife or other players saw the same day. This introduces the stochastic element through the determination of limiting factors. If the daily deal were truly random, then unwinnable deals would be possible and the deal offered would change when presented to the player depending on when it was accessed.
 
-My analytical interest, had I started earlier would be to use my prior results to see how my play has improved over time and see if I can forecast how well I can do in the future. I also am curious to see if there is an underlying pattern of when really challenging deals are presented to players. I could correlate my wife's results with mine to see if a second pattern emerges. This yields the possibility of two separate types of stochastic forecasts. It also allows me to create pattern recognition analyses that may shed some insight into the algorithm the company employs to select the deal for each day. Is it simply a random number generator with some values removed? Or are there other parameters that are added which restrict the lists enough to ensure a player doesn't perceive repeated deals or perhaps you can ascertain the size of the potential pool of deals.
+My analytical interest, had I started earlier would be to use my prior results to see how my play has improved over time and see if I can forecast how well I can do in the future. I also am curious to see if there is an underlying pattern of when really challenging deals are presented to players. I could correlate my wife's results with mine to see if a second pattern emerges. This yields the possibility of two separate types of stochastic forecasts. It also allows me to create pattern recognition analyses that may shed some insight into the algorithm the company employs to select the deal for each day. This works well because my wife and I approach the puzzles in different ways, so if something is challenging to both of our styles, then it's likely that is really difficult. If it is easy for one of us, the it might not be so difficult. Is it simply a random number generator with some values removed? Or are there other parameters that are added which restrict the lists enough to ensure a player doesn't perceive repeated deals or perhaps you can ascertain the size of the potential pool of deals.
 
 ### Double Stochasticity
 
@@ -29,4 +25,8 @@ This is most generally found in many commercial call centres. Most accurately, i
 
 #### The next Stochastic level
 
-Additionally, because of the nature of Primary {{< acr PSAP >}}s, there is an additional level of stochasticity regarding how the call for service arrives to the centre. Calls may arrive from 9-1-1 telephone lines, administrative, non-emergency, lines, SMS text messages, {{< acr TDD >}}/{{< acr TTY >}} devices, radio communications from officers, or even public walk-ups for centres that have a window for the public, like the county that I live in. 
+Additionally, because of the nature of Primary {{< acr PSAP >}}s, there is an additional level of stochasticity regarding how the call for service arrives to the centre. Calls may arrive from 9-1-1 telephone lines, administrative, non-emergency, lines, {{< acr SMS >}} text messages, {{< acr TDD >}}/{{< acr TTY >}} devices, radio communications from officers, or even public walk-ups for centres that have a window for the public, like the county that I live in. This additional stochasticity can magnify the challenges for both forecasting and queue development. So, when we're trying to build models to describe this behaviour, we have to account for the additional factors that are present.
+
+### Application to the Dissertation
+
+In my dissertation, I wanted to examine how to forecast inbound call volumes for PSAPs because it's the first stage in a larger body of work that I hope to complete. I want to find a forecasting model that works

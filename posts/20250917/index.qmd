@@ -5,12 +5,6 @@ date: "2025-09-18"
 categories: [data science, analyses, data issues]
 execute: 
   eval: false
-filters: [acronyms]
-acronyms:
-  PSAP: Public Safety Answering Point
-  TDD: Telecommunications Device for the Deaf
-  TTY: Teletypwriter
-  SMS: Short Message Service
 ---
 
 ## Background
@@ -23,7 +17,7 @@ This all started with a weird thought playing FreeCell. When I started playing, 
 
 Ultimately, this is a simple stochastic process. The "mother-ship" selects a deal at random each day. There are a finite number of choices, according to a quick search, there are $1.75^{64}$ possibilities. The program, as part of the trivia, points out that some deals are unwinnable. So the rules that the "mother-ship" must follow also includes, for the daily challenges, the exclusion of unwinnable deals. The program also attaches the daily deal number to the day it is presented, so even if I don't complete the daily deal, I'm guaranteed to see the same daily deal that my wife or other players saw the same day. This introduces the stochastic element through the determination of limiting factors. If the daily deal were truly random, then unwinnable deals would be possible and the deal offered would change when presented to the player depending on when it was accessed.
 
-My analytical interest, had I started earlier would be to use my prior results to see how my play has improved over time and see if I can forecast how well I can do in the future. I also am curious to see if there is an underlying pattern of when really challenging deals are presented to players. I could correlate my wife's results with mine to see if a second pattern emerges. This yields the possibility of two separate types of stochastic forecasts. It also allows me to create pattern recognition analyses that may shed some insight into the algorithm the company employs to select the deal for each day. Is it simply a random number generator with some values removed? Or are there other parameters that are added which restrict the lists enough to ensure a player doesn't perceive repeated deals or perhaps you can ascertain the size of the potential pool of deals.
+My analytical interest, had I started earlier would be to use my prior results to see how my play has improved over time and see if I can forecast how well I can do in the future. I also am curious to see if there is an underlying pattern of when really challenging deals are presented to players. I could correlate my wife's results with mine to see if a second pattern emerges. This yields the possibility of two separate types of stochastic forecasts. It also allows me to create pattern recognition analyses that may shed some insight into the algorithm the company employs to select the deal for each day. This works well because my wife and I approach the puzzles in different ways, so if something is challenging to both of our styles, then it's likely that is really difficult. If it is easy for one of us, the it might not be so difficult. Is it simply a random number generator with some values removed? Or are there other parameters that are added which restrict the lists enough to ensure a player doesn't perceive repeated deals or perhaps you can ascertain the size of the potential pool of deals.
 
 ### Double Stochasticity
 
@@ -35,4 +29,6 @@ Additionally, because of the nature of Primary {{< acr PSAP >}}s, there is an ad
 
 ### Application to the Dissertation
 
-In my dissertation, I wanted to examine how to forecast inbound call volumes for PSAPs because it's the first stage in a larger body of work that I hope to complete. I want to find a forecasting model that works
+In my dissertation, I wanted to examine how to forecast inbound call volumes for PSAPs because it's the first stage in a larger body of work that I hope to complete. I wanted to find a forecasting model that works well with the technical limitations that can exist in many 9-1-1 centers across the US and Canada. In many of these centers, there aren't enough telecommunicators on duty, so there also isn't a lot of technical support available directly to the center. When they need to create forecasts for staffing models, they simply tack on a percentage as an anecdotal guess and then hope that it's close enough. I was interested in low-code and zero-shot models that could be deployed without incurring substantial technical debt so a center could have a hobbyist who knows just enough Python to make a useful forecast with easy-to-use tools.
+
+The biggest problem that I faces in my research process was that I was overcomplicating it. Thankfully, two of my supervisors, Dr. Crossland and Dr. Schur, saw that and guided me away from turning into somethat I could not handle in a dissertation without it being super long and maybe not completed within the dissertation timeline that the university demanded. When I first proposed the project, I wanted to collect 5 different measurements across hourly, daily, weekly, monthly, and yearly frequencies.  My original plan was to collect inbound 9-1-1 trunk line volumes, abandoned 9-1-1 trunk line volumes, administrative line volumes, abandoned administrative line volumes, and outbound call volumes. After I started thinking about that, I also wanted to collect the percentages of calls answered for 9-1-1 and admin trunk lines in 15 and 20 seconds. I had hoped for a grand correlative study where the different volumes could have been seen as exongenous variables to other variables. That would have been unwieldy. Perhaps doing one center to that depth at daily and hourly levels could be a good follow-up study, but this was not the place for it.

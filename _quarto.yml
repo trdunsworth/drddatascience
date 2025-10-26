@@ -22,6 +22,16 @@ website:
 execute:
   keep-md: true
   
+# Enable acronyms site-wide and load shared definitions
+filters: [acronyms]
+acronyms:
+  # Centralized acronyms list (YAML). You can also supply a list of files.
+  fromfile: acronyms.yml
+  # Default rendering style for first/next uses
+  style: long-short
+  # Where to insert the List of Acronyms automatically (or set to false)
+  insert_loa: beginning
+  
 format:
   html:
     theme: yeti

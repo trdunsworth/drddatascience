@@ -13,3 +13,5 @@ node_modules/
 /playwright/.cache/
 
 **/*.quarto_ipynb
+
+/.luarc.json
