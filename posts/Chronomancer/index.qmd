@@ -1,0 +1,18 @@
+---
+title: "Chronomancer Prestige Class 5e"
+author: "Tony Dunsworth, Ph.D."
+date: "2025-10-26"-
+categories: [Dungeons & Dragons, 5th Edition, Wizard, Subclasses]
+execute: 
+  eval: false
+---
+
+## Background
+
+First off, yes, this is a much different post than some of the ones that I have previously written. Regular readers will note that I typically write about data and 9-1-1 centers. This is a much different and, hopefull, more fun post. I've played Dungeons & Dragons since I was a pre-teen and have played every version of it from the red box set through 5e. My wife has also played D&D for a little longer than I. We have both had a lot of fun with this over the years. This post was started by a conversation my wife and I had earlier when discussing someone we both know working in security and how he was unaware that I had worked in security years ago when I first graduated from university the first time. During that time, I worked a post at a grocery store distribution center and during my rounds, I carried a large clock that was used to prove that rounds have been completed. It consisted of a clock face with a tape spool inside and a keyhole where a key on the wall was inserted and typed against the tape. 
+
+As we discussed what I used to do as a security guard, we started laughing about how the clock could have been used as a weapon had I encountered anyone. The thing was heavy enough to crack someone's skull with a solid blow. It weighed about 3 almost 4 kilos and could be considered a little heavier than a war hammer. So we started discussing what the damage would look like in D&D terms. That then led to my wife suggesting a subclass of a wizard and I came up with the name of Chronomancer. So here is our version of it to be used in a 5e setting. 
+
+### Chronomancer
+
+The Chronomancer is a subclass of Wizard. So in this instance, you would have to have a few levels of Wizard and have the ability subclass in your campaign. We've considered this as a prestige class. These would be wizards who are obsessed with time. 
