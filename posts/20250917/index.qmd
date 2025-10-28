@@ -1,7 +1,7 @@
 ---
 title: "Stochasticity in Time-Series, Dissertation part 1"
 author: "Tony Dunsworth, Ph.D."
-date: "2025-09-18"
+date: "2025-10-27"
 categories: [data science, analyses, data issues]
 execute: 
   eval: false
@@ -33,4 +33,12 @@ In my dissertation, I wanted to examine how to forecast inbound call volumes for
 
 The biggest problem that I faces in my research process was that I was overcomplicating it. Thankfully, two of my supervisors, Dr. Crossland and Dr. Schur, saw that and guided me away from turning into somethat I could not handle in a dissertation without it being super long and maybe not completed within the dissertation timeline that the university demanded. When I first proposed the project, I wanted to collect 5 different measurements across hourly, daily, weekly, monthly, and yearly frequencies.  My original plan was to collect inbound 9-1-1 trunk line volumes, abandoned 9-1-1 trunk line volumes, administrative line volumes, abandoned administrative line volumes, and outbound call volumes. After I started thinking about that, I also wanted to collect the percentages of calls answered for 9-1-1 and admin trunk lines in 15 and 20 seconds. I had hoped for a grand correlative study where the different volumes could have been seen as exongenous variables to other variables. That would have been unwieldy. Perhaps doing one center to that depth at daily and hourly levels could be a good follow-up study, but this was not the place for it.
 
-Had I done this study in that way, I might have also reduced the overall stochasticity of the study by discounting that additional level through the separation. the separation could have implied that these calls could be separated prior to arrival at the center. 
+Had I done this study in that way, I might have also reduced the overall stochasticity of the study by discounting that additional level through the separation. the separation could have implied that these calls could be separated prior to arrival at the center. That could be a second interesting study, comparing centers that have dedicated queues solely for administrative calls against those who have singular queues.
+
+### Where Does This Go Next?
+
+My next post discussing my dissertation will pick up with the forecasting models, specifically zero-shot and low-code models, and how they may be a better fit for for 9-1-1 centers through the country. After that, I will discuss queueing models and how 9-1-1 centers present challenges to traditional queueing models. Finally, I will discuss application of different popular queueing models, in my opinion, falls short of the promise to model 9-1-1 call centers and what alternatives could exist. 
+
+### Teaser
+
+The next post that I'm writing is more fun than work. It's an idea that my wife and I started and I think will be a lot of fun in the future....
