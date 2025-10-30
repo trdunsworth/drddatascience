@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://drddatascience.com/resume.html</loc>
-    <lastmod>2025-04-14T11:44:13.190Z</lastmod>
+    <lastmod>2025-10-28T02:33:50.904Z</lastmod>
   </url>
   <url>
     <loc>https://drddatascience.com/posts/20250129/index.html</loc>
@@ -110,6 +110,10 @@
   </url>
   <url>
     <loc>https://drddatascience.com/posts/20250917/index.html</loc>
-    <lastmod>2025-10-24T01:51:35.829Z</lastmod>
+    <lastmod>2025-10-28T02:20:24.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/posts/Chronomancer/index.html</loc>
+    <lastmod>2025-10-28T02:23:47.598Z</lastmod>
   </url>
 </urlset>

@@ -10,7 +10,7 @@
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 18 Sep 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 27 Oct 2025 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Stochasticity in Time-Series, Dissertation part 1</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
@@ -59,7 +59,17 @@ TeleTYpewriter
 </section>
 <section id="application-to-the-dissertation" class="level3">
 <h3 class="anchored" data-anchor-id="application-to-the-dissertation">Application to the Dissertation</h3>
-<p>In my dissertation, I wanted to examine how to forecast inbound call volumes for PSAPs because it’s the first stage in a larger body of work that I hope to complete. I want to find a forecasting model that works</p>
+<p>In my dissertation, I wanted to examine how to forecast inbound call volumes for PSAPs because it’s the first stage in a larger body of work that I hope to complete. I wanted to find a forecasting model that works well with the technical limitations that can exist in many 9-1-1 centers across the US and Canada. In many of these centers, there aren’t enough telecommunicators on duty, so there also isn’t a lot of technical support available directly to the center. When they need to create forecasts for staffing models, they simply tack on a percentage as an anecdotal guess and then hope that it’s close enough. I was interested in low-code and zero-shot models that could be deployed without incurring substantial technical debt so a center could have a hobbyist who knows just enough Python to make a useful forecast with easy-to-use tools.</p>
+<p>The biggest problem that I faces in my research process was that I was overcomplicating it. Thankfully, two of my supervisors, Dr.&nbsp;Crossland and Dr.&nbsp;Schur, saw that and guided me away from turning into somethat I could not handle in a dissertation without it being super long and maybe not completed within the dissertation timeline that the university demanded. When I first proposed the project, I wanted to collect 5 different measurements across hourly, daily, weekly, monthly, and yearly frequencies. My original plan was to collect inbound 9-1-1 trunk line volumes, abandoned 9-1-1 trunk line volumes, administrative line volumes, abandoned administrative line volumes, and outbound call volumes. After I started thinking about that, I also wanted to collect the percentages of calls answered for 9-1-1 and admin trunk lines in 15 and 20 seconds. I had hoped for a grand correlative study where the different volumes could have been seen as exongenous variables to other variables. That would have been unwieldy. Perhaps doing one center to that depth at daily and hourly levels could be a good follow-up study, but this was not the place for it.</p>
+<p>Had I done this study in that way, I might have also reduced the overall stochasticity of the study by discounting that additional level through the separation. the separation could have implied that these calls could be separated prior to arrival at the center. That could be a second interesting study, comparing centers that have dedicated queues solely for administrative calls against those who have singular queues.</p>
+</section>
+<section id="where-does-this-go-next" class="level3">
+<h3 class="anchored" data-anchor-id="where-does-this-go-next">Where Does This Go Next?</h3>
+<p>My next post discussing my dissertation will pick up with the forecasting models, specifically zero-shot and low-code models, and how they may be a better fit for for 9-1-1 centers through the country. After that, I will discuss queueing models and how 9-1-1 centers present challenges to traditional queueing models. Finally, I will discuss application of different popular queueing models, in my opinion, falls short of the promise to model 9-1-1 call centers and what alternatives could exist.</p>
+</section>
+<section id="teaser" class="level3">
+<h3 class="anchored" data-anchor-id="teaser">Teaser</h3>
+<p>The next post that I’m writing is more fun than work. It’s an idea that my wife and I started and I think will be a lot of fun in the future….</p>
 
 
 </section>
@@ -71,7 +81,56 @@ TeleTYpewriter
   <category>analyses</category>
   <category>data issues</category>
   <guid>https://drddatascience.com/posts/20250917/</guid>
-  <pubDate>Thu, 18 Sep 2025 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 27 Oct 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Chronomancer Prestige Class 5e</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/Chronomancer/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="acronyms_HEADER_LOA" class="level1 loa">
+<h1 class="loa">List Of Acronyms</h1>
+<dl>
+<dt><span id="acronyms_PSAP">PSAP</span></dt>
+<dd>
+Public Safety Answering Point
+</dd>
+<dt><span id="acronyms_SMS">SMS</span></dt>
+<dd>
+Short Message Service
+</dd>
+<dt><span id="acronyms_TDD">TDD</span></dt>
+<dd>
+Telecommunications Device for the Deaf
+</dd>
+<dt><span id="acronyms_TTY">TTY</span></dt>
+<dd>
+TeleTYpewriter
+</dd>
+</dl>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>First off, yes, this is a much different post than some of the ones that I have previously written. Regular readers will note that I typically write about data and 9-1-1 centers. This is a much different and, hopefull, more fun post. I’ve played Dungeons &amp; Dragons since I was a pre-teen and have played every version of it from the red box set through 5e. My wife has also played D&amp;D for a little longer than I. We have both had a lot of fun with this over the years. This post was started by a conversation my wife and I had earlier when discussing someone we both know working in security and how he was unaware that I had worked in security years ago when I first graduated from university the first time. During that time, I worked a post at a grocery store distribution center and during my rounds, I carried a large clock that was used to prove that rounds have been completed. It consisted of a clock face with a tape spool inside and a keyhole where a key on the wall was inserted and typed against the tape.</p>
+<p>As we discussed what I used to do as a security guard, we started laughing about how the clock could have been used as a weapon had I encountered anyone. The thing was heavy enough to crack someone’s skull with a solid blow. It weighed about 3 almost 4 kilos and could be considered a little heavier than a war hammer. So we started discussing what the damage would look like in D&amp;D terms. That then led to my wife suggesting a subclass of a wizard and I came up with the name of Chronomancer. So here is our version of it to be used in a 5e setting. <em>Yes, we do know that others have thought of this as well. You can use it if you wish, or not</em></p>
+<section id="chronomancer" class="level3">
+<h3 class="anchored" data-anchor-id="chronomancer">Chronomancer</h3>
+<p>The Chronomancer is a subclass of Wizard. So in this instance, you would have to have a few levels of Wizard and have the ability subclass in your campaign. We’ve considered this as a prestige class. These would be wizards who are obsessed with time, usnig it, controlling it, changing it. It could be for any reason, the desire for immortality, time saved them from a bad situation, etc.</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>Dungeons &amp; Dragons</category>
+  <category>Wizard</category>
+  <category>Subclasses</category>
+  <guid>https://drddatascience.com/posts/Chronomancer/</guid>
+  <pubDate>Sun, 26 Oct 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Cleaning in the Query</title>
@@ -1987,31 +2046,6 @@ font-style: inherit;"># saveWidget(cluster_map, "alexandria_calls_cluster_map.ht
   <category>thoughts</category>
   <category>reports</category>
   <guid>https://drddatascience.com/posts/20241223/</guid>
-  <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
-</item>
-</channel>
-</rss>
-887207:/posts/startingpoint/index.html}</title>
-  <dc:creator>Tony Dunsworth</dc:creator>
-  <link>https://drddatascience.com/posts/startingpoint/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is, for me, a starting point post. I am just starting to develop this site, including this blog, as a way to do several things at once. First and foremost, I want to document my work in public safety communications data science. This is a turning point in my career, transitioning from back-end administration of dispatch systems to data analytics and data science.</p>
-<p>Another part of this blog will discuss things I find interesting in tech, especially when it comes to data. For example, I have been working more and more in Python lately and finding tools that I enjoy using because they make my work easier. The top three of late are <a href="https://github.com/astral-sh/uv">uv</a>, <a href="https://duckdb.org/">DuckDB</a>, and <a href="https://fireducks-dev.github.io/">FireDucks</a>. Over time, I will add Jupyter notebooks here so I can document my work with these and other tools.</p>
-<p>I also want to learn more about <a href="https://julialang.org/">Julia</a>. So I might experiment with it in notebooks as well here and there and document the experience. However, most of the code that you see here will be in R, because it was the first language that I learned and the one that I feel most comfortable with. That will present its own challenge because many forecasting libraries that I have worked with are only expressed in Python.</p>
-<p>There will be some tutorials as I write more and I get more comfortable with writing here and updating the blog and the site. Most of those are going to be geared towards public safety communications. I work with <a href="https://nena.org">NENA</a> on several technical committees and part of that work, for me, focuses on bringing advanced analytics to PSAPs across the country. I also speak a few times a year on this and other topics. I will start blogging about what I have presented after the presentations are done. It will be good review.</p>
-<p>I am also fascinated with generating synthetic data for analyses. Right now, I’ve been working with <a href="https://mostly.ai/">Mostly.ai</a> to generate synthetic data for my research work. Due to the nature of the work that I do in centres, I use synthetic data for my presentations and my tutorials. My goal is to work with other libraries to create more realistic data for research purposes. I know that I will write about that in future posts. I’m looking forward to having fun with that exploration.</p>
-<p>Many of my posts will be found on my <a href="https://medium.com/@trdunsworth">Medium</a> page. Some of the tutorials may also be found, in the future, on my <a href="https://linkedin.com/in/tonyrdunsworth">LinkedIn</a>. However, I will point my audience here over time because there will be posts here that don’t exist other places so I can promote this place as my prefered publication venue.</p>
-<p>Well, I think that this is a good start as a pre-launch blog post.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <guid>https://drddatascience.com/posts/startingpoint/</guid>
   <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
 </item>
 </channel>

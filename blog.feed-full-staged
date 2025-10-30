@@ -10,7 +10,7 @@
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 18 Sep 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 27 Oct 2025 04:00:00 GMT</lastBuildDate>
 <item>
   <title>{B4F502887207:/posts/20250917/index.html}</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
@@ -20,7 +20,18 @@
   <category>analyses</category>
   <category>data issues</category>
   <guid>https://drddatascience.com/posts/20250917/</guid>
-  <pubDate>Thu, 18 Sep 2025 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 27 Oct 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Chronomancer/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/Chronomancer/</link>
+  <description>{B4F502887207:/posts/Chronomancer/index.html}</description>
+  <category>Dungeons &amp; Dragons</category>
+  <category>Wizard</category>
+  <category>Subclasses</category>
+  <guid>https://drddatascience.com/posts/Chronomancer/</guid>
+  <pubDate>Sun, 26 Oct 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>{B4F502887207:/posts/20250831/index.html}</title>
@@ -178,16 +189,6 @@
   <category>thoughts</category>
   <category>reports</category>
   <guid>https://drddatascience.com/posts/20241223/</guid>
-  <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
-</item>
-</channel>
-</rss>
-887207:/posts/startingpoint/index.html}</title>
-  <dc:creator>Tony Dunsworth</dc:creator>
-  <link>https://drddatascience.com/posts/startingpoint/</link>
-  <description>{B4F502887207:/posts/startingpoint/index.html}</description>
-  <category>news</category>
-  <guid>https://drddatascience.com/posts/startingpoint/</guid>
   <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
 </item>
 </channel>
