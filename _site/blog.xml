@@ -9,8 +9,114 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 27 Oct 2025 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Sat, 22 Nov 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Deception in Graphics and Statistics</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/DeceptiveGraphics/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>My wife and I were at our sister’s place and while we were there, I found a graphic on Facebook that bothered me greatly. I make it a point to ensure that all of my work can rigorously withstand scrutiny. I won’t tell you something if I can’t show you how I got it and why it’s the way it is. The post, put there by an old high school classmate, showed a graphic that disturbed me because it appeared to be deceptive. This the graphic in question:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://drddatascience.com/assets/deceptive_graphic3.jpg" class="img-fluid figure-img"></p>
+<figcaption>Deceptive Graphic</figcaption>
+</figure>
+</div>
+<p>This graphic <a href="https://personalfinancewizards.org/blog/the-pfw-blog/food-stamps-by-ethnicity-s809">appears</a> originally on the blog of <a href="https://personalfinancewizards.org/">The Personal Finance Wizards</a>. This group, per <a href="https://www.bizapedia.com/ar/the-personal-finance-wizards-llc.html">bizapedia.com</a>, is a registered LLC in Arkansas and has the Asa Hutchinson Law Group as its registered agent. So, knowing that Mr.&nbsp;Hutchinson is a former Republican Governor of Arkansas, you can expect a conservative bent and misleading information.</p>
+<p>The LLC describes itself as <em>“group of personal finance experts dedicated to providing content on money, savings, and investing education.”</em>. Also, to their credit, their website does have a disclaimer that states:</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The Personal Finance Wizards, LLC makes no claim or representation as to the registered trademarks or copyrighted works of others, nor any claim as to the data and tools cited, sourced or referenced herein.</p>
+</blockquote>
+</div>
+</div>
+<p>So, in essence, <em>“We’ll put this out there, but we’re not responsible if it’s wrong or misleading!”</em> That is an ethical problem in my opinion. As my wife and I discussed the graphic, we found more problems with it, along with a lot of people who accepted the <em>intent</em> of the message that comes from the graphic.</p>
+<p>I ended up speaking to my <a href="https://northernnecktoastmasters.toastmastersclubs.org/">Toastmasters club</a> about the graphic and how it was misleading and deceptive. After discussing the speech with my wife, I decided that I had the material to turn it into a blog post as an example of misleading your audience with statistics and presentation.</p>
+</section>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<p>The graphic, as seen above, is a horizontal bar chart that lists different “ethnicities” that receive <a href="https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program">SNAP</a> benefits. The first problem is how they define “ethnicity”. There is a blending, deliberate, in my opinion of ethnicity, race, and national origin. For example, the first listing in the graphic, Afghani, is misleading because it does not make clear if they are discussing ethnic Pashtuns who comprise about 42% of Afghanis and who may also be called Afghani in country of if it comprises other ethnic groups prevalent in Afghanistan such as Tajiks, Hazaras, Uzbeks, or other ethnic or tribal groups who reside in Afghanistan. Further, this graphic does not distinguish between immigrants from Afghanistan who have been in the US, legally, for more than five years and meet the other <a href="https://www.fns.usda.gov/snap/recipient/eligibility">eligibility requirements</a> and US Citizens who are ethnically connected to Afghanistan.</p>
+<p>Additionally, some “ethnicities” such as <em>Arab</em> reflect vastly different groups that are loosely classified as an ethnic group by lingustic heritage, unless they are from a specific country then the nationality is reflected. This appears in the entry for Iraqi, where Arabs, Kurds, Assyrians, Armenians, and Turkmen can all be classified as Iraqis. Additionally, some groups such as the Yazidi, are religious minorities who may be classified as Iraqi.</p>
+<p>In the graphic, Pacific Islanders are represented by a Hawaiian Flag, which feels very misleading. The Caribbean is listed as a single “ethnicity”, but there are several different ethnic groups who live in the area, and the graphic has separate distinctions for many nationalities in the region, regardless of their ethnicity. LatinX communities are also separated by nationality and not ethnicity.</p>
+<p>For “ethnicities” represented with an American flag, Indigenous Americans are listed as “Native”, African-Americans are listed as “Blacks”, and then there are, towards the bottom, “Whites”. By now, you see the picture. The implication is that immigrants are the problem. This plays fast and loose with the data.</p>
+<section id="numerical-deception" class="level3">
+<h3 class="anchored" data-anchor-id="numerical-deception">Numerical Deception</h3>
+<p>Since neither the grpahic shown above nor the original blog post are clear about how a household is defined and ethnically classified, the percentages are even doubly deceptive. If you use ethnicity and nationality together, several sources including <a href="https://www.migrationpolicy.org/article/afghan-immigrants-united-states">this one</a> place the population at around 200,000 individuals. If <strong><em>all</em></strong> of those individuals were eligible for SNAP benefits, then the eligible population would be about 91,000 people. That’s not a significant portion of the population of the United States. In fact, the same group that published this graphic, published a second article three days later that broke the same data down by volume. That graphic, shown below, paints an entirely different picture.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://drddatascience.com/assets/deceptive_graphic2.png" class="img-fluid figure-img"></p>
+<figcaption>Deceptive Graphic2</figcaption>
+</figure>
+</div>
+<p>In fact, from this graphic, the Afghani ethnicity does not appear in the list. The number of households is that small. Instead, “Whites”, at the bottom of the percentages, just above Italians and Indians, turns out to be the largest in volume. This is where the deliberate deception skews the message. The first published graphic had an agenda. “Look at all the foreigners getting things that you don’t.” It’s not true, but it makes for good outrage bait. The group doesn’t define the terms, so they don’t have to clarify what they want to imply. They made the dog whistle at just the right frequency to ensure the point was made and people are distracted from the truth and swallow the deception like pablum.</p>
+<p>After publishing both graphics they add text in the second entry to exonerate themselves:</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>It’s important to note that the graph highlights a selection of ethnicities we felt would be most relevant and engaging for our audience. With hundreds of ethnic groups in the U.S., it’s not possible to include every single one in a single post. If there is a group you would like to see represented, let us know or check out the full table available from the U.S. Census.</p>
+</blockquote>
+</div>
+</div>
+<p>So the second graphic is cherry-picked to both give you some truth, but also continue to stoke the fire from the earlier post. I do appreciate that they added additional informative text:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>It’s also worth noting that we used a logarithmic scale for the y-axis with tick marks at 10K, 100K, 1M, and 10M to better display the wide range in SNAP household counts. This approach helps make the lower numbers like those under 1M visible while still keeping the larger outliers like the White and Black data points in context. Without the log scale, most of the smaller groups would practically be invisible on the graph.</p>
+</blockquote>
+</div>
+</div>
+<p>This admission is good. We should always make clear to our audience when the scales have been changed for legibility. However, I disagree with their assessment that this keeps those points in context. It merely presents the data in a way to ensure that there is some legibility and counts on the fact that their audience may not read the remainder of the post.</p>
+</section>
+</section>
+<section id="my-two-cents" class="level2">
+<h2 class="anchored" data-anchor-id="my-two-cents">My two cents</h2>
+<p>I think that I’ve demonstrated how this was a deliberate attempt to misinform an audience and, equally, play to an intended audience’s biases. That’s unethical. I work hard, as do most analysts that I know, to present factual data in a way that ensures the data tells its story honestly. We strive to inform and to give our audiences the tools to make the best decisions. If called upon, I rely on my subject matter knowledge to assist in interpretation, but I’m clear as to what is my opinion and interpretation and what the data says. There has to be a distinction between the two. These folks didn’t do that. They presented the data in a way that allowed for a misunderstanding of the facts and only after other groups such as <a href="https://www.aljazeera.com/news/2025/10/29/fact-checking-a-viral-chart-on-us-food-stamps-recipients-race-ethnicity">Al Jazeera</a>, <a href="https://api.politifact.com/article/2025/oct/27/food-stamps-SNAP-ethnicity-chart/">Politifact</a>, and <a href="https://www.wired.com/story/disinformation-conspiracy-theories-snap-benefits/">Wired Magazine</a> called attention to the misinformation did they “correct” their data. Additionally, they hide behind the disclaimers and caveats. <em>It wasn’t us……, we just <strong>shared</strong> something with you.</em> “It’s not our fault if <strong>you</strong> read something else into it.” Again, this is not ethical behaviour. It’s deceptive and manipulative.</p>
+<p>I will have other posts on here where I talk about my work and I will do my best, <strong>each time</strong> to fully inform you and ensure that you have the facts and my interpretation. I will also ensure that I make the difference between the information and my interpretation clear. You deserve that.</p>
+<p>Thank you for reading this longer post.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>data science</category>
+  <category>analyses</category>
+  <category>data integrity</category>
+  <category>deceptive statistics</category>
+  <guid>https://drddatascience.com/posts/DeceptiveGraphics/</guid>
+  <pubDate>Sat, 22 Nov 2025 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Stochasticity in Time-Series, Dissertation part 1</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
@@ -114,11 +220,11 @@ TeleTYpewriter
 </dl>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>First off, yes, this is a much different post than some of the ones that I have previously written. Regular readers will note that I typically write about data and 9-1-1 centers. This is a much different and, hopefull, more fun post. I’ve played Dungeons &amp; Dragons since I was a pre-teen and have played every version of it from the red box set through 5e. My wife has also played D&amp;D for a little longer than I. We have both had a lot of fun with this over the years. This post was started by a conversation my wife and I had earlier when discussing someone we both know working in security and how he was unaware that I had worked in security years ago when I first graduated from university the first time. During that time, I worked a post at a grocery store distribution center and during my rounds, I carried a large clock that was used to prove that rounds have been completed. It consisted of a clock face with a tape spool inside and a keyhole where a key on the wall was inserted and typed against the tape.</p>
+<p>First off, yes, this is a much different post than some of the ones that I have previously written. Regular readers will note that I typically write about data and 9-1-1 centers. This is a much different and, hopeful, more fun post. I’ve played Dungeons &amp; Dragons since I was a pre-teen and have played every version of it from the red box set through 5e. My wife has also played D&amp;D for a little longer than I. We have both had a lot of fun with this over the years. This post was started by a conversation my wife and I had earlier when discussing someone we both know working in security and how he was unaware that I had worked in security years ago when I first graduated from university the first time. During that time, I worked a post at a grocery store distribution center and during my rounds, I carried a large clock that was used to prove that rounds have been completed. It consisted of a clock face with a tape spool inside and a keyhole where a key on the wall was inserted and typed against the tape.</p>
 <p>As we discussed what I used to do as a security guard, we started laughing about how the clock could have been used as a weapon had I encountered anyone. The thing was heavy enough to crack someone’s skull with a solid blow. It weighed about 3 almost 4 kilos and could be considered a little heavier than a war hammer. So we started discussing what the damage would look like in D&amp;D terms. That then led to my wife suggesting a subclass of a wizard and I came up with the name of Chronomancer. So here is our version of it to be used in a 5e setting. <em>Yes, we do know that others have thought of this as well. You can use it if you wish, or not</em></p>
 <section id="chronomancer" class="level3">
 <h3 class="anchored" data-anchor-id="chronomancer">Chronomancer</h3>
-<p>The Chronomancer is a subclass of Wizard. So in this instance, you would have to have a few levels of Wizard and have the ability subclass in your campaign. We’ve considered this as a prestige class. These would be wizards who are obsessed with time, usnig it, controlling it, changing it. It could be for any reason, the desire for immortality, time saved them from a bad situation, etc.</p>
+<p>The Chronomancer is a subclass of Wizard. So in this instance, you would have to have a few levels of Wizard and have the ability subclass in your campaign. We’ve considered this as a prestige class. These would be wizards who are obsessed with time, using it, controlling it, changing it. It could be for any reason, the desire for immortality, time saved them from a bad situation, etc.</p>
 
 
 </section>
@@ -344,10 +450,30 @@ TeleTYpewriter
 
 
 
+<section id="acronyms_HEADER_LOA" class="level1 loa">
+<h1 class="loa">List Of Acronyms</h1>
+<dl>
+<dt><span id="acronyms_PSAP">PSAP</span></dt>
+<dd>
+Public Safety Answering Point
+</dd>
+<dt><span id="acronyms_SMS">SMS</span></dt>
+<dd>
+Short Message Service
+</dd>
+<dt><span id="acronyms_TDD">TDD</span></dt>
+<dd>
+Telecommunications Device for the Deaf
+</dd>
+<dt><span id="acronyms_TTY">TTY</span></dt>
+<dd>
+TeleTYpewriter
+</dd>
+</dl>
 <p>I recently wrote about a presentation that I gave at <a href="https://rmc.edu">Randolph Macon College</a> concerning using data analyses in 9-1-1 centres. During the Q&amp;A section, someone asked me how I would recommend getting started. My answer, then and now, is pick a question and dive into that and new questions will start coming.</p>
 <p>I thought, perhaps, I should come up with an example of what I mean. In our centre, our medical director has requested that we do quality checks on every cardiac arrest call that we receive. So, here is the starting question: what can we learn about the cardiac arrest calls in the city? With that as the opening question, the first step is collecting the data. To start, I plan on collecting four datasets. I can create all of them using SQL. Since I work on SQL Server or T-SQL flavoured databases, the query, for our dispatch software’s databases looks something like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">USE</span> Reporting_System;</span>
@@ -479,12 +605,12 @@ font-weight: bold;
 font-style: inherit;">ORDER</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">BY</span> Response_Date;</span></code></pre></div>
+font-style: inherit;">BY</span> Response_Date;</span></code></pre></div></div>
 </div>
 <p>These queries will generate the four datasets that I would want for the full analysis. I would save the output to csv files and name them cardiac_arrest_cy.csv, cardiac_arrest_1y.csv, cardiac_arrest_3y.csv, and cardiac_arrest_5y.csv.</p>
 <p>Personally, I want to start with current data so I can get a feel for the data. To do some of my work, I would add some columns to the dataset. I can do it programmatically or through the SQL Query. I prefer to do it in the query like so:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">USE</span> Reporting_System;</span>
@@ -582,12 +708,12 @@ font-weight: bold;
 font-style: inherit;">ORDER</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">BY</span> Response_Date;</span></code></pre></div>
+font-style: inherit;">BY</span> Response_Date;</span></code></pre></div></div>
 </div>
 <p>This gives us a columns of elapsed times to determine how long it took us to make the call dispatchable, how long it took to dispatch the call to the first unit, and how long we spent on the phone with the caller.</p>
 <p>Now we load the dataset, for this I’m using the R programming language. We can do it in Python as well, but I’ve been working with R a lot longer.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">df_cacy <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">df_cacy <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -605,11 +731,11 @@ font-style: inherit;">","</span>, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">stringsAsFactors =</span> <span class="cn" style="color: #8f5902;
 background-color: null;
-font-style: inherit;">TRUE</span>)</span></code></pre></div>
+font-style: inherit;">TRUE</span>)</span></code></pre></div></div>
 </div>
 <p>Now that we have the dataset loaded, we can go through the dataset to clean it up. Most of these calls <em>should</em> have all of the components that we’ve selected. If there are things missing, then we can go in and clean those up to remove missing data points. For this dataset, this is the code I would use to clean up any missing values:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Check the data</span></span>
 <span id="cb4-2"><span class="fu" style="color: #4758AB;
@@ -811,7 +937,7 @@ font-style: inherit;">$</span>Call_Processing_Time, <span class="sc" style="colo
 background-color: null;
 font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">1</span>)</span></code></pre></div>
+font-style: inherit;">1</span>)</span></code></pre></div></div>
 </div>
 <p>This should clean the data of any missing values. This is also the start of new questions. How much data is missing? Where is it missing at? Finally, why is the data missing? Most of the data is likely not missing at random. I expect that most of the missing data comes from calls that were not completed. When the other three benchmark datasets are compared, we can see how the percentage of calls missing data compares over 1, 3, and 5 years. If the comparisons are in line, then you move on, if they aren’t, there’s question number 4, what’s different now?</p>
 <p>The next thing that I check for would be negative values in the final three columns, Call_Entry_Time, Call_Queue_Time, and Call_Processing_Time. These varables represent the elapsed times between events in the centre that measure our telecommunicators actions. If we see any values in these variables that are negative, then we know, instantly, that the calls have been closed then reopened. The fifth questions becomes why are some calls being reopened? My recommendation is to take those calls, and the calls with missing values if they can be proven to be full calls, and create a new dataset. That list can be exported to an Excel spreadsheet and used for future investigation. This is the first potential project that has been generated by this work.</p>
@@ -819,7 +945,7 @@ font-style: inherit;">1</span>)</span></code></pre></div>
 <p><em>In a quick glance after running the queries, I found that none of my entries for this year had any missing data and that historical data had missing data in the Time_First_Unit_Assigned column. These would be calls that were received, but never ran for whatever reason. This is what I expected to see in real data.</em></p>
 <p>Once the call list has been cleaned, the next step that I recommend is to look at individual variables. I prefer to start with the numeric variables and create a summary. I have a custom summary that I use for my analyses. I feel like it serves my needs and gives me some insights that I will confirm when I create visuals for others. That summary can be found here:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Custom summary function</span></span>
 <span id="cb5-2">custom_summary <span class="ot" style="color: #003B4F;
@@ -987,12 +1113,12 @@ font-style: inherit;">TRUE</span>), <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span>)</span>
 <span id="cb5-15">  )</span>
-<span id="cb5-16">}</span></code></pre></div>
+<span id="cb5-16">}</span></code></pre></div></div>
 </div>
 <p>This custom summary gives me a very good picture of the data prior to creating any visualizations. The minimum and maximum values give me a good range for the data, while the mean and median paint a picture of the central tendencies of the data. The standard deviation and variance can give me some information about the overall spread of the data, the skewness and kurtosis values give me the shape of the distribution, and the Q1 and Q3 values suggest the boundaries for outlier identification. All of this together now gives me a good numeric ‘<em>visualization</em>’ of the data and now I can focus on asking new questions of the numeric data.</p>
 <p>Additionally, I will want to break the Response_Date column into some constituent components such as the day of the week, the day of the year, the hour, and the week number. These will allow me to create different pictures. To get those, I typically generate them from the SQL Query. That updated query would look like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb6-1"><span class="kw" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb6-1"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">SELECT</span> Master_Incident_Number <span class="kw" style="color: #003B4F;
@@ -1123,11 +1249,11 @@ font-weight: bold;
 font-style: inherit;">ORDER</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">BY</span> Response_Date;</span></code></pre></div>
+font-style: inherit;">BY</span> Response_Date;</span></code></pre></div></div>
 </div>
 <p>or you can do it programmatically in R like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Function to extract day of week (DDD), week number, year, and hour</span></span>
 <span id="cb7-2"><span class="co" style="color: #5E5E5E;
@@ -1186,12 +1312,12 @@ font-style: inherit;">!!</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">sym</span>(Response_Date))</span>
 <span id="cb7-10">    )</span>
-<span id="cb7-11">}</span></code></pre></div>
+<span id="cb7-11">}</span></code></pre></div></div>
 </div>
 <p>Either way, thsis allows us new data to generate new questions and answers. Is there a specific day of the week that has more events than others? Is there a certain time of the year that has more events? Are there specific hours out of the day that see more events? These questions could impact staffing, training, and could present opportunities to partner with the local hospitals to create better synergies for positive patient experiences and outcomes. So we’re now at 8 questions from our starting point as well as a couple of different projects. And when you take a look at the summaries for each of the elapsed times and compare them to the 1, 3, and 5 year summaries, you can not only see trends but find new questions when doing the comparisons to those benchmarks.</p>
 <p>From here, for the more visually minded, we can create two or three visualizations for each of the three elapsed time columns. I recommend a histogram or density plot, a blox plot, and a QQ plot. The last one will show you, visually, what the skewness and kurtosis told you numerically. This code should create those for you. Just remember that you’re doing it for each of the three variables.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Historgram and Density plt</span></span>
 <span id="cb8-2"><span class="fu" style="color: #4758AB;
@@ -1303,12 +1429,12 @@ font-style: inherit;">ggtitle</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Boxplot of Call Entry Times by Day"</span>)</span>
 <span id="cb8-16"></span>
-<span id="cb8-17">box1</span></code></pre></div>
+<span id="cb8-17">box1</span></code></pre></div></div>
 </div>
 <p>Comparing the results of the current year to the benchmarks gives you visual verification of what you’ve seen numerically. These are also great for the subsequent reports because your audience is now able to visualize what you’re telling them. This may lead to additional questions about the internal working of the data. This could add to the question and project totals that you have generated.</p>
 <p>Visualizations are not simply for numeric data. We can create boxplots for the factor or categorical data. For example, this allows us to look at each day of the week and see how many cardiac arrest calls we have for each day of the week.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">df_cacy<span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">df_cacy<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>DOW <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -1405,11 +1531,11 @@ background-color: null;
 font-style: inherit;"># Adjusts the vertical position of the count</span></span>
 <span id="cb9-12">  )</span>
 <span id="cb9-13"></span>
-<span id="cb9-14">barDOW</span></code></pre></div>
+<span id="cb9-14">barDOW</span></code></pre></div></div>
 </div>
 <p>If anything stands out in this, we can also check that against the benchmark datasets and determine if this normal or if it’s standing out for a different reason. This can also be generated for each hour of the day with minor changes to the code. This leads us to another plot that can be visually appealing while also giving us some excellent information. We can use a ridgeline plot to give us a count of events per hour per doy. Are there specific times and days which see more events than others. It’s likely that we would see different patters if we examined traffic stops. I expect, if we ran this out, we would not see any particular combination stand out.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Aggregate data to get counts per hour per day</span></span>
 <span id="cb10-2">hourly_calls <span class="ot" style="color: #003B4F;
@@ -1550,11 +1676,11 @@ font-style: inherit;">grid =</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">TRUE</span>)</span>
 <span id="cb10-17"></span>
-<span id="cb10-18">ridge_plot</span></code></pre></div>
+<span id="cb10-18">ridge_plot</span></code></pre></div></div>
 </div>
 <p>Another thing we can do is look at the geographic distribution of cardiac arrests in the city. Where do we have more of them? that might help us position our resources better and assist us with patient care by ensuring that people at those locations are properly trained in CPR to help get hands on chest faster which increases the likelihood of survival. This code will create and display a map of the City with the locations marked. Hovering over any individual data point will also give us call information so we can see other details.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Convert integer coordinates to decimal degrees</span></span>
 <span id="cb11-2"><span class="co" style="color: #5E5E5E;
@@ -1873,13 +1999,14 @@ background-color: null;
 font-style: inherit;"># Uncomment to save the cluster map</span></span>
 <span id="cb11-68"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># saveWidget(cluster_map, "alexandria_calls_cluster_map.html", selfcontained = TRUE)</span></span></code></pre></div>
+font-style: inherit;"># saveWidget(cluster_map, "alexandria_calls_cluster_map.html", selfcontained = TRUE)</span></span></code></pre></div></div>
 </div>
 <p>We have set this up to show us where all of the calls are and when we hover over an individual call, it will give us information about the call including the master incident number, the address, the date and time of when it was generated, and the amount of time that passed before it went to queue, was dispatcahed, and how long we were on the call. Seeing the geographic clusters will likely identify nursing homes or other care facilities, so if we see clusters in other places, we may want to look into why a cluster of cardiac arrests are there. These clusters can also be compared against the benchmarks to see if they look the same. If they don’t, we can start asking why we have a new cluster. That increases the number of questions that we can ask and the number of projects we have in front of us.</p>
 <p>A final example of a new research project would be to create a binary variable in hand with deeper research to determine if calls were originally coded as cardiac arrests or if they were coded and dispatched as something else and changed to cardiac arrests later in the process. That examination could show how accurate we were in triaging and handling these calls. I will leave that code for another day and another post.</p>
 <p>From here, you can go anywhere you want to and find answers to the questions that you’ve found. I hope that this showed exactly how you can start with one question, what can we learn about cardiac arrests, and turn it into many questions and projects that show how much is left to know.</p>
 
 
+</section>
 
  ]]></description>
   <category>examples</category>

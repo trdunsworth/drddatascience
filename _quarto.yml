@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - assets/**
 
 website:
   title: "Dr. D's Data Science"
@@ -30,7 +32,7 @@ acronyms:
   # Default rendering style for first/next uses
   style: long-short
   # Where to insert the List of Acronyms automatically (or set to false)
-  insert_loa: beginning
+  insert_loa: false
   
 format:
   html:

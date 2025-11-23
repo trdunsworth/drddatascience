@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tony Dunsworth, Ph.D.">
-<meta name="dcterms.date" content="2025-10-26">
+<meta name="dcterms.date" content="2025-11-22">
 
-<title>Chronomancer Prestige Class 5e – Dr.&nbsp;D’s Data Science</title>
+<title>Deception in Graphics and Statistics – Dr.&nbsp;D’s Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,13 +130,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#acronyms_HEADER_LOA" id="toc-acronyms_HEADER_LOA" class="nav-link active" data-scroll-target="#acronyms_HEADER_LOA">List Of Acronyms</a>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The Problem</a>
   <ul class="collapse">
-  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a>
-  <ul class="collapse">
-  <li><a href="#chronomancer" id="toc-chronomancer" class="nav-link" data-scroll-target="#chronomancer">Chronomancer</a></li>
+  <li><a href="#numerical-deception" id="toc-numerical-deception" class="nav-link" data-scroll-target="#numerical-deception">Numerical Deception</a></li>
   </ul></li>
-  </ul></li>
+  <li><a href="#my-two-cents" id="toc-my-two-cents" class="nav-link" data-scroll-target="#my-two-cents">My two cents</a></li>
   </ul>
 </nav>
     </div>
@@ -145,11 +144,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chronomancer Prestige Class 5e</h1>
+<h1 class="title">Deception in Graphics and Statistics</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Dungeons &amp; Dragons</div>
-    <div class="quarto-category">Wizard</div>
-    <div class="quarto-category">Subclasses</div>
+    <div class="quarto-category">data science</div>
+    <div class="quarto-category">analyses</div>
+    <div class="quarto-category">data integrity</div>
+    <div class="quarto-category">deceptive statistics</div>
   </div>
   </div>
 
@@ -167,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 26, 2025</p>
+      <p class="date">November 22, 2025</p>
     </div>
   </div>
   
@@ -179,37 +179,93 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="acronyms_HEADER_LOA" class="level1 loa">
-<h1 class="loa">List Of Acronyms</h1>
-<dl>
-<dt><span id="acronyms_PSAP">PSAP</span></dt>
-<dd>
-Public Safety Answering Point
-</dd>
-<dt><span id="acronyms_SMS">SMS</span></dt>
-<dd>
-Short Message Service
-</dd>
-<dt><span id="acronyms_TDD">TDD</span></dt>
-<dd>
-Telecommunications Device for the Deaf
-</dd>
-<dt><span id="acronyms_TTY">TTY</span></dt>
-<dd>
-TeleTYpewriter
-</dd>
-</dl>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>First off, yes, this is a much different post than some of the ones that I have previously written. Regular readers will note that I typically write about data and 9-1-1 centers. This is a much different and, hopeful, more fun post. I’ve played Dungeons &amp; Dragons since I was a pre-teen and have played every version of it from the red box set through 5e. My wife has also played D&amp;D for a little longer than I. We have both had a lot of fun with this over the years. This post was started by a conversation my wife and I had earlier when discussing someone we both know working in security and how he was unaware that I had worked in security years ago when I first graduated from university the first time. During that time, I worked a post at a grocery store distribution center and during my rounds, I carried a large clock that was used to prove that rounds have been completed. It consisted of a clock face with a tape spool inside and a keyhole where a key on the wall was inserted and typed against the tape.</p>
-<p>As we discussed what I used to do as a security guard, we started laughing about how the clock could have been used as a weapon had I encountered anyone. The thing was heavy enough to crack someone’s skull with a solid blow. It weighed about 3 almost 4 kilos and could be considered a little heavier than a war hammer. So we started discussing what the damage would look like in D&amp;D terms. That then led to my wife suggesting a subclass of a wizard and I came up with the name of Chronomancer. So here is our version of it to be used in a 5e setting. <em>Yes, we do know that others have thought of this as well. You can use it if you wish, or not</em></p>
-<section id="chronomancer" class="level3">
-<h3 class="anchored" data-anchor-id="chronomancer">Chronomancer</h3>
-<p>The Chronomancer is a subclass of Wizard. So in this instance, you would have to have a few levels of Wizard and have the ability subclass in your campaign. We’ve considered this as a prestige class. These would be wizards who are obsessed with time, using it, controlling it, changing it. It could be for any reason, the desire for immortality, time saved them from a bad situation, etc.</p>
-
-
+<p>My wife and I were at our sister’s place and while we were there, I found a graphic on Facebook that bothered me greatly. I make it a point to ensure that all of my work can rigorously withstand scrutiny. I won’t tell you something if I can’t show you how I got it and why it’s the way it is. The post, put there by an old high school classmate, showed a graphic that disturbed me because it appeared to be deceptive. This the graphic in question:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/deceptive_graphic3.jpg" class="img-fluid figure-img"></p>
+<figcaption>Deceptive Graphic</figcaption>
+</figure>
+</div>
+<p>This graphic <a href="https://personalfinancewizards.org/blog/the-pfw-blog/food-stamps-by-ethnicity-s809">appears</a> originally on the blog of <a href="https://personalfinancewizards.org/">The Personal Finance Wizards</a>. This group, per <a href="https://www.bizapedia.com/ar/the-personal-finance-wizards-llc.html">bizapedia.com</a>, is a registered LLC in Arkansas and has the Asa Hutchinson Law Group as its registered agent. So, knowing that Mr.&nbsp;Hutchinson is a former Republican Governor of Arkansas, you can expect a conservative bent and misleading information.</p>
+<p>The LLC describes itself as <em>“group of personal finance experts dedicated to providing content on money, savings, and investing education.”</em>. Also, to their credit, their website does have a disclaimer that states:</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The Personal Finance Wizards, LLC makes no claim or representation as to the registered trademarks or copyrighted works of others, nor any claim as to the data and tools cited, sourced or referenced herein.</p>
+</blockquote>
+</div>
+</div>
+<p>So, in essence, <em>“We’ll put this out there, but we’re not responsible if it’s wrong or misleading!”</em> That is an ethical problem in my opinion. As my wife and I discussed the graphic, we found more problems with it, along with a lot of people who accepted the <em>intent</em> of the message that comes from the graphic.</p>
+<p>I ended up speaking to my <a href="https://northernnecktoastmasters.toastmastersclubs.org/">Toastmasters club</a> about the graphic and how it was misleading and deceptive. After discussing the speech with my wife, I decided that I had the material to turn it into a blog post as an example of misleading your audience with statistics and presentation.</p>
+</section>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<p>The graphic, as seen above, is a horizontal bar chart that lists different “ethnicities” that receive <a href="https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program">SNAP</a> benefits. The first problem is how they define “ethnicity”. There is a blending, deliberate, in my opinion of ethnicity, race, and national origin. For example, the first listing in the graphic, Afghani, is misleading because it does not make clear if they are discussing ethnic Pashtuns who comprise about 42% of Afghanis and who may also be called Afghani in country of if it comprises other ethnic groups prevalent in Afghanistan such as Tajiks, Hazaras, Uzbeks, or other ethnic or tribal groups who reside in Afghanistan. Further, this graphic does not distinguish between immigrants from Afghanistan who have been in the US, legally, for more than five years and meet the other <a href="https://www.fns.usda.gov/snap/recipient/eligibility">eligibility requirements</a> and US Citizens who are ethnically connected to Afghanistan.</p>
+<p>Additionally, some “ethnicities” such as <em>Arab</em> reflect vastly different groups that are loosely classified as an ethnic group by lingustic heritage, unless they are from a specific country then the nationality is reflected. This appears in the entry for Iraqi, where Arabs, Kurds, Assyrians, Armenians, and Turkmen can all be classified as Iraqis. Additionally, some groups such as the Yazidi, are religious minorities who may be classified as Iraqi.</p>
+<p>In the graphic, Pacific Islanders are represented by a Hawaiian Flag, which feels very misleading. The Caribbean is listed as a single “ethnicity”, but there are several different ethnic groups who live in the area, and the graphic has separate distinctions for many nationalities in the region, regardless of their ethnicity. LatinX communities are also separated by nationality and not ethnicity.</p>
+<p>For “ethnicities” represented with an American flag, Indigenous Americans are listed as “Native”, African-Americans are listed as “Blacks”, and then there are, towards the bottom, “Whites”. By now, you see the picture. The implication is that immigrants are the problem. This plays fast and loose with the data.</p>
+<section id="numerical-deception" class="level3">
+<h3 class="anchored" data-anchor-id="numerical-deception">Numerical Deception</h3>
+<p>Since neither the grpahic shown above nor the original blog post are clear about how a household is defined and ethnically classified, the percentages are even doubly deceptive. If you use ethnicity and nationality together, several sources including <a href="https://www.migrationpolicy.org/article/afghan-immigrants-united-states">this one</a> place the population at around 200,000 individuals. If <strong><em>all</em></strong> of those individuals were eligible for SNAP benefits, then the eligible population would be about 91,000 people. That’s not a significant portion of the population of the United States. In fact, the same group that published this graphic, published a second article three days later that broke the same data down by volume. That graphic, shown below, paints an entirely different picture.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/deceptive_graphic2.png" class="img-fluid figure-img"></p>
+<figcaption>Deceptive Graphic2</figcaption>
+</figure>
+</div>
+<p>In fact, from this graphic, the Afghani ethnicity does not appear in the list. The number of households is that small. Instead, “Whites”, at the bottom of the percentages, just above Italians and Indians, turns out to be the largest in volume. This is where the deliberate deception skews the message. The first published graphic had an agenda. “Look at all the foreigners getting things that you don’t.” It’s not true, but it makes for good outrage bait. The group doesn’t define the terms, so they don’t have to clarify what they want to imply. They made the dog whistle at just the right frequency to ensure the point was made and people are distracted from the truth and swallow the deception like pablum.</p>
+<p>After publishing both graphics they add text in the second entry to exonerate themselves:</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>It’s important to note that the graph highlights a selection of ethnicities we felt would be most relevant and engaging for our audience. With hundreds of ethnic groups in the U.S., it’s not possible to include every single one in a single post. If there is a group you would like to see represented, let us know or check out the full table available from the U.S. Census.</p>
+</blockquote>
+</div>
+</div>
+<p>So the second graphic is cherry-picked to both give you some truth, but also continue to stoke the fire from the earlier post. I do appreciate that they added additional informative text:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>It’s also worth noting that we used a logarithmic scale for the y-axis with tick marks at 10K, 100K, 1M, and 10M to better display the wide range in SNAP household counts. This approach helps make the lower numbers like those under 1M visible while still keeping the larger outliers like the White and Black data points in context. Without the log scale, most of the smaller groups would practically be invisible on the graph.</p>
+</blockquote>
+</div>
+</div>
+<p>This admission is good. We should always make clear to our audience when the scales have been changed for legibility. However, I disagree with their assessment that this keeps those points in context. It merely presents the data in a way to ensure that there is some legibility and counts on the fact that their audience may not read the remainder of the post.</p>
 </section>
 </section>
+<section id="my-two-cents" class="level2">
+<h2 class="anchored" data-anchor-id="my-two-cents">My two cents</h2>
+<p>I think that I’ve demonstrated how this was a deliberate attempt to misinform an audience and, equally, play to an intended audience’s biases. That’s unethical. I work hard, as do most analysts that I know, to present factual data in a way that ensures the data tells its story honestly. We strive to inform and to give our audiences the tools to make the best decisions. If called upon, I rely on my subject matter knowledge to assist in interpretation, but I’m clear as to what is my opinion and interpretation and what the data says. There has to be a distinction between the two. These folks didn’t do that. They presented the data in a way that allowed for a misunderstanding of the facts and only after other groups such as <a href="https://www.aljazeera.com/news/2025/10/29/fact-checking-a-viral-chart-on-us-food-stamps-recipients-race-ethnicity">Al Jazeera</a>, <a href="https://api.politifact.com/article/2025/oct/27/food-stamps-SNAP-ethnicity-chart/">Politifact</a>, and <a href="https://www.wired.com/story/disinformation-conspiracy-theories-snap-benefits/">Wired Magazine</a> called attention to the misinformation did they “correct” their data. Additionally, they hide behind the disclaimers and caveats. <em>It wasn’t us……, we just <strong>shared</strong> something with you.</em> “It’s not our fault if <strong>you</strong> read something else into it.” Again, this is not ethical behaviour. It’s deceptive and manipulative.</p>
+<p>I will have other posts on here where I talk about my work and I will do my best, <strong>each time</strong> to fully inform you and ensure that you have the facts and my interpretation. I will also ensure that I make the difference between the information and my interpretation clear. You deserve that.</p>
+<p>Thank you for reading this longer post.</p>
+
+
 </section>
 
 </main> <!-- /main -->
