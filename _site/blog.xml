@@ -9,7 +9,7 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.8.26</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Sat, 22 Nov 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Deception in Graphics and Statistics</title>
@@ -126,26 +126,6 @@ Note
 
 
 
-<section id="acronyms_HEADER_LOA" class="level1 loa">
-<h1 class="loa">List Of Acronyms</h1>
-<dl>
-<dt><span id="acronyms_PSAP">PSAP</span></dt>
-<dd>
-Public Safety Answering Point
-</dd>
-<dt><span id="acronyms_SMS">SMS</span></dt>
-<dd>
-Short Message Service
-</dd>
-<dt><span id="acronyms_TDD">TDD</span></dt>
-<dd>
-Telecommunications Device for the Deaf
-</dd>
-<dt><span id="acronyms_TTY">TTY</span></dt>
-<dd>
-TeleTYpewriter
-</dd>
-</dl>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>It’s been nearly a year since I defended my dissertation. In that time, I’ve found that people are intrested in knowing what it’s about until I try to explain it, then they feel that they don’t understand it and the discussions get lost. So, while I was playing FreeCell solitaire this morning, I thought of an experiment that could help me work with forecasting stochastic processes, including adding conformal predictions to the mixture. Part of it is because I want to keep my data science skills sharp. I also realized that this would work well as a better explanation of my dissertation also. So my plan is to split everything into three parts. This part is going to discuss stochasticity and how it plays a part of forecasting. The second part will be focused low-code and zero-shot forecasting models. The final part will be marrying these together, like I did in my dissertation, for 9-1-1 centres and how my dissertation can serve as a foundation for future research on both forecasting polystochastic processes and finding even better ways to address forecasting in centers and why it will be important.</p>
@@ -180,7 +160,6 @@ TeleTYpewriter
 
 </section>
 </section>
-</section>
 
  ]]></description>
   <category>data science</category>
@@ -198,26 +177,6 @@ TeleTYpewriter
 
 
 
-<section id="acronyms_HEADER_LOA" class="level1 loa">
-<h1 class="loa">List Of Acronyms</h1>
-<dl>
-<dt><span id="acronyms_PSAP">PSAP</span></dt>
-<dd>
-Public Safety Answering Point
-</dd>
-<dt><span id="acronyms_SMS">SMS</span></dt>
-<dd>
-Short Message Service
-</dd>
-<dt><span id="acronyms_TDD">TDD</span></dt>
-<dd>
-Telecommunications Device for the Deaf
-</dd>
-<dt><span id="acronyms_TTY">TTY</span></dt>
-<dd>
-TeleTYpewriter
-</dd>
-</dl>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>First off, yes, this is a much different post than some of the ones that I have previously written. Regular readers will note that I typically write about data and 9-1-1 centers. This is a much different and, hopeful, more fun post. I’ve played Dungeons &amp; Dragons since I was a pre-teen and have played every version of it from the red box set through 5e. My wife has also played D&amp;D for a little longer than I. We have both had a lot of fun with this over the years. This post was started by a conversation my wife and I had earlier when discussing someone we both know working in security and how he was unaware that I had worked in security years ago when I first graduated from university the first time. During that time, I worked a post at a grocery store distribution center and during my rounds, I carried a large clock that was used to prove that rounds have been completed. It consisted of a clock face with a tape spool inside and a keyhole where a key on the wall was inserted and typed against the tape.</p>
@@ -227,7 +186,6 @@ TeleTYpewriter
 <p>The Chronomancer is a subclass of Wizard. So in this instance, you would have to have a few levels of Wizard and have the ability subclass in your campaign. We’ve considered this as a prestige class. These would be wizards who are obsessed with time, using it, controlling it, changing it. It could be for any reason, the desire for immortality, time saved them from a bad situation, etc.</p>
 
 
-</section>
 </section>
 </section>
 
@@ -450,26 +408,6 @@ TeleTYpewriter
 
 
 
-<section id="acronyms_HEADER_LOA" class="level1 loa">
-<h1 class="loa">List Of Acronyms</h1>
-<dl>
-<dt><span id="acronyms_PSAP">PSAP</span></dt>
-<dd>
-Public Safety Answering Point
-</dd>
-<dt><span id="acronyms_SMS">SMS</span></dt>
-<dd>
-Short Message Service
-</dd>
-<dt><span id="acronyms_TDD">TDD</span></dt>
-<dd>
-Telecommunications Device for the Deaf
-</dd>
-<dt><span id="acronyms_TTY">TTY</span></dt>
-<dd>
-TeleTYpewriter
-</dd>
-</dl>
 <p>I recently wrote about a presentation that I gave at <a href="https://rmc.edu">Randolph Macon College</a> concerning using data analyses in 9-1-1 centres. During the Q&amp;A section, someone asked me how I would recommend getting started. My answer, then and now, is pick a question and dive into that and new questions will start coming.</p>
 <p>I thought, perhaps, I should come up with an example of what I mean. In our centre, our medical director has requested that we do quality checks on every cardiac arrest call that we receive. So, here is the starting question: what can we learn about the cardiac arrest calls in the city? With that as the opening question, the first step is collecting the data. To start, I plan on collecting four datasets. I can create all of them using SQL. Since I work on SQL Server or T-SQL flavoured databases, the query, for our dispatch software’s databases looks something like this:</p>
 <div class="cell">
@@ -2006,7 +1944,6 @@ font-style: inherit;"># saveWidget(cluster_map, "alexandria_calls_cluster_map.ht
 <p>From here, you can go anywhere you want to and find answers to the questions that you’ve found. I hope that this showed exactly how you can start with one question, what can we learn about cardiac arrests, and turn it into many questions and projects that show how much is left to know.</p>
 
 
-</section>
 
  ]]></description>
   <category>examples</category>

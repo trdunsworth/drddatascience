@@ -8,7 +8,7 @@ execute:
 
 Testing Python execution:
 
-::: {#88fba72c .cell execution_count=1}
+::: {#5ab7eb3f .cell execution_count=1}
 ``` {.python .cell-code}
 import pandas as pd
 import numpy as np

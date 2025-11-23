@@ -1,0 +1,20 @@
+---
+title: "You never know what is interesting"
+author: "Tony Dunsworth, Ph.D."
+date: "2025-08-04"
+categories: [updates, news]
+execute: 
+  eval: false
+---
+
+About a month or so back, I had an opportunity to speak with several people from a company that makes software for public safety entities. I had connected with one of their folks through my [BlueSky account](trdunsworth.bsky.social). After a few preliminary conversations, they wanted to read my dissertation. Trust me folks, when someone asks to read it, you are truly excited. I sent them a copy of it and when it came time to meet with the group, I was excited to learn they **really did** read it!
+
+When we met, they asked me a few questions about it. Overall, they appeared to be impressed with my work. However, the surprise came when I mentioned a small piece of *toy* software I have written. They were immediately interested in this software. They were thinking of new uses for it, beyond my reason for creating it, and asking questions about what I developed and why I made the design choices that I dud. The conversation was very enlightening. I admit that I didn't expect that the [program](https://github.com/trdunsworth/synth911gen2) would be the subject of anyone's interest.
+
+Because I give many presentations around the country about statistics and data use, I use synthetic data in place of real data from a specfic centre for my presentations. It provides better compliance with CJIS and HIPAA regulations because I'm not potentially exposing anyone's data. Granted, I don't ever use the call narrative, but some systems may identify telecommunicators by name, and I don't want to expose that either. In the past, I used [Mostly.ai](https://mostly.ai/) as my first provider. The building process was challenging, not because of any deficiencies on their part. They were kind enough to extend credits to me to dive into the product after I met with them and discussed what I was doing and why. When I created my first datasets using their product, I made mistakes and ended up creating a dataset that had a normal distribution for elapsed times between events. Granted, I will admit that was user error. So, I went through the [NumPy](https://numpy.org/) library and started leveraging different random generators to find the right distribution for the data when compared to actual data from my center.I wrote an analyzer to look over the elapsed times for each interval and report back the distribution and its properties. Once I had those, I matched that to the proper random generator so I would have realistic elapsed times. After I created those, I used that to create my ancillary timestamps. 
+
+When I started making it, I thought of it is as something that I could use to generate data for my speeches and a way to learn more about Python programming. I didn't conceive of any other uses or anyone else being interested. Maybe someone like Mostly might look at it and, possibly, give me suggestions to make it better or something like that, but I didn't expect anyone else to find uses for it or inspire me to see different uses for it. However, like the post about [Asking the First Question](https://drddatascience.com/posts/20250415/), it was someone else who inspried me to take things in a direction I hadn't expected.
+
+I hope you find this post useful. Thanks for reading!
+
+---
