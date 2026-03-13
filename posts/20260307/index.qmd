@@ -1,14 +1,17 @@
 ---
-title: "Data in the PSAP"
+title: "Why is Staffing So Hard?"
 author: "Tony Dunsworth, Ph.D."
-date: "2026-03-07"
+date: "2026-03-13"
 categories: [data science, analyses, hosting, thoughts]
 execute:
   eval: false
 ---
 
-## What data exists in a 9-1-1 centre?
+## Is staffing hard?
 
-Recently, at a conference I attended, I heard a panel discussion about AI and someone from the audience asked about data ownership and who owns your data if you choose to share it with a company who offers an AI enhanced product. While that is an excellent question, it misses the mark in one respect, who owns your data when you share access to any company? The response suggested that you had to consult your contract. The answer was right, but the answer didn't illuminate the question. The problem is that many centre directors and executives don't know as much about the data in a centre as they would like. That isn't a criticism. Honestly, they have so much on their plate that they have or need to have someone else to know that information.
+During a day when I didn't feel so good, I saw an interesting poll question on LinkedIn. The poster asked if PSAPs were considering predictive staffing tools. Since I've been working on the same thing in different ways for a while, I reached out to the poster and we're going to meet in the near future to discuss how they are looking to approach the problem versus how I've been approaching it. So, I thought I would share some of my thoughts on how to approach this because I know I've looked at the issue differently than most people. It's always good to get another perspective and see how that might influence my own work.
 
-I had the idea for creating a working group in the industry trade organisation, to write guidance documents on data management and data governance. As I consulted with some colleagues who I knew were sympathetic to the idea, we realized that management and governance weren't sufficient. Data Literacy was also an important component. I submitted the idea and found pushback from across the industry. The pushback was that data was already covered by several GIS groups. That exposed me to a glaring gap in understanding. There is so much data in the industry and not all of it is geographic. Every call to a centre is logged by the phone and the phone handling system. Every service call generated creates a tonne of data, including: who called, what did they call about, where is the incident, when did we get it, when did we get there, etc. Even our partner's assets, including units and apparatus, are data points that we can track, analyse, and understand. We possess tons of data in several places. I guess, to be honest, that we should consider data inventories to be part of data literacy. You need to know what data you have an where it lives.
+Yes, the short answer is staffing is hard. There are several non-trivial variables that have to be addressed to estimate how many people you need to staff any centre, let alone a PSAP. Since many centres and consultants use some version of the Erlang family, I started using that as a framework for how to consider the problem. For the Erlang-C model, you need to estimate the arrival rate of calls, the average handling time of calls, and the acceptable level of service (e.g., percentage of calls answered within a certain time frame). I did my dissertation on the first part of that, estimating the arrival rate of calls. 
+
+### Arrival Rates - Forecasting
+
