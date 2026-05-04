@@ -15,3 +15,6 @@ Yes, the short answer is staffing is hard. There are several non-trivial variabl
 
 ### Arrival Rates - Forecasting
 
+How many calls do you get? How many do you expect to receive in the future? These are questions that exist for a PSAP, but most centres do not know how to write a forecast. The standard suggestion is to take your most recent data and add a reasonable percentage, between 3 and 5 percent, and report that as the forecasted call volume. After that, you assume the busiest hour is the base for the day and account for your shifts.
+
+The problem with this is that it creates a static forecast that doesn't address many other factors. For me, outside of the D.C. metro area, do Washington Commanders games have an impact on call volumes in thed suburbs? What impact does the weather have on call volumes? Do certain types of calls increase during certain times of the year? Are there any trends in the data that suggest call volumes are increasing or decreasing over time? These are all questions that can be addressed with a more dynamic forecasting model that takes into account historical data, seasonal trends, and other relevant factors. The biggest challenge in that is that most centres 
