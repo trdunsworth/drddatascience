@@ -15,10 +15,10 @@ On another note, between my CompTIA work and my regular paid gig, I've spent a l
 
 ### Projects
 
-I have a pretty hefty electronic to-do list right now. I have a few book reviews outstanding. I just got a new one with Manning. I have done a prior review of this book. This would be the final proof review. Personally, I wish I got credit in the book for it, but I don't think that comes with the process. We will see what happens next.
+I have a pretty hefty electronic to-do list right now. I have a few book reviews outstanding. I just got a new one with Manning. I have done a prior review of this book. This would be the final proof review. Personally, I wish I got credit in the book for it, but I don't think that comes with the process. We will see what happens next.I have a new website to work on for our LLC. [Dunsworth, Mann, and Associates, LLC](https://dunsworth_mann.com) I know that it isn't live yet, but when it is, the link will take you there.
 
  I also ran across an interesting article about time series forecasting and how models are not tasked correctly, by the author's opinion. In [Why Most Time Series Models Fail Before They Start](https://medium.com/r-evolution/why-most-time-series-models-fail-before-they-start-febbdc1918dc), Fatih Tüzen discusses his procedures to dive into the data and ensure that forecasting models behave as expected and give honest outputs. I think that I want to try the technique with 9-1-1 centre volume data. I believe that it will be a challenge to the workflow, but that's what I want. He wrote it the code in R, so I'm really stoked to see that. It reminds me that if I had nothing else to do, I wouldn't mind trying to port [timecopilot](https://timecopilot.dev/) to R if it were possible.
 
  ### Other Thoughts
 
- 
+ So, about that LLC I referenced above. My wife and I figured that we would start an LLC so we can offer analytics, research, and other statistical processes to 9-1-1 centres around the country and, wishful thinking, around the world. We've been discussing it for a while, but there was always a reason to delay. Things have come together and now we've started the venture and I'm hoping that someone reading this may believe that their centre could use our services.
