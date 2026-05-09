@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tony Dunsworth, Ph.D.">
-<meta name="dcterms.date" content="2025-08-30">
+<meta name="dcterms.date" content="2026-05-03">
 
-<title>Getting Certified – Dr.&nbsp;D’s Data Science</title>
+<title>Where is the data? – Dr.&nbsp;D’s Data Science</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -127,19 +127,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#thoughts-on-data-in-the-9-1-1-centre." id="toc-thoughts-on-data-in-the-9-1-1-centre." class="nav-link active" data-scroll-target="#thoughts-on-data-in-the-9-1-1-centre.">Thoughts on data in the 9-1-1 centre.</a></li>
+  <li><a href="#so-what-data-exists-and-where-is-it" id="toc-so-what-data-exists-and-where-is-it" class="nav-link" data-scroll-target="#so-what-data-exists-and-where-is-it">So what data exists and where is it?</a></li>
+  <li><a href="#so-thats-what-im-talking-about" id="toc-so-thats-what-im-talking-about" class="nav-link" data-scroll-target="#so-thats-what-im-talking-about">So that’s what I’m talking about</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Getting Certified</h1>
+<h1 class="title">Where is the data?</h1>
   <div class="quarto-categories">
     <div class="quarto-category">data science</div>
-    <div class="quarto-category">certification</div>
-    <div class="quarto-category">studying</div>
+    <div class="quarto-category">analyses</div>
+    <div class="quarto-category">9-1-1</div>
+    <div class="quarto-category">data lineage</div>
   </div>
   </div>
 
@@ -157,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 30, 2025</p>
+      <p class="date">May 3, 2026</p>
     </div>
   </div>
   
@@ -169,14 +178,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>As my readers know, from following this blog, I work with <a href="https://www.comptia.org/en-us/">CompTIA</a> on developing certification exams for Database Administrators and Data Analysts. One of the criteria for sunject matter experts is that we hold a valid CompTIA certification outselves. Thankfully, they were gracious enough to suspend that for me while I was finishing my Ph.D.&nbsp;Now that I’ve finished it, I know that I have to start working on obtaining a certification. At one point, I held four CompTIA certfications, but I sadly allowed them to lapse because I was working on a Masters in Data Analytics. The ones that I held were the A+, the Network+, the Security+ and the Project+ certs. I suppose that, with a little review time, I could retake the exams and obtain all four of them. However, I won’t make use of them in my day job any longer, so it feels like it defeats the purpose.</p>
-<p>While we work on the exams, CompTIA reminds us to ensure that we focus on things that the target audience would acutally need to know or do in their daily work. I think that is an excellent idea. So, I’m going to follow the same advice for the selection of the certification I am choosing to pursue. In this case, I’m starting to study for the <a href="https://partners.comptia.org/docs/default-source/resources/comptia-datax-dy0-001-exam-objectives-(5-0)">DataX</a> exam. I applied to work on this exam, but I was told that my qualifications were insufficient. At first, I was surprised because I thought that my resume was impressive enough to work on this exam. In retrospect, I can see where I fell short. While I had a lot of experience in data analytics and statistics, I wasn’t working as a data scientist on a daily basis, so I was just a bit short. I might reapply after I get the certification since I think the combination of passing the exam and having the Ph.D.&nbsp;might qualify me.</p>
-<p>Until then, like anyone else, I have to study to prepare for the exam. So far, to do that, I picked up a book of questions from Amazon and have it on my Fire tablet. I know that most of the questions are not in the CompTIA format, but it’s a good way to review different topics that may be covered on the exam. I’ve also purchased a Udemy course for the exam. I’ve used some of them in the past to help me study and they were effective when I made good use of them. So that’s an emerging discipline issue that I will address.</p>
-<p>The first exam objective, according to the CompTIA document I’ve linked above is mathematics and statistics. It makes sense to me since math is the foundation of analytics and data science. In this domain, most of the topics make sense and I can see how they apply. The question is going to be how in depth do they cover p-values? Everything else in there seems to make sense to me. I think that I will need to review AIC/BIC, type I and II errors, and a few other statistical concepts. The second objective in the domain is probability and synthetic modeling. A lot of this is stuff that I use daily, types of distributions, missingness, skewness and kurtosis. Those two are big with my work on 9-1-1 data. I know that I will want to cover homoskedacity and heteroskedacity in depth. I also need to review Probability Density Function and Probability Mass Function. The third objective in this domain is linear algebra and calculus. I know I need to review that. I have always been a much better statistician than mathematician. I will find additional resources to augment my education in this area. The final objective in this domain is temporal. I know that I will feel comfortable there. I wrote a dissertation on the subject and have built many models I thought that it was interesting to see that survival analysis is included here. I also saw that the objectives list a difference between parametric and non-parametric survival analyses. I want to ensure that I look into this a bit more.</p>
-<p>The second domain covers modeling, analyses, and outcomes. The first objective that exists in this domain is Exploratory Data Analysis (EDA). I think that every data scientist has conducted EDA at least a dozen times in their practice. It’s the first thing that we do with new datasets. All of the topics that are covered under this objective should be pretty straightforward for me and my studies. There are the different types of analyses and the different plots that can be used for visualizing the data. The second objective centers on common data issues such as sparse data, outliers, lagged observations, multicollinearity issues, and other issues. The third objective covers data enrichment such as geocoding, feature engineering, and transforming data. I have done quite a bit of feature engineering when I have built forecasts. I also like that synthetic data is covered here. I’ve done a lot of work recently with synthetic data, so I will feel comfortable there. I think that I want to review a lot of data transformation techniques prior to the exam. Mainly that will be needed because that is something that I don’t do as much of that in my current work. That doesn’t mean that I don’t need to do it, just that I’ve not applied these much.</p>
-<p>I’m going to continue to cover this in more depth while I work on my studies, but this is a good start to get me moving. I have other blog posts that I want to get out to all of you. So, on to the next step.</p>
+<section id="thoughts-on-data-in-the-9-1-1-centre." class="level2">
+<h2 class="anchored" data-anchor-id="thoughts-on-data-in-the-9-1-1-centre.">Thoughts on data in the 9-1-1 centre.</h2>
+<p>Back in January of this year, I went to the National Emergency Number Association’s (NENA) Standards and Best Practices Conference in New Orleans, Louisiana. While I was there, I listened to a panel presentation with several members of the vendor community concerning AI use in centres. The moderator and some of the audience members asked several questions about data, specifically who owns it and who can use the data and how can these companies use it. The panelists’ answers were very similar, “look at your contract”. The answer is correct. However, it also implies something important. It implies that contracts are being signed without a clear understanding of data ownership and use. I came away from the conference thinking that there is a gap in the industry regarding an understanding of data. This was amplified when I filed paperwork to create a new working group in NENA to create an informational document about data ownership, data governance, and data management. The first response from the committee that evaluated my request suggested that the working group wasn’t necessary because the GIS groups had already docmented their data requirements and standards. The feedback implied that GIS was the only data in the industry.</p>
+<p>I believe that the entire process underscored the need for better data literacy, data management practices, and data governance principles in 9-1-1 centres. Thankfully, my working group has been approved and will be moving forward some time in the future. Ironically, most of the first volunteers willing to join this working group and help build the charter are from the GIS community.</p>
+</section>
+<section id="so-what-data-exists-and-where-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="so-what-data-exists-and-where-is-it">So what data exists and where is it?</h2>
+<p>Data, data, everywhere but not a row to analyse. Well, that’s partially true. There is tonnes of data in 9-1-1 centres. Every call generates data. We already have a lot of data built in also. Every unit, every map point, everything is data in the centre. The first step is recognizing that the data is there. For example, when a call comes into the centre, we start with the phone number and depending on whether it’s a cell call, a VOIP call, or a landline call, we have some form of location data. For landline and VOIP calls, we have the ANI/ALI, Automated Number Indicator/Automated Location Indicator, which gives us the registered address for that specific number. For cell calls, depending on the technology available, we can get triangulated location data. Some people use apps that also will increase the accuracy of the location data. As we start talking to the caller, we gather more data about the caller, a call-back number, and start working on the reason for the call. Once we have the basic data, we start sending units to the scene. We determine the units by using data from their locations, their statuses, and their capabilities. We want to match the right resources to the call for service while minimizing the transit time to get there. While those units are en route, we may stay on the line with the caller to gather even more data. Every action and comment associated with the service calls is timestamped. We can use that to understand how well we are doing our jobs.</p>
+<p>Because there are humans in the mix, we already know that we have to look carefully at that data before we make statements about it. For example, when we work with our vendor friends who want to add AI into products to help us serve the public better, we have to ensure that the data they are using is clean, accurate, and free of potential problems such as protected health information (PHI) or personally identifiable information (PII). We also have to ensure that the data is being used in a way that is ethical and respects the privacy of our callers. This is where data management and data governance come into play. We need to have clear policies and procedures in place for how we collect, store, and use data in our centres. We also need to ensure that our staff are trained on these policies and procedures so that they understand the importance of data management and data governance.</p>
+</section>
+<section id="so-thats-what-im-talking-about" class="level2">
+<h2 class="anchored" data-anchor-id="so-thats-what-im-talking-about">So that’s what I’m talking about</h2>
+<p>This is why I want to work on documents that help centre management be better educated about data. So I want to start with data literacy, understanding what data is and what data they possess. After that, I would like to discuss data lineage. I think that centre managers need to understand the data lifecycle from generation to use. Once we have those foundations built, I think we should move into data management and data governance.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

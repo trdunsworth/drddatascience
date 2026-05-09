@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://drddatascience.com/test_python_setup.html.html</loc>
-    <lastmod>2025-08-17T02:00:57.845Z</lastmod>
+    <lastmod>2026-03-28T13:48:29.247Z</lastmod>
   </url>
   <url>
     <loc>https://drddatascience.com/SETUP_COMPLETE.html</loc>
@@ -50,15 +50,15 @@
   </url>
   <url>
     <loc>https://drddatascience.com/blog.html</loc>
-    <lastmod>2025-03-30T04:25:24.756Z</lastmod>
+    <lastmod>2026-03-28T13:48:29.224Z</lastmod>
   </url>
   <url>
     <loc>https://drddatascience.com/about.html</loc>
-    <lastmod>2025-12-20T01:40:59.228Z</lastmod>
+    <lastmod>2026-03-28T13:48:29.211Z</lastmod>
   </url>
   <url>
     <loc>https://drddatascience.com/index.html</loc>
-    <lastmod>2025-03-30T04:25:24.757Z</lastmod>
+    <lastmod>2026-03-28T13:48:29.227Z</lastmod>
   </url>
   <url>
     <loc>https://drddatascience.com/posts/20250105/index.html</loc>
@@ -107,5 +107,13 @@
   <url>
     <loc>https://drddatascience.com/posts/20251226/index.html</loc>
     <lastmod>2026-01-13T02:27:58.313Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/posts/Goings_On_20260506/index.html</loc>
+    <lastmod>2026-05-09T13:05:27.968Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/test_python.html.html</loc>
+    <lastmod>2026-03-28T13:48:29.246Z</lastmod>
   </url>
 </urlset>

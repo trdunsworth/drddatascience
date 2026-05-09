@@ -2,7 +2,10 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/Goings_On_20260506/index.html",
+      "/posts/20260503/index.html",
       "/posts/20251226/index.html",
+      "/posts/Jupyter_Work/index.html",
       "/posts/DeceptiveGraphics/index.html",
       "/posts/20250917/index.html",
       "/posts/Chronomancer/index.html",

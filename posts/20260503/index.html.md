@@ -1,0 +1,24 @@
+---
+title: "Where is the data?"
+author: "Tony Dunsworth, Ph.D."
+date: "2026-05-03"
+categories: [data science, analyses, 9-1-1, data lineage]
+execute: 
+  eval: false
+---
+
+## Thoughts on data in the 9-1-1 centre.
+
+Back in January of this year, I went to the National Emergency Number Association's (NENA) Standards and Best Practices Conference in New Orleans, Louisiana. While I was there, I listened to a panel presentation with several members of the vendor community concerning AI use in centres. The moderator and some of the audience members asked several questions about data, specifically who owns it and who can use the data and how can these companies use it. The panelists' answers were very similar, "look at your contract". The answer is correct. However, it also implies something important. It implies that contracts are being signed without a clear understanding of data ownership and use. I came away from the conference thinking that there is a gap in the industry regarding an understanding of data. This was amplified when I filed paperwork to create a new working group in NENA to create an informational document about data ownership, data governance, and data management. The first response from the committee that evaluated my request suggested that the working group wasn't necessary because the GIS groups had already docmented their data requirements and standards. The feedback implied that GIS was the only data in the industry.
+
+I believe that the entire process underscored the need for better data literacy, data management practices, and data governance principles in 9-1-1 centres. Thankfully, my working group has been approved and will be moving forward some time in the future. Ironically, most of the first volunteers willing to join this working group and help build the charter are from the GIS community.
+
+## So what data exists and where is it?
+
+Data, data, everywhere but not a row to analyse. Well, that's partially true. There is tonnes of data in 9-1-1 centres. Every call generates data. We already have a lot of data built in also. Every unit, every map point, everything is data in the centre. The first step is recognizing that the data is there. For example, when a call comes into the centre, we start with the phone number and depending on whether it's a cell call, a VOIP call, or a landline call, we have some form of location data. For landline and VOIP calls, we have the ANI/ALI, Automated Number Indicator/Automated Location Indicator, which gives us the registered address for that specific number. For cell calls, depending on the technology available, we can get triangulated location data. Some people use apps that also will increase the accuracy of the location data. As we start talking to the caller, we gather more data about the caller, a call-back number, and start working on the reason for the call. Once we have the basic data, we start sending units to the scene. We determine the units by using data from their locations, their statuses, and their capabilities. We want to match the right resources to the call for service while minimizing the transit time to get there. While those units are en route, we may stay on the line with the caller to gather even more data. Every action and comment associated with the service calls is timestamped. We can use that to understand how well we are doing our jobs. 
+
+Because there are humans in the mix, we already know that we have to look carefully at that data before we make statements about it. For example, when we work with our vendor friends who want to add AI into products to help us serve the public better, we have to ensure that the data they are using is clean, accurate, and free of potential problems such as protected health information (PHI) or personally identifiable information (PII). We also have to ensure that the data is being used in a way that is ethical and respects the privacy of our callers. This is where data management and data governance come into play. We need to have clear policies and procedures in place for how we collect, store, and use data in our centres. We also need to ensure that our staff are trained on these policies and procedures so that they understand the importance of data management and data governance.
+
+## So that's what I'm talking about
+
+This is why I want to work on documents that help centre management be better educated about data. So I want to start with data literacy, understanding what data is and what data they possess. After that, I would like to discuss data lineage. I think that centre managers need to understand the data lifecycle from generation to use. Once we have those foundations built, I think we should move into data management and data governance.

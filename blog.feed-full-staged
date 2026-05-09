@@ -9,8 +9,32 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 15 Jan 2026 05:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Wed, 06 May 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/Goings_On_20260506/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/Goings_On_20260506/</link>
+  <description>{B4F502887207:/posts/Goings_On_20260506/index.html}</description>
+  <category>data science</category>
+  <category>analyses</category>
+  <category>9-1-1</category>
+  <category>data lineage</category>
+  <guid>https://drddatascience.com/posts/Goings_On_20260506/</guid>
+  <pubDate>Wed, 06 May 2026 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/20260503/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/20260503/</link>
+  <description>{B4F502887207:/posts/20260503/index.html}</description>
+  <category>data science</category>
+  <category>analyses</category>
+  <category>9-1-1</category>
+  <category>data lineage</category>
+  <guid>https://drddatascience.com/posts/20260503/</guid>
+  <pubDate>Sun, 03 May 2026 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>{B4F502887207:/posts/20251226/index.html}</title>
   <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
@@ -22,6 +46,18 @@
   <category>thoughts</category>
   <guid>https://drddatascience.com/posts/20251226/</guid>
   <pubDate>Thu, 15 Jan 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Jupyter_Work/index.html}</title>
+  <dc:creator>Tony Dunsworth, Ph.D.</dc:creator>
+  <link>https://drddatascience.com/posts/Jupyter_Work/</link>
+  <description>{B4F502887207:/posts/Jupyter_Work/index.html}</description>
+  <category>data science</category>
+  <category>jupyter</category>
+  <category>python</category>
+  <category>notebooks</category>
+  <guid>https://drddatascience.com/posts/Jupyter_Work/</guid>
+  <pubDate>Wed, 24 Dec 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>{B4F502887207:/posts/DeceptiveGraphics/index.html}</title>
@@ -192,28 +228,6 @@
   <category>data science</category>
   <guid>https://drddatascience.com/posts/20250106/</guid>
   <pubDate>Mon, 06 Jan 2025 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>{B4F502887207:/posts/20250105/index.html}</title>
-  <dc:creator>Tony Dunsworth</dc:creator>
-  <link>https://drddatascience.com/posts/20250105/</link>
-  <description>{B4F502887207:/posts/20250105/index.html}</description>
-  <category>news</category>
-  <category>analytics</category>
-  <category>911</category>
-  <guid>https://drddatascience.com/posts/20250105/</guid>
-  <pubDate>Sun, 05 Jan 2025 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>{B4F502887207:/posts/20241223/index.html}</title>
-  <dc:creator>Tony Dunsworth</dc:creator>
-  <link>https://drddatascience.com/posts/20241223/</link>
-  <description>{B4F502887207:/posts/20241223/index.html}</description>
-  <category>news</category>
-  <category>thoughts</category>
-  <category>reports</category>
-  <guid>https://drddatascience.com/posts/20241223/</guid>
-  <pubDate>Sun, 22 Dec 2024 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
