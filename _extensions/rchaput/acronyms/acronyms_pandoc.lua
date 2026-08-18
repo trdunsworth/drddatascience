@@ -97,7 +97,7 @@ end
     - plural: whether to display the plural form of this acronym.
 --]]
 function AcronymsPandoc.replaceExistingAcronym(
-    acr_key, style, first_use, insert_links, plural
+    acr_key, style, first_use, insert_links, plural, case_target, case
 )
     quarto.log.debug("[acronyms] Replacing acronym", acr_key)
     local acronym = Acronyms:get(acr_key)
@@ -110,6 +110,32 @@ function AcronymsPandoc.replaceExistingAcronym(
     -- Use default values from Options if not specified
     style = style or Options["style"]
     if insert_links == nil then insert_links = Options["insert_links"] end
+    case_target = case_target or "long"
+
+    -- If plural is requested, enforce strictness when markdown is present
+    -- in any part of the acronym unless an explicit plural was provided
+    if plural then
+        local need_long_strict = Helpers.contains_markdown(acronym.longname)
+            and not acronym._explicit_plural_longname
+        local need_short_strict = Helpers.contains_markdown(acronym.shortname)
+            and not acronym._explicit_plural_shortname
+        if need_long_strict then
+            quarto.log.error(
+                "[acronyms] Plural form requested for '" .. tostring(acr_key) ..
+                "' but 'plural.longname' was not explicitly provided while markdown parsing is enabled for its longname. " ..
+                "Define it under plural: { longname: ... } to use \\acrs{" .. tostring(acr_key) .. "} ."
+            )
+            assert(false)
+        end
+        if need_short_strict then
+            quarto.log.error(
+                "[acronyms] Plural form requested for '" .. tostring(acr_key) ..
+                "' but 'plural.shortname' was not explicitly provided while markdown parsing is enabled for its shortname. " ..
+                "Define it under plural: { shortname: ... } to use \\acrs{" .. tostring(acr_key) .. "} ."
+            )
+            assert(false)
+        end
+    end
 
     -- Replace the acronym with the desired style
     return replaceExistingAcronymWithStyle(
@@ -117,7 +143,9 @@ function AcronymsPandoc.replaceExistingAcronym(
         style,
         insert_links,
         first_use,
-        plural
+        plural,
+        case_target,
+        case
     )
 end
 
@@ -136,8 +164,8 @@ function AcronymsPandoc.generateDefinitionList(sorted_acronyms)
             pandoc.Attr(Helpers.key_to_id(acronym.key), {}, {})
         )
         -- The definition's value.
-        local definition = pandoc.Plain(acronym.longname)
-        table.insert(definition_list, { name, definition })
+        local definition_value = pandoc.Plain(Helpers.ensure_inlines(acronym.longname))
+        table.insert(definition_list, { name, definition_value })
     end
     return pandoc.DefinitionList(definition_list)
 end
@@ -158,12 +186,15 @@ function AcronymsPandoc.generateCustomFormat(sorted_acronyms, loa_format)
             "[acronyms] Generating definition for acronym", acronym.key
         )
         local id = Helpers.key_to_id(acronym.key)
+        acronym_markup = loa_format
         -- The acronym's name. We want it to be rendered with an ID attribute.
-        local name = "[" .. acronym.shortname .. "]{#" .. id .. "}"
-        -- The `loa_format` should be a Markdown template, with `{shortname}`
-        -- and `{longname}` as placeholder values that we must replace.
-        local acronym_markup = loa_format:gsub("{shortname}", name)
-        acronym_markup = acronym_markup:gsub("{longname}", acronym.longname)
+        local serialized_short = Helpers.serialize_inlines(acronym.shortname)
+        local short_str_with_id = '[' .. serialized_short .. ']{#' .. id .. '}'
+        acronym_markup = acronym_markup:gsub("{shortname}", short_str_with_id)
+
+        local serialized_long = Helpers.serialize_inlines(acronym.longname)
+        acronym_markup = acronym_markup:gsub("{longname}", serialized_long)
+        
         quarto.log.debug(
             "[acronyms] Template markup processed as", acronym_markup
         )
@@ -195,8 +226,9 @@ end
     - title: the header title ; use `''` (the empty string) to avoid generating
         a header (the user wants to create the header manually).
     - header_classes: the table of extra classes to put to the header.
+    - header_level: the (integer) level for the List of Acronyms heading.
 --]]
-function AcronymsPandoc.generateLoA(sorting, include_unused, title, header_classes)
+function AcronymsPandoc.generateLoA(sorting, include_unused, title, header_classes, header_level)
     -- Original idea from https://gist.github.com/RLesur/e81358c11031d06e40b8fef9fdfb2682
 
     -- Use default options if not specified
@@ -232,6 +264,17 @@ function AcronymsPandoc.generateLoA(sorting, include_unused, title, header_class
         -- Custom format, render acronyms based on the requested format.
         list_acronyms = AcronymsPandoc.generateCustomFormat(sorted, loa_format)
     end
+    
+    header_level = header_level or Options['loa_header_level']
+    if tonumber(header_level) == nil then
+        quarto.log.error(
+            "[acronyms] Could not cast", header_level, "to number.",
+            "Please set the `header_level` to a valid integer value."
+        )
+        assert(false)
+    end
+    header_level = math.floor(tonumber(header_level))
+    quarto.log.debug("[acronyms] Using header level", tostring(header_level))
 
     -- Create the Header (only if the title is not empty)
     local header = nil
@@ -241,7 +284,7 @@ function AcronymsPandoc.generateLoA(sorting, include_unused, title, header_class
         -- (from the Options) to this table. The table will also contain `"loa"`.
         local loa_classes = table.move(extra_classes, 1, #extra_classes, 2, {"loa"})
         header = pandoc.Header(
-            1,
+            header_level,
             { table.unpack(title) },
             pandoc.Attr(Helpers.key_to_id("HEADER_LOA"), loa_classes, {})
         )

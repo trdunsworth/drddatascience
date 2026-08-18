@@ -1,0 +1,30 @@
+---
+title: "First Project List"
+author: "Tony Dunsworth, Ph.D."
+date: "2026-08-17"
+categories: [Synthetic Data, 9-1-1 centres, projects, python]
+execute:
+  eval: false
+filters:
+  - acronyms
+acronyms:
+  keys:
+    - shortname: NENA
+      longname: National Emergency Number Association
+    - shortname: CAD
+      longname: Computer Assisted Dispatch
+---
+
+## Introduction
+
+I've been silent lately because my wife and I have been busy launching our new LLC, [Dunsworth, Mann, & Associates, LLC](https://dunsworth-mann.com). Part of that process, aside from an interminable amount of paperwork, is to start putting together projects and products that we can offer to clients. The first of these is something that I've been working on for a while now, and that is a synthetic data generator for 9-1-1 call centers. The idea is to create a tool that can generate realistic, but entirely synthetic, data that can be used for training, testing, and research purposes without compromising the privacy of real individuals.
+
+The tool is named SynthCCD. While it is focused on the creation of synthetic data for the 9-1-1 industry, we also believe that it can be used in various other industries with some customization. My intention is to have a product that we can license to educators, companies in the 9-1-1 sector, analysts, and other consultants who would like to work on various projects of their own, but eihter do not want to use or cannot use data from a 9-1-1 centre. I will discuss the possible use cases as I discuss some of the design desicions. The link to the software's page will be at the bottom of the post. 
+
+Now, before many of my friends say anything, yes, I'm selling licenses to use the software. However, when you buy a license to use it, you will get the source code, so it's open-sourced, but it won't be freeware. Yes, I would like other people to contribute back improvements they may make to the code over time. However, the truth will still be this; I might request it, but I don't know that I can enforce it.
+
+## Back Story
+
+In 2024, I was preparing to give a presentation with a friend of mine at the 2024 [NENA](https://nena.org) Annual Convention in Orlando, FL. Part of what I wanted to do with this was give a live coding demonstration to show, in real time, how a request from operations could be processed through analytics, and return a real business impact. Essentially, I wanted to show how data science was relevant to 9-1-1 centres around the country and emergency communication centres around the world. My concern was balancing showing that with exposing real data from a real centre. Thankfully, I work in a supportive centre and as long as I cleaned the data to ensure that no personal information was ever used, I was allowed to use my home centre's data, this time. 
+
+I knew that I couldn't count on that in the future, so that started the germination of what is now becoming SynthCCD. At first, I only needed something that would emulate incident data that you could find generated from any {{< acr CAD >}} system. So I tried [Mostly AI](https://mostly.ai) and the results weren't bad except that I had to give them real data to get good results. They offered me time and processing power to build sets and see what I could do with their project. While the results weren't bad, they weren't what I was hoping for. So, I started thinking about how I could do it myself.

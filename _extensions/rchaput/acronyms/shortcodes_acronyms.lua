@@ -85,12 +85,16 @@ function replaceAcronym (args, kwargs, meta)
         local first_use = getBooleanOrNil(kwargs["first_use"])
         local insert_links = getBooleanOrNil(kwargs["insert_links"])
         local plural = getBooleanOrNil(kwargs["plural"])
+        local case_target = getOrNil(kwargs["case_target"])
+        local case = getOrNil(kwargs["case"])
         return AcronymsPandoc.replaceExistingAcronym(
             acronym_key,
             style,
             first_use,
             insert_links,
-            plural
+            plural,
+            case_target,
+            case
         )
     else
         -- The acronym does not exists
@@ -119,12 +123,14 @@ function generateListOfAcronyms (args, kwargs, meta)
     local include_unused = getBooleanOrNil(kwargs["include_unused"])
     local title = getOrNil(kwargs["title"])
     local header_classes = getOrNil(kwargs["header_classes"])
+    local header_level = getOrNil(kwargs["header_level"])
 
     local header, definition_list = AcronymsPandoc.generateLoA(
         sorting,
         include_unused,
         title,
-        header_classes
+        header_classes,
+        header_level
     )
 
     if header ~= nil then

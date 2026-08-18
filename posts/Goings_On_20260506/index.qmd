@@ -21,4 +21,4 @@ I have a pretty hefty electronic to-do list right now. I have a few book reviews
 
 ### Other Thoughts
 
- So, about that LLC I referenced above. My wife and I figured that we would start an LLC so we can offer analytics, research, and other statistical processes to 9-1-1 centres around the country and, wishful thinking, around the world. We've been discussing it for a while, but there was always a reason to delay. Things have come together and now we've started the venture and I'm hoping that someone reading this may believe that their centre could use our services.
+ So, about that LLC I referenced above. My wife and I figured that we would start an LLC so we can offer analytics, research, and other statistical processes to 9-1-1 centres around the country and, wishful thinking, around the world. We've been discussing it for a while, but there was always a reason to delay. Things have come together and now we've started the venture and I'm hoping that someone reading this may believe that their centre could use our services.I think that it would be beneficial to me

@@ -7,4 +7,3 @@ contributes:
     - parse-acronyms.lua
   shortcodes:
     - shortcodes_acronyms.lua
-source: rchaput/acronyms@v2.2.0
