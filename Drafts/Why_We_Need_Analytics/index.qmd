@@ -1,0 +1,23 @@
+---
+title: "Why We Need to Stop Leaving Data on the Table"
+author: "Tony Dunsworth, Ph.D."
+date: "2026-09-09"
+categories: [Synthetic Data, 9-1-1 centres, projects, python]
+execute:
+  eval: false
+filters:
+  - acronyms
+acronyms:
+  keys:
+    - shortname: NENA
+      longname: National Emergency Number Association
+    - shortname: CAD
+      longname: Computer Assisted Dispatch
+---
+
+## Two Questions and Away We Go
+
+Currently, for my [LLC](https://dunsworth-mann.com), I'm developing a couple of different pieces of software. The first is a synthetic data generator for 9-1-1 data called SynthCCD. It's nearing the 1.0 release and I'm wriitng that blog entry to introduce it as we speak. Or at least, I have been until I started writing this. The other piece of software that I'm developing is a reporting engine that can leverage multiple languages and can employ agents to assist the user with analysing and answering questions about the data. Both are important for the LLC and the industry. It's in active development and will have it's own launch post when I am ready.
+
+Anyone interested in beta testing is encouraged to email me at [drddatascience@gmail.com](mailto:drddatascience@gmail.com) or [drtony@dunsworth-mann.com](mailto:drtony@dunsworth-mann.com). We can discuss access, testing, and protocols for that if you're interested.
+
