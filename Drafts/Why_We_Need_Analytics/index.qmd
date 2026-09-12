@@ -21,3 +21,4 @@ Currently, for my [LLC](https://dunsworth-mann.com), I'm developing a couple of 
 
 Anyone interested in beta testing is encouraged to email me at [drddatascience@gmail.com](mailto:drddatascience@gmail.com) or [drtony@dunsworth-mann.com](mailto:drtony@dunsworth-mann.com). We can discuss access, testing, and protocols for that if you're interested.
 
+The point of this post is to explain why I'm building these products. Think of it as a really soft sales pitch. 
