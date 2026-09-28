@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://drddatascience.com/blog.html</loc>
-    <lastmod>2026-03-28T13:48:29.224Z</lastmod>
+    <lastmod>2025-04-14T11:44:13.175Z</lastmod>
   </url>
   <url>
     <loc>https://drddatascience.com/about.html</loc>
@@ -110,7 +110,7 @@
   </url>
   <url>
     <loc>https://drddatascience.com/posts/Goings_On_20260506/index.html</loc>
-    <lastmod>2026-06-09T00:57:13.141Z</lastmod>
+    <lastmod>2026-08-18T11:19:33.511Z</lastmod>
   </url>
   <url>
     <loc>https://drddatascience.com/test_python.html.html</loc>
@@ -119,5 +119,21 @@
   <url>
     <loc>https://drddatascience.com/Drafts/Projects/index.html</loc>
     <lastmod>2026-05-10T21:01:46.982Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/Drafts/SynthCCD/index.html</loc>
+    <lastmod>2026-09-28T12:18:07.085Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/Drafts/Why_We_Need_Analytics/index.html</loc>
+    <lastmod>2026-09-28T12:18:07.088Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/Drafts/20260609/main.html</loc>
+    <lastmod>2026-09-09T19:11:39.088Z</lastmod>
+  </url>
+  <url>
+    <loc>https://drddatascience.com/Drafts/SynthCCD/post.html</loc>
+    <lastmod>2026-09-09T19:11:39.089Z</lastmod>
   </url>
 </urlset>

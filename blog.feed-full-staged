@@ -9,7 +9,7 @@
 <link>https://drddatascience.com/blog.html</link>
 <atom:link href="https://drddatascience.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Public Safety Data Science by Dr. Tony Dunsworth</description>
-<generator>quarto-1.9.36</generator>
+<generator>quarto-1.9.38</generator>
 <lastBuildDate>Wed, 06 May 2026 04:00:00 GMT</lastBuildDate>
 <item>
   <title>{B4F502887207:/posts/Goings_On_20260506/index.html}</title>
@@ -224,6 +224,14 @@
   <link>https://drddatascience.com/posts/20250106/</link>
   <description>{B4F502887207:/posts/20250106/index.html}</description>
   <category>news</category>
+  <category>full-stack</category>
+  <category>data science</category>
+  <guid>https://drddatascience.com/posts/20250106/</guid>
+  <pubDate>Mon, 06 Jan 2025 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
+ory>news</category>
   <category>full-stack</category>
   <category>data science</category>
   <guid>https://drddatascience.com/posts/20250106/</guid>
