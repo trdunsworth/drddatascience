@@ -33,4 +33,18 @@ I knew that I could leverage the [faker](https://faker.readthedocs.io/en/master/
 
 ## Version 3
 
-So, with all that in the background, the idea was to take the pieces of the first two versions that I thought worked and start building. I started with a SQL query that I used in my day job. That allowed me to start identifying the fields that I wanted in the incidents data when it was created. 
+So, with all that in the background, the idea was to take the pieces of the first two versions that I thought worked and start building. I started with a SQL query that I used in my day job. That allowed me to start identifying the fields that I wanted in the incidents data when it was created. After I added to the base schema, I started creating a new TODO list to add those elements into the system. 
+
+The first thing that I worked on was getting the distributions even more accurately defined. The more that I worked on this, the more that I wanted to ensure that the output looked more and more like real data. I had even started finding more data from [data.gov](https:/data.gov) to ensure that I had distributions of categorical data as correct as I could. That started making the output data feel a little better. However, the next challenge I found was that I had the right city name, but the addresses were all fake, literally, and it was a challenge to have a diverse enough address set to pass muster. So, I figured out how to leverage [Open Street Map](https://www.openstreetmap.org/) to generate real addresses for real locations. The next step became more in the line of vanity than what I really needed. I tried to work out how to scale the number of events of generated weekly using the population. I also extended that to the volume of calls to a PSAP. Being honest, the latter was the reason I was working this out. I could make up numbers for Alexandria because I know that data back and front. However, if I move up and down in population, I am not so certain. After I had these down and I could prove the scale, I felt it was ready to write up and make public.
+
+### Other steps
+
+In the development process, I had to decide how the user is going to interact with the software. I had considered building a GUI, but in the end, I decided against it and only made command-line and TUI options. I asume that most users will likely interact with it for data at scale. I did set up that a user can write up a JSON, YAML, or TOML file with the parameters to be passed in the command line. All of the parameters can eqaully be defined in the TUI. I also updated the security so I can reduce the exposure as much as possible. I've also set up the program to output the data in CSVs, parquet files, pandas and polars data frames, and now output into various databases. I know that is a lot of input and output options, but it allows for different user groups to use this software as they need.
+
+## What's coming next?
+
+I have a couple of different ideas for what comes next. The first thing I'm thinking of is the ability to create synthetic Emergency Incident Data Objects (EIDOs) to test connections, data transfers, and the ability to successfully process them. I'm also looking at building an AI agent companion to assist someone in creating everything and have that be the equivalent of a GUI. I think that these are good enhancements for the future. 
+
+## What do you think?
+
+So, as per the question starting this section, after you've looked at it and read the extensive documentaiton, what do you think I should be doing next with this as it grows? 
