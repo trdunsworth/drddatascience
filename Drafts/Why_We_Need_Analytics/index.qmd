@@ -17,8 +17,8 @@ acronyms:
 
 ## Two Questions and Away We Go
 
-Currently, for my [LLC](https://dunsworth-mann.com), I'm developing a couple of different pieces of software. The first is a synthetic data generator for 9-1-1 data called SynthCCD. It's nearing the 1.0 release and I'm wriitng that blog entry to introduce it as we speak. Or at least, I have been until I started writing this. The other piece of software that I'm developing is a reporting engine that can leverage multiple languages and can employ agents to assist the user with analysing and answering questions about the data. Both are important for the LLC and the industry. It's in active development and will have it's own launch post when I am ready.
+Currently, for my [LLC](https://dunsworth-mann.com), I'm developing a couple of different pieces of software. The first is a synthetic data generator for 9-1-1 data called [SynthCCD](https://github.com/trdunsworth/SynthCCD). I've released it as a 1.0 offering and have written a [blog post](https://drddatascience.com/posts/SynthCCD/) The other piece of software that I'm developing is a reporting engine that can leverage multiple languages and can employ agents to assist the user with analysing and answering questions about the data. Both are important for the LLC and the industry. It's in active development and will have it's own launch post when I am ready.
 
 Anyone interested in beta testing is encouraged to email me at [drddatascience@gmail.com](mailto:drddatascience@gmail.com) or [drtony@dunsworth-mann.com](mailto:drtony@dunsworth-mann.com). We can discuss access, testing, and protocols for that if you're interested.
 
-The point of this post is to explain why I'm building these products. Think of it as a really soft sales pitch. 
+The point of this post is to explain why I'm building these products. Think of it as a really soft sales pitch. SynthCCD was built with two audiences in mind. One audience is the developer community wishing to build products for centers which leverage their data. This audience could use the train AI=assisted or AI-first products for this industry. I believe that generating realistic synthetic data rather than 

@@ -1,0 +1,28 @@
+---
+title: "Development of a Synthetic Enhanced Decision Engineering System"
+author: "Tony Dunsworth, Ph.D."
+date: "2026-11-19"
+categories: [Synthetic Data, 9-1-1 centres, projects, python]
+execute:
+  eval: false
+filters:
+  - acronyms
+acronyms:
+  keys:
+    - shortname: NENA
+      longname: National Emergency Number Association
+    - shortname: CAD
+      longname: Computer Assisted Dispatch
+    - shortname: GIS
+      longname: Geographic Information Systems
+---
+
+# Developing a Synthetically Enhanced Decision Engineering System
+
+## The Starting Point
+
+I started a while back with the development of [SynthCCD](https://github.com/trdunsworth/SynthCCD), the [announcement post](https://drddatascience.com/posts/SynthCCD/) gives the reasons behind creating it. I wanted to be able to use synthetic data for my presentations. As I continued to develop the software, I started finding other uses for the program. I've added a generator in this that enables me to generate phone volume data. I built that so I could create call handling data that I could use in volume forecasting and staffing model development. While I'm still designing that experiment, I understand that there are still other uses for that data. I think that I'm going to work out how to add incident handling volumes to the call handling volumes, then I can strengthen the research into staffing models, because I can better measure workloads. 
+
+I can also start developing a better analytics engine based on the synthetic data that I'm able to create. I am going to start with descriptive analytics, then move along to exploratory analyses, then move into more complex analyses, including comparative analyses. Since we have a new client for [Dunsworth, Mann, and Associates, LLC](https://dunsworth-mann.com), we want to start building a series of informative reports that will address the centre's needs and start them on the road to better data use. 
+
+most recently, I've added the cross street, ensured that the latitude and longitude are in place, and a flag to indicate whether or not an address was validated prior to the call moving from call handling to incident handling and dispatch. I have also added a slight time penalty for calls at addresses that were not validated. That should reflect the time taken to try and validate the address, confirm that the address override is really the address for response, and trying to find the address during the response. I still want to verify that my hunches hold up to scrutiny.
