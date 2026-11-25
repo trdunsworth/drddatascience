@@ -1,7 +1,7 @@
 ---
 title: "Development of a Synthetic Enhanced Decision Engineering System"
 author: "Tony Dunsworth, Ph.D."
-date: "2026-11-19"
+date: "2026-11-26"
 categories: [Synthetic Data, 9-1-1 centres, projects, python]
 execute:
   eval: false
@@ -37,4 +37,6 @@ However, at the same time, I recently tried to create a smaller data set that I 
 
 As an additional benefit, I realized that I could use this to create a dataset that conforms to the published NENA standards. Since the datasets that I generate are meant for research and reporting in public safety, adherence to NENA GIS standards makes perfect sense. This will, after I write the software, allow me to have a proper standards compliant jurisdiction for the dataset. After I started sketching out the details, I realized that I also need to create file that allow for persistence and expansion of the dataset.
 
-My original intent was to create one town that I could use for my own work. After I started looking at libraries and standards, I realized that I could make this
+My original intent was to create one town that I could use for my own work. After I started looking at libraries and standards, I realized that I could make this into something that I could develop into a larger project. That project would be to create synthetic generators to emulate as many parts of a centre as possible. I think that I can do this for different parts of the process and then create experimental modules that facilitate research into centres while reducing data exposure. Reducing exposure while increasing utility enhances security and data management policiies, while allowing work ot continue. Additionally, synthetic data can be used to check real data, just as real data can be used to check that synthetic data is accurate. When the two are in alignment, then blended data comprised of real and synthetic data can be used to fill in gaps, enhance options, and allow research to move forward.
+
+Ultimately, I want to keep research and development moving forward, but I also want to protect the privacy and security attached to real data from centres. I think that I can keep doing this and that SynthGIS is the next piece of that puzzle.
